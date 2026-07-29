@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useRef, useState, type ReactNode, type CSSProperties, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { animate, stagger } from "animejs";
+import { motion } from "framer-motion";
 
 const SYMPLA =
   "https://www.sympla.com.br/evento/festival-costume-gourmet/3512927";
@@ -39,6 +40,20 @@ function Sparkle({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
       <path d="M12 0 L14 10 L24 12 L14 14 L12 24 L10 14 L0 12 L10 10 Z" fill="currentColor" />
+    </svg>
+  );
+}
+
+const ICONES_PROGRAMACAO: Record<"cozinha" | "harmonizacao" | "musica", string> = {
+  cozinha: "M12 2c1 3-3 4-3 8a3 3 0 0 0 6 0c0-1-1-2-1-2 1 2 3 3 3 6a5 5 0 0 1-10 0c0-5 3-6 5-12Z",
+  harmonizacao: "M7 3h10l-1 6a4 4 0 0 1-3 3.9V17h3v2H8v-2h3v-4.1A4 4 0 0 1 8 9L7 3Z",
+  musica: "M9 17a3 3 0 1 1-2-2.83V5l10-2v10.17a3 3 0 1 1-2-2.83V6.3L9 8v9Z",
+};
+
+function IconePrograma({ variante, className = "" }: { variante: "cozinha" | "harmonizacao" | "musica"; className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <path d={ICONES_PROGRAMACAO[variante]} fill="currentColor" />
     </svg>
   );
 }
@@ -152,17 +167,31 @@ function LeadForm({ tipo, onClose }: { tipo: LeadTipo; onClose: () => void }) {
 
 const experiencias = [
   { nome: "Recebendo em Casa", tag: "Experiência premium", desc: "Mesa para 30 pessoas, serviço completo e um chef convidado servindo pratos e sobremesa. Vagas limitadas por horário.", img: "/espacos/recebendo-em-casa.webp", selo: "ic-ramo" as const },
-  { nome: "Palco Gourmet Gerações", tag: "Cozinha show", desc: "Aulas e demonstrações ao vivo com chefs exclusivos, transmitidas em telão para todo o público.", img: "/espacos/palco-gourmet.webp" },
+  { nome: "Palco Gourmet", tag: "Cozinha show", desc: "Grandes nomes da culinária cearense e nacional cozinham ao vivo no Palco Gourmet. A cada dia, um chef diferente apresenta suas receitas, com transmissão em telão para todo o público.", img: "/espacos/palco-gourmet.webp" },
   { nome: "Piano Bar", tag: "Vinhos e música", desc: "Drinks, degustação e harmonização com sommelier, ao som de música ao vivo a cada noite.", img: "/espacos/piano-bar.webp", duotone: "duotone-om", selos: ["ic-rolha", "ic-sacarolha"] as const },
 ];
 
 const numeros = [
-  { to: 3, prefix: "", suffix: "", l: "dias de festa", glow: "#D8992F" },
-  { to: 20, prefix: "+", suffix: "", l: "chefs confirmados", glow: "#DC463C" },
-  { to: 3, prefix: "", suffix: "", l: "espaços", glow: "#A0A04E" },
-  { to: 30, prefix: "+", suffix: "", l: "marcas parceiras", glow: "#D8992F" },
-  { to: 100, prefix: "", suffix: "%", l: "da renda vira doação", glow: "#DC463C", hero: true },
+  { to: 35, prefix: "+", suffix: "", l: "estandes", glow: "#D8992F" },
+  { to: 3, prefix: "", suffix: "", l: "dias de festa", glow: "#DC463C" },
+  { to: 20, prefix: "+", suffix: "", l: "chefs confirmados", glow: "#A0A04E" },
+  { to: 3, prefix: "", suffix: "", l: "espaços", glow: "#D8992F" },
+  { to: 30, prefix: "+", suffix: "", l: "marcas parceiras", glow: "#DC463C" },
+  { to: 100, prefix: "", suffix: "%", l: "da renda destinada à doação", glow: "#A0A04E" },
 ];
+
+const numeroVarianteContainer = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.14, delayChildren: 0.05 } },
+};
+
+const numeroVarianteItem = {
+  hidden: { opacity: 0, y: 56, scale: 0.8, filter: "blur(10px)" },
+  show: {
+    opacity: 1, y: 0, scale: 1, filter: "blur(0px)",
+    transition: { duration: 0.9, ease: [0.19, 1, 0.22, 1] as const },
+  },
+};
 
 const chefs = [
   { nome: "Claude Troisgros", casa: "São Luiz", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-vinho", foto: "/chefs/claude-troisgros.webp", link: "/chefs/claude-troisgros" },
@@ -215,8 +244,8 @@ const faq = [
   ["Posso comprar por dia ou o combo dos três dias?", "Os dois. Tem ingresso por dia e o combo para os três dias de festival."],
   ["Como acesso o evento depois de comprar?", "A compra é pela Sympla. Na bilheteria, você apresenta o ingresso pelo celular e retira a pulseira de acesso."],
   ["Quantos ingressos posso comprar?", "Quantos quiser. Não há limite por pessoa."],
-  ["Posso levar crianças?", "Sim, é um ambiente para toda a família. Recomendamos que menores estejam acompanhados dos responsáveis."],
-  ["Tem estacionamento?", "O local conta com opções de estacionamento. Chegue com antecedência para maior comodidade."],
+  ["Posso levar crianças?", "Sim. O Festival Costume Gourmet é um ambiente para toda a família. Menores de idade deverão estar acompanhados pelos pais ou responsáveis. Crianças de até 11 anos não pagam. A partir dos 12 anos, será necessária a apresentação do ingresso e, quando aplicável, da carteirinha para comprovação do benefício."],
+  ["Tem estacionamento?", "Sim, o local conta com +300 vagas de estacionamento disponíveis. Se for beber, utilize o aplicativo de transporte de sua preferência."],
   ["Posso sair e voltar no mesmo dia?", "Pode, é só usar a pulseira de acesso entregue na entrada."],
 ];
 
@@ -231,10 +260,25 @@ const dias = [
 ];
 
 const programacaoBlocos = [
-  { t: "Cozinha Show", d: "No Palco Gourmet Gerações, um chef diferente cozinha ao vivo a cada dia, com transmissão em telão para todo o público." },
-  { t: "Festins e jantares", d: "Recebendo em Casa: mesa para 30 pessoas, serviço completo e chef convidado. Vagas limitadas, com reserva por horário." },
-  { t: "Shows musicais", d: "Piano Bar ao vivo às 19h, 20h e 21h50, e o Projeto Cearal levando música instrumental cearense pelos espaços abertos." },
+  { t: "Cozinha Show", d: "No Palco Gourmet, grandes nomes da culinária cearense e nacional cozinham ao vivo no Palco Gourmet. A cada dia, um chef diferente apresenta suas receitas, com transmissão em telão para todo o público.", icone: "cozinha" as const },
+  { t: "Jantares e Harmonizações", d: "Recebendo em Casa: mesa para 30 pessoas, serviço completo e chef convidado. Vagas limitadas, com reserva por horário.", icone: "harmonizacao" as const },
+  { t: "Atrações musicais", d: "Piano Bar ao vivo às 19h, 20h e 21h50, e o Projeto Cearal levando música instrumental cearense pelos espaços abertos.", icone: "musica" as const },
 ];
+
+const programacaoVarianteContainer = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.12 } },
+};
+
+const programacaoVarianteCard = {
+  hidden: { opacity: 0, y: 32, scale: 0.94 },
+  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: [0.19, 1, 0.22, 1] as const } },
+};
+
+const programacaoVarianteIcone = {
+  hidden: { opacity: 0, scale: 0.3, rotate: -25 },
+  show: { opacity: 1, scale: 1, rotate: 0, transition: { type: "spring" as const, stiffness: 260, damping: 15, delay: 0.15 } },
+};
 
 /* grade real dos 4 espaços do festival, por horário — sincronizada do cronograma ao vivo do portal interno (22/07/2026) */
 const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; sub?: string; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
@@ -349,9 +393,18 @@ const produtoresLocais = [
   { nome: "Tijuca", desde: "1969", desc: "Queijo coalho e ovos, um clássico da mesa cearense.", logo: "/produtores/tijuca.webp" },
   { nome: "Emape", desde: "1963", desc: "Tradição em alimentos que atravessa gerações.", logo: "/produtores/emape.webp" },
   { nome: "Granja Regina · Merci", desde: "", desc: "Produtos de granja e doces artesanais.", logo: "/produtores/granja-regina.webp" },
-  { nome: "Cachaça Viçosa", desde: "", desc: "Cachaça artesanal cearense.", logo: "/produtores/cachaca-vicosa.webp" },
   { nome: "Sabor & Vida", desde: "", desc: "Cream cheese e ricota fresquinhos.", logo: "/produtores/sabor-vida.webp" },
 ];
+
+const produtoresVarianteContainer = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.1 } },
+};
+
+const produtoresVarianteCard = {
+  hidden: { opacity: 0, y: 28, scale: 0.95 },
+  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: [0.19, 1, 0.22, 1] as const } },
+};
 
 
 const regras = [
@@ -430,15 +483,15 @@ function Countdown() {
     [pad(t.s), "seg"],
   ];
   return (
-    <div ref={wrap} className="flex items-start justify-center gap-1.5 md:gap-4 mt-5 max-w-xl mx-auto">
+    <div ref={wrap} className="flex items-start justify-center gap-2 md:gap-5 mt-7 max-w-2xl mx-auto">
       {units.map(([v, l], i) => (
         <Fragment key={l}>
-          <div className="text-center relative w-16 md:w-20">
-            <div className="absolute inset-x-0 top-0 h-12 md:h-16 rounded-full bg-dourado opacity-20 blur-2xl -z-10" aria-hidden="true" />
-            <div data-unit className="font-serif font-extrabold text-dourado tabular-nums" style={{ fontSize: "clamp(32px,9vw,60px)", lineHeight: 1 }}>{v}</div>
-            <div className="text-[9px] md:text-[11px] font-bold tracking-[0.16em] uppercase text-creme/60 mt-2">{l}</div>
+          <div className="text-center relative w-20 md:w-28">
+            <div className="absolute inset-x-0 top-0 h-14 md:h-20 rounded-full bg-dourado opacity-20 blur-2xl -z-10" aria-hidden="true" />
+            <div data-unit className="font-serif font-extrabold text-dourado tabular-nums" style={{ fontSize: "clamp(40px,11vw,76px)", lineHeight: 1 }}>{v}</div>
+            <div className="text-[11px] md:text-[13px] font-bold tracking-[0.16em] uppercase text-creme/70 mt-2.5">{l}</div>
           </div>
-          {i < units.length - 1 && <Sparkle className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 text-dourado/50 mt-3 md:mt-4 shrink-0" />}
+          {i < units.length - 1 && <Sparkle className="w-3 h-3 md:w-4 md:h-4 text-dourado/50 mt-5 md:mt-7 shrink-0" />}
         </Fragment>
       ))}
     </div>
@@ -555,9 +608,7 @@ export default function Landing() {
       {/* ===== NAV ===== */}
       <header className={`fixed top-0 inset-x-0 z-50 transition-all ${scrolled ? "bg-creme/90 backdrop-blur border-b border-creme-soft" : ""}`}>
         <div className="max-w-content mx-auto px-5 h-16 flex items-center justify-between">
-          <a href="#topo" className="flex items-center gap-2.5">
-            <img src="/brand/logo-fcg.webp" alt="Festival Costume Gourmet" className="h-9 w-auto" />
-          </a>
+          <span className="w-24 md:w-40 shrink-0" aria-hidden="true" />
           <nav className="hidden lg:flex items-center gap-6 text-[13px] font-semibold tracking-wide text-grafite/80">
             {navLinks.slice(0, 7).map(([href, label]) => (
               <a key={href} href={href} className="hover:text-dourado transition">{label}</a>
@@ -581,6 +632,10 @@ export default function Landing() {
             </div>
           </div>
         )}
+        {/* logotipo em aba retangular, colada no topo, cantos arredondados só embaixo */}
+        <a href="#topo" className="absolute top-0 left-5 md:left-8 flex items-center bg-vinho rounded-b-2xl md:rounded-b-3xl shadow-md px-4 py-2.5 md:px-7 md:py-4">
+          <img src="/brand/logo-fcg.webp" alt="Festival Costume Gourmet" className="h-9 md:h-14 w-auto" />
+        </a>
       </header>
 
       {/* ===== HERO ===== */}
@@ -634,10 +689,14 @@ export default function Landing() {
       <section className="px-5 -mt-4 md:-mt-8 relative z-10">
         <div className="max-w-content mx-auto">
           <Reveal>
-            <div className="rounded-[2rem] text-creme px-5 py-8 md:py-10 shadow-xl shadow-oliva/30 relative overflow-hidden" style={{ background: "radial-gradient(circle at 50% 40%, #4A4A22 0%, #26260A 65%)" }}>
-              <Eyebrow center dark>Contagem regressiva</Eyebrow>
+            <div className="rounded-[2rem] text-creme px-5 py-10 md:py-14 shadow-xl shadow-oliva/30 relative overflow-hidden" style={{ background: "radial-gradient(circle at 50% 40%, #4A4A22 0%, #26260A 65%)" }}>
+              <div className="label-eyebrow font-bold uppercase text-dourado-lt inline-flex items-center gap-3 justify-center w-full" style={{ fontSize: "clamp(15px,2.6vw,20px)" }}>
+                <span className="w-8 h-px bg-dourado-lt/60" />
+                Contagem regressiva
+                <span className="w-8 h-px bg-dourado-lt/60" />
+              </div>
               <Countdown />
-              <div className="text-center text-[12px] text-creme/60 mt-5">18 a 20 de setembro · Fortaleza</div>
+              <div className="text-center font-bold tracking-wide text-creme/90 mt-6" style={{ fontSize: "clamp(16px,3vw,20px)" }}>18 a 20 de setembro · Fortaleza</div>
             </div>
           </Reveal>
         </div>
@@ -692,19 +751,12 @@ export default function Landing() {
             <p className="mt-4 text-[15px] leading-relaxed text-grafite/80">
               Marcas, produtores, chefs, especialistas e consumidores reunidos em torno do que valoriza origem, qualidade e propósito. A curadoria se inspira na cena gastronômica cearense, onde cada receita carrega memória e cada aroma desperta lembranças.
             </p>
-            <div className="grid sm:grid-cols-2 gap-4 mt-6">
+            <div className="mt-6">
               <div className="flex gap-3 items-start">
                 <img loading="lazy" src="/brand/ic-ramo.webp" alt="" aria-hidden="true" className="w-9 h-9 shrink-0 mt-0.5" />
                 <div>
                   <div className="text-[13px] font-bold text-vinho">Sustentabilidade na prática</div>
                   <p className="text-[12.5px] text-grafite/70 leading-snug mt-0.5">Damos palco a produtores locais de décadas, como a Tijuca (desde 1969) e a Emape (desde 1963), valorizando origem e cadeia curta ao invés de importar de fora.</p>
-                </div>
-              </div>
-              <div className="flex gap-3 items-start">
-                <img loading="lazy" src="/brand/ic-livro.webp" alt="" aria-hidden="true" className="w-9 h-9 shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-[13px] font-bold text-vinho">Prêmio Sabores da Cidade</div>
-                  <p className="text-[12.5px] text-grafite/70 leading-snug mt-0.5">O festival recebe no palco a cerimônia do Prêmio Sabores da Cidade, que elege os melhores da gastronomia cearense em diversas categorias.</p>
                 </div>
               </div>
             </div>
@@ -749,7 +801,6 @@ export default function Landing() {
                     {e.selo && <img loading="lazy" src={`/brand/${e.selo}.webp`} alt="" aria-hidden="true" className="absolute -top-3 -right-3 w-12 -rotate-[10deg] drop-shadow-sm pointer-events-none select-none" />}
                     {e.selos && (
                       <>
-                        <img loading="lazy" src={`/brand/${e.selos[0]}.webp`} alt="" aria-hidden="true" className="absolute -bottom-3 left-3 w-11 -rotate-6 drop-shadow-md pointer-events-none select-none" />
                         <img loading="lazy" src={`/brand/${e.selos[1]}.webp`} alt="" aria-hidden="true" className="absolute -bottom-3 right-3 w-12 rotate-6 drop-shadow-md pointer-events-none select-none" />
                       </>
                     )}
@@ -764,33 +815,41 @@ export default function Landing() {
       </section>
 
       {/* ===== NÚMEROS / O FESTIVAL ===== */}
-      <section className="px-5">
-        <div className="max-w-content mx-auto">
+      <section className="relative overflow-hidden text-creme py-16 md:py-24" style={{ background: "radial-gradient(ellipse at 50% 35%,#4E1714 0%,#3A0F0E 55%,#2A0A09 100%)" }}>
+        <div className="absolute inset-0 -z-0 opacity-[0.07]" style={{ backgroundImage: "url(/brand/ilustra-mesa-vinho.webp)", backgroundSize: "520px", backgroundPosition: "center" }} />
+        <div className="absolute inset-0 -z-0 opacity-[0.04]" style={{ backgroundImage: "url(/brand/pattern-vinho.webp)", backgroundSize: "300px", filter: "grayscale(1) contrast(1.2)", mixBlendMode: "overlay" }} />
+        <div className="max-w-6xl mx-auto px-5 relative text-center">
           <Reveal>
-            <div className="rounded-[2rem] text-creme px-6 py-14 md:py-20 text-center relative overflow-hidden" style={{ background: "radial-gradient(ellipse at 50% 35%,#4E1714 0%,#3A0F0E 55%,#2A0A09 100%)" }}>
-              <div className="absolute inset-0 -z-0 opacity-[0.07]" style={{ backgroundImage: "url(/brand/ilustra-mesa-vinho.webp)", backgroundSize: "520px", backgroundPosition: "center" }} />
-              <div className="absolute inset-0 -z-0 opacity-[0.04]" style={{ backgroundImage: "url(/brand/pattern-vinho.webp)", backgroundSize: "300px", filter: "grayscale(1) contrast(1.2)", mixBlendMode: "overlay" }} />
-              <div className="relative">
-                <Eyebrow dark>Uma edição histórica</Eyebrow>
-                <h2 className="font-serif font-extrabold mt-3 leading-tight" style={{ fontSize: "clamp(28px,5.5vw,52px)" }}>
-                  100 anos celebrados<br />em 3 dias de festa
-                </h2>
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mt-11 max-w-4xl mx-auto">
-                  {numeros.map((s) => (
-                    <div key={s.l} className={`relative ${s.hero ? "col-span-2 md:col-span-1" : ""}`}>
-                      <div className="absolute inset-x-2 top-1 h-14 rounded-full opacity-25 blur-2xl -z-10" style={{ background: s.glow }} aria-hidden="true" />
-                      <CountUp
-                        to={s.to} prefix={s.prefix} suffix={s.suffix}
-                        className={`font-serif font-extrabold tabular-nums block ${s.hero ? "text-telha" : "text-dourado"}`}
-                        style={{ fontSize: s.hero ? "clamp(56px,13vw,88px)" : "clamp(36px,7vw,52px)" }}
-                      />
-                      <div className="label-micro text-[11px] text-creme/70 mt-1">{s.l}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <Eyebrow dark center>Uma edição histórica</Eyebrow>
+            <h2 className="font-serif font-extrabold mt-3 leading-tight" style={{ fontSize: "clamp(28px,5.5vw,52px)" }}>
+              100 anos celebrados<br />em 3 dias de festa
+            </h2>
           </Reveal>
+          <motion.div
+            className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-14 text-left"
+            variants={numeroVarianteContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            {numeros.map((s) => (
+              <motion.div
+                key={s.l}
+                variants={numeroVarianteItem}
+                whileHover={{ scale: 1.04, y: -6 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="relative rounded-3xl border border-creme/10 bg-white/[0.05] backdrop-blur-sm overflow-hidden flex flex-col justify-center p-6 md:p-8 min-h-[180px] md:min-h-[220px]"
+              >
+                <div className="absolute -inset-6 opacity-30 blur-3xl -z-10" style={{ background: s.glow }} aria-hidden="true" />
+                <CountUp
+                  to={s.to} prefix={s.prefix} suffix={s.suffix}
+                  className="font-serif font-extrabold tabular-nums block text-dourado-lt"
+                  style={{ fontSize: "clamp(52px,8vw,76px)" }}
+                />
+                <div className="label-micro text-[13px] md:text-[14px] font-bold uppercase text-creme/80 mt-2">{s.l}</div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
@@ -825,16 +884,23 @@ export default function Landing() {
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-dourado to-transparent my-8" aria-hidden="true" />
 
-          <div className="grid sm:grid-cols-2 gap-4">
-            {programacaoBlocos.map((b, i) => (
-              <Reveal key={b.t} delay={i * 80}>
-                <div className="bg-white rounded-2xl border border-creme-soft p-6 shadow-sm h-full">
-                  <h3 className="font-serif font-bold text-xl text-telha">{b.t}</h3>
-                  <p className="text-[13.5px] leading-relaxed text-grafite/80 mt-1.5">{b.d}</p>
-                </div>
-              </Reveal>
+          <motion.div
+            className="grid sm:grid-cols-3 gap-4"
+            variants={programacaoVarianteContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            {programacaoBlocos.map((b) => (
+              <motion.div key={b.t} variants={programacaoVarianteCard} className="bg-white rounded-2xl border border-creme-soft p-6 shadow-sm h-full">
+                <motion.div variants={programacaoVarianteIcone} className="w-11 h-11 rounded-full bg-telha/10 text-telha flex items-center justify-center mb-3">
+                  <IconePrograma variante={b.icone} className="w-6 h-6" />
+                </motion.div>
+                <h3 className="font-serif font-bold text-xl text-telha">{b.t}</h3>
+                <p className="text-[13.5px] leading-relaxed text-grafite/80 mt-1.5">{b.d}</p>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
           <Reveal>
             <a href="#chefs" className="inline-block mt-7 text-[13px] font-bold text-dourado hover:text-laranja">Ver os chefs confirmados →</a>
           </Reveal>
@@ -1015,20 +1081,30 @@ export default function Landing() {
             </p>
           </Reveal>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-10">
-            {produtoresLocais.map((p, i) => (
-              <Reveal key={p.nome} delay={i * 70}>
-                <div className="bg-white rounded-2xl border border-creme-soft shadow-sm p-5 h-full flex flex-col items-center text-center">
-                  <div className="h-14 flex items-center justify-center">
-                    <img loading="lazy" src={p.logo} alt={p.nome} className="max-h-14 max-w-full object-contain" />
-                  </div>
-                  <h3 className="font-serif font-bold text-[15px] text-grafite mt-3 leading-tight">{p.nome}</h3>
-                  {p.desde && <div className="text-[10px] font-bold tracking-[0.12em] uppercase text-dourado mt-1">Desde {p.desde}</div>}
-                  <p className="text-[12px] leading-relaxed text-grafite/60 mt-2">{p.desc}</p>
+          <motion.div
+            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"
+            variants={produtoresVarianteContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            {produtoresLocais.map((p) => (
+              <motion.div
+                key={p.nome}
+                variants={produtoresVarianteCard}
+                whileHover={{ y: -4, scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="bg-white rounded-2xl border border-creme-soft shadow-sm p-7 h-full flex flex-col items-center text-center"
+              >
+                <div className="h-16 flex items-center justify-center">
+                  <img loading="lazy" src={p.logo} alt={p.nome} className="max-h-16 max-w-full object-contain" />
                 </div>
-              </Reveal>
+                <h3 className="font-serif font-bold text-xl text-grafite mt-4 leading-tight">{p.nome}</h3>
+                {p.desde && <div className="text-[11.5px] font-bold tracking-[0.12em] uppercase text-dourado mt-1.5">Desde {p.desde}</div>}
+                <p className="text-[14px] leading-relaxed text-grafite/70 mt-2.5">{p.desc}</p>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           <Reveal>
             <p className="mt-6 text-[12.5px] text-grafite/55 leading-relaxed max-w-xl">
