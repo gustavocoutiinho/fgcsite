@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Montserrat', system-ui, sans-serif; background: #FCF6EE; color: #4A4744; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+/* fade-in ao rolar (usabilidade Event Spark) */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+/* troca de slide do carrossel */
+@keyframes cfade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.cfade { animation: cfade .5s cubic-bezier(.2,.7,.2,1); }
+@media (prefers-reduced-motion: reduce) { .cfade { animation: none; } }
+
+/* carrossel flutuante de logos (marquee infinito) */
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.marquee-track { display: flex; width: max-content; animation: marquee var(--dur, 46s) linear infinite; }
+.marquee-track.reverse { animation-direction: reverse; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
+
+/* --- sistema de rótulos em 3 níveis (melhoria visual) --- */
+.label-micro { letter-spacing: .12em; }
+.label-eyebrow { letter-spacing: .24em; }
+.label-wide { letter-spacing: .34em; }
+
+/* --- moldura dourada fina por dentro de toda foto real (melhoria visual) --- */
+.frame-real { box-shadow: inset 0 0 0 1.5px rgba(216,153,47,.55), inset 0 0 0 4px rgba(216,153,47,.12); }
+
+/* --- grade de cor única nas fotos reais, pra parecerem a mesma sessão (melhoria visual) --- */
+.foto-real { filter: saturate(1.08) contrast(1.05) brightness(0.99) sepia(0.04); }
+
+/* --- grain sutil de textura vintage sobre fotos reais (melhoria visual) --- */
+.foto-grain::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .05; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px;
+}
+
+/* --- barra de progresso de leitura fixa no topo (melhoria visual) --- */
+#scrollbar-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg,#D8992F,#D2742E); box-shadow: 0 0 8px rgba(216,153,47,.6); z-index: 60; transition: width .08s linear; }
+
+/* --- pulso de brilho ao completar a contagem (melhoria visual) --- */
+@keyframes pulseglow { 0%,100% { text-shadow: 0 0 0 rgba(216,153,47,0); } 50% { text-shadow: 0 0 18px rgba(216,153,47,.65); } }
+.pulseglow { animation: pulseglow .7s ease-out 1; }
+
+/* --- respiração do glow decorativo (melhoria visual) --- */
+@keyframes breathe { 0%,100% { opacity: .18; } 50% { opacity: .32; } }
+.glow-breathe { animation: breathe 6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .glow-breathe { animation: none; } }
+
+/* --- barra de progresso do autoplay do carrossel de instituições (melhoria visual) --- */
+@keyframes fillbar { from { width: 0%; } to { width: 100%; } }
+.fillbar { animation: fillbar 6s linear 1; }
