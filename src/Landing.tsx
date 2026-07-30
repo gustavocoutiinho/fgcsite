@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useRef, useState, type ReactNode, type CSSProperties, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { animate, stagger } from "animejs";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const SYMPLA =
   "https://www.sympla.com.br/evento/festival-costume-gourmet/3512927";
@@ -406,6 +406,33 @@ const produtoresVarianteCard = {
   show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: [0.19, 1, 0.22, 1] as const } },
 };
 
+/* vitrine "edições anteriores" — grade em bento com lightbox */
+const edicoesAnterioresImgs = [
+  "/edicoes-anteriores/DSC_0098.jpg",
+  "/edicoes-anteriores/DSC_0284.jpg",
+  "/edicoes-anteriores/DSC_0289.jpg",
+  "/edicoes-anteriores/DSC_0355.jpg",
+  "/edicoes-anteriores/DSC_0649.jpg",
+];
+
+const edicoesAnterioresSpan = [
+  "col-span-2 row-span-2",
+  "row-span-1",
+  "row-span-2",
+  "row-span-1",
+  "col-span-2 row-span-1",
+];
+
+const edicoesAnterioresContainer = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.12 } },
+};
+
+const edicoesAnterioresItem = {
+  hidden: { opacity: 0, y: 34, scale: 0.92 },
+  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.7, ease: [0.19, 1, 0.22, 1] as const } },
+};
+
 
 const regras = [
   { t: "Para toda a família", d: "Ambiente para todas as idades. Menores devem estar acompanhados dos responsáveis." },
@@ -430,6 +457,149 @@ function LogoMarquee({ logos, dur, reverse = false }: { logos: string[]; dur: st
         ))}
       </div>
     </div>
+  );
+}
+
+/* vitrine animada das edições anteriores, com lightbox por teclado/clique */
+function GaleriaEdicoesAnteriores() {
+  const [aberto, setAberto] = useState<number | null>(null);
+  const total = edicoesAnterioresImgs.length;
+
+  useEffect(() => {
+    if (aberto === null) return;
+    const overflowAnterior = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setAberto(null);
+      if (e.key === "ArrowRight") setAberto((i) => (i === null ? i : (i + 1) % total));
+      if (e.key === "ArrowLeft") setAberto((i) => (i === null ? i : (i - 1 + total) % total));
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = overflowAnterior;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [aberto, total]);
+
+  return (
+    <section id="edicoes-anteriores" className="px-5 py-20 md:py-28 relative overflow-hidden">
+      <img loading="lazy" src="/brand/carimbo-vinho.webp" alt="" aria-hidden="true" className="absolute -top-16 -left-24 w-96 opacity-[0.08] -rotate-[10deg] pointer-events-none select-none hidden md:block" />
+      <div className="max-w-content mx-auto relative">
+        <Reveal>
+          <Eyebrow center>Retrospectiva</Eyebrow>
+          <h2 className="font-serif font-extrabold text-vinho mt-2 text-center" style={{ fontSize: "clamp(30px,5.5vw,54px)" }}>
+            Edições anteriores do Costume Gourmet
+          </h2>
+          <p className="mt-4 max-w-xl mx-auto text-[15px] leading-relaxed text-grafite/75 text-center">
+            Um giro visual pelas edições que já passaram pelo festival. Clique numa foto pra ver em tamanho grande.
+          </p>
+        </Reveal>
+
+        <motion.div
+          className="grid grid-cols-2 sm:grid-cols-4 auto-rows-[130px] sm:auto-rows-[150px] gap-3 mt-10"
+          style={{ gridAutoFlow: "dense" }}
+          variants={edicoesAnterioresContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.15 }}
+        >
+          {edicoesAnterioresImgs.map((src, i) => (
+            <motion.button
+              key={src}
+              type="button"
+              onClick={() => setAberto(i)}
+              variants={edicoesAnterioresItem}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 260, damping: 22 }}
+              className={`group relative rounded-2xl overflow-hidden frame-real foto-grain text-left ${edicoesAnterioresSpan[i]}`}
+              aria-label={`Ver foto ${i + 1} de ${total} em tamanho grande`}
+            >
+              <img
+                loading="lazy"
+                src={src}
+                alt="Registro de uma edição anterior do Festival Costume Gourmet"
+                className="w-full h-full object-cover transition duration-700 group-hover:scale-110 foto-real"
+                style={i % 2 === 1 ? { filter: "url(#duotone-vl)" } : undefined}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-vinho/0 to-transparent opacity-0 group-hover:opacity-100 group-hover:from-vinho/60 transition-opacity duration-500" />
+              <div className="absolute inset-0 grid place-items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="w-11 h-11 rounded-full bg-creme/90 grid place-items-center shadow-lg scale-90 group-hover:scale-100 transition-transform duration-300">
+                  <svg viewBox="0 0 24 24" className="w-5 h-5 text-vinho" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="M21 21l-4.3-4.3" strokeLinecap="round" />
+                    <path d="M11 8v6M8 11h6" strokeLinecap="round" />
+                  </svg>
+                </span>
+              </div>
+            </motion.button>
+          ))}
+        </motion.div>
+      </div>
+
+      <AnimatePresence>
+        {aberto !== null && (
+          <motion.div
+            className="fixed inset-0 z-[70] bg-[#1a0605]/95 backdrop-blur-sm grid place-items-center px-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            onClick={() => setAberto(null)}
+          >
+            <button
+              type="button"
+              aria-label="Fechar"
+              onClick={() => setAberto(null)}
+              className="absolute top-5 right-5 w-11 h-11 rounded-full bg-creme/10 hover:bg-creme/20 grid place-items-center text-creme transition-colors"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M5 5l14 14M19 5L5 19" strokeLinecap="round" />
+              </svg>
+            </button>
+
+            <button
+              type="button"
+              aria-label="Foto anterior"
+              onClick={(e) => { e.stopPropagation(); setAberto((i) => (i === null ? i : (i - 1 + total) % total)); }}
+              className="absolute left-3 md:left-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-creme/10 hover:bg-creme/20 grid place-items-center text-creme transition-colors"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M15 5l-7 7 7 7" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              aria-label="Próxima foto"
+              onClick={(e) => { e.stopPropagation(); setAberto((i) => (i === null ? i : (i + 1) % total)); }}
+              className="absolute right-3 md:right-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-creme/10 hover:bg-creme/20 grid place-items-center text-creme transition-colors"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            <motion.div
+              key={aberto}
+              className="relative max-w-4xl max-h-[80vh] w-full"
+              initial={{ opacity: 0, scale: 0.92 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.96 }}
+              transition={{ duration: 0.35, ease: [0.19, 1, 0.22, 1] as const }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={edicoesAnterioresImgs[aberto]}
+                alt="Registro de uma edição anterior do Festival Costume Gourmet"
+                className="w-full max-h-[80vh] object-contain rounded-xl shadow-2xl foto-real"
+              />
+              <div className="mt-3 text-center text-[12px] tracking-[0.15em] uppercase text-creme/60">
+                {aberto + 1} / {total}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </section>
   );
 }
 
@@ -1129,6 +1299,8 @@ export default function Landing() {
           </Reveal>
         </div>
       </section>
+
+      <GaleriaEdicoesAnteriores />
 
       {/* ===== IMPACTO SOCIAL ===== */}
       <section id="social" className="px-5">
