@@ -390,10 +390,18 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
 ];
 
 const produtoresLocais = [
-  { nome: "Tijuca", desde: "1969", desc: "Queijo coalho e ovos, um clássico da mesa cearense.", logo: "/produtores/tijuca.webp" },
-  { nome: "Emape", desde: "1963", desc: "Tradição em alimentos que atravessa gerações.", logo: "/produtores/emape.webp" },
-  { nome: "Granja Regina · Merci", desde: "", desc: "Produtos de granja e doces artesanais.", logo: "/produtores/granja-regina.webp" },
-  { nome: "Sabor & Vida", desde: "", desc: "Cream cheese e ricota fresquinhos.", logo: "/produtores/sabor-vida.webp" },
+  { nome: "Santa Clara", logo: "/patrocinadores/master-santa-clara.webp" },
+  { nome: "Stella Artois Puro Malte", logo: "/patrocinadores/master-stella-artois.webp" },
+  { nome: "Tijuca", logo: "/produtores/tijuca.webp" },
+  { nome: "Granja Regina", logo: "/produtores/granja-regina.webp" },
+  { nome: "D'origem", logo: "/patrocinadores/master-dorigem.webp" },
+  { nome: "M. Dias Branco", logo: "/patrocinadores/master-mdiasbranco.webp" },
+  { nome: "JBS", logo: "/patrocinadores/master-jbs.webp" },
+  { nome: "Lactalis Nestlé DPA", logo: "/patrocinadores/master-nestle.webp" },
+  { nome: "Naturágua", logo: "/patrocinadores/premium-naturagua.webp" },
+  { nome: "Opção", logo: "/patrocinadores/master-opcao.webp" },
+  { nome: "La Maison", logo: "/patrocinadores/premium-la-maison.webp" },
+  { nome: "Heineken", logo: "/patrocinadores/master-heineken.png" },
 ];
 
 const produtoresVarianteContainer = {
@@ -852,6 +860,14 @@ export default function Landing() {
             <img src="/brand/selo-100anos.webp" alt="100 anos São Luiz" className="h-14 w-auto" />
             <span className="text-[12px] font-semibold tracking-wide max-w-[180px] text-left leading-snug">Edição do centenário do São Luiz Supermercado</span>
           </div>
+          <div data-hero className="opacity-0 mt-6 flex flex-col items-center gap-2.5">
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-grafite/45">Uma iniciativa</span>
+            <div className="flex items-center gap-4 bg-vinho rounded-2xl px-6 py-3.5">
+              <img loading="lazy" src="/brand/logo-saoluiz.webp" alt="São Luiz Supermercado" className="h-8 w-auto" />
+              <span className="text-creme/40 text-xl font-light">+</span>
+              <img loading="lazy" src="/brand/logo-fcg.webp" alt="Festival Costume Gourmet" className="h-8 w-auto" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1252,7 +1268,7 @@ export default function Landing() {
           </Reveal>
 
           <motion.div
-            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"
+            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 mt-10"
             variants={produtoresVarianteContainer}
             initial="hidden"
             whileInView="show"
@@ -1264,14 +1280,12 @@ export default function Landing() {
                 variants={produtoresVarianteCard}
                 whileHover={{ y: -4, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="bg-white rounded-2xl border border-creme-soft shadow-sm p-7 h-full flex flex-col items-center text-center"
+                className="bg-white rounded-2xl border border-creme-soft shadow-sm p-6 h-full flex flex-col items-center justify-center text-center gap-4"
               >
                 <div className="h-16 flex items-center justify-center">
                   <img loading="lazy" src={p.logo} alt={p.nome} className="max-h-16 max-w-full object-contain" />
                 </div>
-                <h3 className="font-serif font-bold text-xl text-grafite mt-4 leading-tight">{p.nome}</h3>
-                {p.desde && <div className="text-[11.5px] font-bold tracking-[0.12em] uppercase text-dourado mt-1.5">Desde {p.desde}</div>}
-                <p className="text-[14px] leading-relaxed text-grafite/70 mt-2.5">{p.desc}</p>
+                <h3 className="font-serif font-bold text-base text-grafite leading-tight">{p.nome}</h3>
               </motion.div>
             ))}
           </motion.div>
