@@ -231,13 +231,13 @@ const instituicoes = [
 ];
 
 const masterLogos = [
-  "dorigem", "emape", "granja-regina", "merci",
+  "dorigem", "emape", "granja-regina",
   "sao-jose", "tijuca", "opcao", "santa-clara", "stella-artois",
 ].map((n) => `/patrocinadores/master-${n}.webp`);
 
 const premiumLogos = [
-  "5-elementos", "avine", "br-spices", "brutal-fruit", "imac", "la-maison", "lays", "madi",
-  "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "vale-fertil",
+  "turatti", "avine", "br-spices", "brutal-fruit", "imac", "la-maison", "doritos", "madi",
+  "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
 ].map((n) => `/patrocinadores/premium-${n}.webp`);
 
 const faq = [
@@ -391,13 +391,13 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
 
 const produtoresLocais = [
   { nome: "Santa Clara", logo: "/patrocinadores/master-santa-clara.webp" },
-  { nome: "Stella Artois Puro Malte", logo: "/patrocinadores/master-stella-artois.webp" },
+  { nome: "Stella Artois Pure Gold", logo: "/patrocinadores/master-stella-artois.webp" },
   { nome: "Tijuca", logo: "/produtores/tijuca.webp" },
   { nome: "Granja Regina", logo: "/produtores/granja-regina.webp" },
   { nome: "D'origem", logo: "/patrocinadores/master-dorigem.webp" },
   { nome: "M. Dias Branco", logo: "/patrocinadores/master-mdiasbranco.webp" },
   { nome: "JBS", logo: "/patrocinadores/master-jbs.webp" },
-  { nome: "Lactalis Nestlé DPA", logo: "/patrocinadores/master-nestle.webp" },
+  { nome: "Galbani", logo: "/patrocinadores/premium-galbani.webp" },
   { nome: "Naturágua", logo: "/patrocinadores/premium-naturagua.webp" },
   { nome: "Opção", logo: "/patrocinadores/master-opcao.webp" },
   { nome: "La Maison", logo: "/patrocinadores/premium-la-maison.webp" },
@@ -1542,7 +1542,7 @@ export default function Landing() {
         <div className="max-w-content mx-auto">
           <Reveal>
             <h2 className="font-serif font-extrabold text-vinho leading-tight" style={{ fontSize: "clamp(34px,7vw,72px)" }}>
-              Garanta seu lugar<br /><span className="text-dourado italic">à mesa</span>
+              Garanta seu lugar<br /><span className="text-dourado italic">no evento</span>
             </h2>
             <p className="mt-4 text-[15px] text-grafite/75">Ingressos pela Sympla. Estudantes de gastronomia têm gratuidade.</p>
             <a href={SYMPLA} target="_blank" rel="noopener" className="inline-block mt-8 px-10 py-4 rounded-full bg-gradient-to-r from-dourado to-laranja text-vinho font-bold tracking-wide shadow-lg shadow-dourado/30 hover:brightness-105 transition">
