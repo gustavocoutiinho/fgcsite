@@ -11,7 +11,7 @@ const WAZE = "https://waze.com/ul?q=La%20Maison%20Coliseu%20Av%20Eng%20Luiz%20Vi
 const NEWSLETTER = "https://www.instagram.com/channel/AbYOJmngcLM_wj4b/";
 const LEADS_API = "https://festival-costume-gourmet.vercel.app/api/leads-b2b";
 /* liga quando o chef convidado de sexta for divulgado nas redes; até lá, some do site sem apagar o trabalho */
-const CHEF_SURPRESA_REVELADO = false;
+const CHEF_SURPRESA_REVELADO = true;
 const EVENTO = new Date("2026-09-18T15:00:00-03:00").getTime();
 
 /* ---------- fade-in ao rolar (usabilidade Event Spark) ---------- */
@@ -238,6 +238,7 @@ const masterLogos = [
 const premiumLogos = [
   "turatti", "avine", "br-spices", "brutal-fruit", "imac", "la-maison", "doritos", "madi",
   "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
+  "lecuisinier","dolcedivino"
 ].map((n) => `/patrocinadores/premium-${n}.webp`);
 
 const faq = [
@@ -402,6 +403,9 @@ const produtoresLocais = [
   { nome: "Opção", logo: "/patrocinadores/master-opcao.webp" },
   { nome: "La Maison", logo: "/patrocinadores/premium-la-maison.webp" },
   { nome: "Heineken", logo: "/patrocinadores/master-heineken.png" },
+  { nome: "Dolce Divino", logo: "/patrocinadores/premium-dolcedivino.webp" },
+  { nome: "Le Cuisinier", logo: "/patrocinadores/premium-lecuisinier.webp" },
+
 ];
 
 const produtoresVarianteContainer = {
