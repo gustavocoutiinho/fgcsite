@@ -244,6 +244,9 @@ const instituicoes = [
     vira: "futuro",
     desc: "Há 40 anos cuida da saúde, da nutrição e do desenvolvimento de crianças na primeira infância e apoia mães em situação de vulnerabilidade, em Fortaleza.",
     site: "https://iprede.org.br/",
+    foto: "/impacto/iprede.webp",
+    foco: "center 40%",
+    legenda: "Entrega de refeições do IPREDE",
   },
   {
     sigla: "IPOM",
@@ -251,6 +254,9 @@ const instituicoes = [
     vira: "educação",
     desc: "Transforma a vida de crianças e adolescentes da comunidade do Vicente Pinzón, no litoral de Fortaleza, com esporte, arte e educação.",
     site: "https://institutopovodomar.org.br/",
+    foto: "/impacto/ipom.webp",
+    foco: "center 26%",
+    legenda: "Oficina de educação ambiental do IPOM",
   },
   {
     sigla: "ICC",
@@ -258,6 +264,9 @@ const instituicoes = [
     vira: "cuidado",
     desc: "Leva tratamento a pacientes com câncer no Ceará e mantém a Casa Vida, que acolhe famílias que vêm a Fortaleza em busca de tratamento oncológico.",
     site: "https://icc.org.br/",
+    foto: "/impacto/icc.webp",
+    foco: "center center",
+    legenda: "Campanha dos 80 anos do ICC",
   },
 ];
 
@@ -723,15 +732,21 @@ function Instituicoes() {
         Seu ingresso vira{" "}
         <span key={cur.vira} className="cfade inline-block font-serif italic font-bold text-dourado">{cur.vira}</span>.
       </p>
-      <div key={cur.sigla} className="cfade relative mt-7 max-w-xl mx-auto bg-white/[0.04] border border-musgo/25 rounded-3xl p-8 md:p-10 text-center overflow-hidden">
-        <div className="absolute top-0 left-0 h-[3px] bg-musgo fillbar" />
-        <div className="absolute inset-x-8 top-6 h-16 rounded-full bg-musgo opacity-20 blur-2xl -z-10" aria-hidden="true" />
-        <div className="font-serif font-extrabold text-dourado" style={{ fontSize: "clamp(30px,7vw,44px)" }}>{cur.sigla}</div>
-        <div className="text-creme font-semibold text-[15px] mt-1">{cur.nome}</div>
-        <p className="text-creme/80 text-[14px] leading-relaxed mt-4 max-w-md mx-auto">{cur.desc}</p>
-        <a href={cur.site} target="_blank" rel="noopener" className="inline-block mt-7 px-7 py-3 rounded-full bg-musgo/90 text-oliva font-bold text-[13px] tracking-wide hover:bg-musgo transition">
-          Conhecer o {cur.sigla}
-        </a>
+      <div key={cur.sigla} className="cfade relative mt-7 max-w-xl mx-auto bg-white/[0.04] border border-musgo/25 rounded-3xl text-center overflow-hidden">
+        <div className="absolute top-0 left-0 h-[3px] bg-musgo fillbar z-20" />
+        <div className="relative h-[215px] md:h-[275px] overflow-hidden">
+          <img loading="lazy" src={cur.foto} alt={cur.legenda} className="w-full h-full object-cover" style={{ objectPosition: cur.foco }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, #26260A 0%, rgba(38,38,10,.82) 20%, rgba(38,38,10,.18) 55%, rgba(38,38,10,0) 100%)" }} />
+        </div>
+        <div className="relative px-8 md:px-10 pb-8 md:pb-10 -mt-10">
+          <div className="absolute inset-x-8 top-2 h-16 rounded-full bg-musgo opacity-20 blur-2xl -z-10" aria-hidden="true" />
+          <div className="font-serif font-extrabold text-dourado" style={{ fontSize: "clamp(30px,7vw,44px)" }}>{cur.sigla}</div>
+          <div className="text-creme font-semibold text-[15px] mt-1">{cur.nome}</div>
+          <p className="text-creme/80 text-[14px] leading-relaxed mt-4 max-w-md mx-auto">{cur.desc}</p>
+          <a href={cur.site} target="_blank" rel="noopener" className="inline-block mt-7 px-7 py-3 rounded-full bg-musgo/90 text-oliva font-bold text-[13px] tracking-wide hover:bg-musgo transition">
+            Conhecer o {cur.sigla}
+          </a>
+        </div>
       </div>
       <div className="flex items-center justify-center gap-5 mt-6">
         <button aria-label="Anterior" onClick={() => setI((p) => (p - 1 + n) % n)} className="w-9 h-9 rounded-full border border-musgo/40 text-musgo hover:bg-musgo hover:text-oliva transition grid place-items-center">‹</button>
