@@ -317,11 +317,11 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
   { id: "palco", nome: "Palco Gourmet", icon: "mic", grade: [
     { dia: "Sexta", slots: [
       { h: "16h00 - 16h40", o: "Georgia Santiago · Muá Tuá", sub: "Arroz Tio João + Pomar da Polpa", status: "confirmado" },
-      { h: "16h40 - 17h00", o: "Momento fornecedor", status: "aconfirmar" },
+      { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
       { h: "17h00 - 17h40", o: "Daniel Sabbá", sub: "Pronto Carnes", status: "confirmado" },
-      { h: "17h40 - 18h00", o: "Momento fornecedor", status: "aconfirmar" },
+      { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
       { h: "18h00 - 18h40", o: "Sabores de uma bela História · Phelipe Carvalho + Zena", sub: "Granja Regina", status: "confirmado" },
-      { h: "18h40 - 19h20", o: "Momento fornecedor", status: "aconfirmar" },
+      { h: "18h40 - 19h20", o: "A definir", status: "aconfirmar" },
       { h: "19h20 - 20h20", o: CHEF_SURPRESA_REVELADO ? "Claude Troisgros" : "Chef convidado surpresa", sub: "São Luiz", status: "confirmado" },
       { h: "20h00 - 20h40", o: "Brunno Malheiros · Cheiro do Pão", status: "confirmado" },
       { h: "21h00 - 21h40", o: "Edil Costa", sub: "Vinho culinário · Le Cuisinier · São Braz", status: "confirmado" },
@@ -329,11 +329,11 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
     ]},
     { dia: "Sábado", slots: [
       { h: "16h00 - 16h40", o: "Oficina Prokichten", sub: "Prokichten", status: "confirmado" },
-      { h: "16h40 - 17h00", o: "Momento fornecedor", status: "aconfirmar" },
+      { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
       { h: "17h00 - 18h00", o: "Sabor de uma bela história · Matu Macêdo + Phelipe Carvalho", sub: "Pomar da Polpa", status: "confirmado" },
-      { h: "18h00 - 18h20", o: "Momento fornecedor", status: "aconfirmar" },
+      { h: "18h00 - 18h20", o: "A definir", status: "aconfirmar" },
       { h: "18h20 - 19h20", o: "Felipe Caputo", sub: "São Luiz", status: "confirmado" },
-      { h: "19h20 - 19h40", o: "Momento fornecedor", status: "aconfirmar" },
+      { h: "19h20 - 19h40", o: "A definir", status: "aconfirmar" },
       { h: "19h40 - 20h20", o: "Rafael Kim · Comida asiática", sub: "Arroz Tio João", status: "aconfirmar" },
       { h: "20h20 - 21h00", o: "Thales Romão · NOM", sub: "Molino", status: "confirmado" },
       { h: "21h00 - 21h40", o: "Ralfo · Parrilleiro", sub: "Arroz Tio João + BR Spices", status: "confirmado" },
@@ -341,11 +341,11 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
     ]},
     { dia: "Domingo", slots: [
       { h: "16h00 - 16h40", o: "Chef Well", status: "aconfirmar" },
-      { h: "16h40 - 17h00", o: "Momento fornecedor", status: "aconfirmar" },
+      { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
       { h: "17h00 - 17h40", o: "Matheus Vieira", sub: "Arroz Tio João + BR Spices", status: "confirmado" },
-      { h: "17h40 - 18h00", o: "Momento fornecedor", status: "aconfirmar" },
+      { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
       { h: "18h00 - 18h40", o: "Sabor de uma história · Chef Zinda + Phê", sub: "La France", status: "aconfirmar" },
-      { h: "18h40 - 19h00", o: "Momento fornecedor", status: "aconfirmar" },
+      { h: "18h40 - 19h00", o: "A definir", status: "aconfirmar" },
       { h: "19h00 - 19h40", o: "Pepê e Diego", sub: "Netumar + BR Spices", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Fechamento", status: "fixo" },
       { h: "20h00 - 21h00", o: "Elcio e Bia Nagano · Oficina", status: "confirmado" },
@@ -1135,7 +1135,7 @@ export default function Landing() {
               Os chefs do festival
             </h2>
             <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-grafite/75">
-              As mãos por trás da edição do centenário, do Palco Gourmet ao Piano Bar e ao Recebendo em Casa. Quem ainda está em fechamento aparece esmaecido.
+              As mãos por trás da edição do centenário, do Palco Gourmet ao Piano Bar e ao Recebendo em Casa. Quem ainda não está confirmado fica esmaecido, sem detalhe, até fechar.
             </p>
           </Reveal>
         </div>
@@ -1143,12 +1143,12 @@ export default function Landing() {
           <div className="relative max-w-content mx-auto">
             <div ref={chefsTrackRef} className="flex gap-4 overflow-x-auto snap-x snap-mandatory px-5 pb-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden" style={{ WebkitMaskImage: "linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)", maskImage: "linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)" }}>
               {chefs.filter((c) => CHEF_SURPRESA_REVELADO || c.nome !== "Claude Troisgros").map((c) => (
-                <div key={c.nome} className={`flex-shrink-0 w-[248px] snap-start bg-white rounded-3xl shadow-sm border border-creme-soft overflow-hidden ${c.status === "aconfirmar" ? "opacity-60" : ""}`}>
+                <div key={c.nome} className={`flex-shrink-0 w-[248px] snap-start bg-white rounded-3xl shadow-sm border border-creme-soft overflow-hidden ${c.status === "aconfirmar" ? "opacity-80" : ""}`}>
                   <div className={`${c.cor} h-[300px] flex items-center justify-center relative overflow-hidden`} style={{ backgroundImage: "radial-gradient(circle at 50% 30%, rgba(255,255,255,.12), transparent 60%)" }}>
                     {c.foto ? (
-                      <img loading="lazy" src={c.foto} alt={c.nome} className="absolute inset-0 w-full h-full object-cover foto-real" />
+                      <img loading="lazy" src={c.foto} alt={c.status === "aconfirmar" ? "" : c.nome} className={`absolute inset-0 w-full h-full object-cover foto-real ${c.status === "aconfirmar" ? "scale-110" : ""}`} style={c.status === "aconfirmar" ? { filter: "blur(14px) saturate(0.9)" } : undefined} />
                     ) : (
-                      <div className="w-24 h-24 rounded-full border-[1.5px] border-dourado/50 grid place-items-center relative z-10">
+                      <div className={`w-24 h-24 rounded-full border-[1.5px] border-dourado/50 grid place-items-center relative z-10 ${c.status === "aconfirmar" ? "blur-[9px]" : ""}`}>
                         <span className="font-serif italic font-black text-creme/95 select-none" style={{ fontSize: 56, lineHeight: 1 }}>
                           {c.nome.replace(/^Chef\s+/i, "").trim().charAt(0)}
                         </span>
@@ -1163,18 +1163,18 @@ export default function Landing() {
                     {!c.foto && <img loading="lazy" src="/brand/ilustra-mesa-vinho.webp" alt="" className="absolute -right-7 -bottom-7 w-28 opacity-10 pointer-events-none" />}
                     <div className="absolute inset-0" style={{ background: c.foto ? "linear-gradient(to top, rgba(0,0,0,.55), transparent 60%)" : "radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,.25) 100%)" }} />
                   </div>
-                  <div className="p-5">
+                  <div className={`p-5 ${c.status === "aconfirmar" ? "blur-[6px] select-none" : ""}`} aria-hidden={c.status === "aconfirmar" || undefined}>
                     <div className="text-[10px] font-bold tracking-[0.16em] uppercase text-dourado">{c.atracao}</div>
                     <h3 className="font-serif font-bold text-xl text-grafite mt-1">{c.nome}</h3>
                     {c.sub && <div className="text-[12px] font-semibold text-grafite/70">{c.sub}</div>}
                     {c.casa && <div className="text-[12.5px] text-grafite/60 mt-0.5">{c.casa}</div>}
                     {c.bio && <p className="text-[11.5px] text-grafite/55 leading-snug mt-1.5">{c.bio}</p>}
-                    {c.link && (
+                    {c.link && c.status !== "aconfirmar" && (
                       <Link to={c.link} className="inline-flex items-center gap-1.5 mt-2.5 text-[11.5px] font-bold text-dourado hover:text-laranja">
                         Conheça a história {c.pronome ?? "dele"} →
                       </Link>
                     )}
-                    {c.instagram && (
+                    {c.instagram && c.status !== "aconfirmar" && (
                       <a href={c.instagram} target="_blank" rel="noopener" className="inline-flex items-center gap-1.5 mt-2.5 text-[11.5px] font-bold text-dourado hover:text-laranja">
                         <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="3.5" /><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" /></svg>
                         Instagram
@@ -1196,7 +1196,7 @@ export default function Landing() {
               O que rola em cada palco
             </h3>
             <p className="mt-3 max-w-xl text-[14px] leading-relaxed text-grafite/75">
-              Hora a hora, o que já está de pé em cada espaço. Os momentos de fornecedor e o que ainda está em fechamento aparecem esmaecidos.
+              Hora a hora, o que já está de pé em cada espaço. O que ainda não está confirmado fica esmaecido, sem detalhe, até fechar.
             </p>
           </Reveal>
           <Reveal>
@@ -1224,15 +1224,15 @@ export default function Landing() {
                     </div>
                     <div className="divide-y divide-creme-soft flex-1">
                       {g.slots.map((s, i) => (
-                        <div key={i} className={`px-5 py-3 flex gap-3 ${s.status === "intervalo" ? "opacity-50" : s.status === "aconfirmar" ? "opacity-45" : ""}`}>
+                        <div key={i} className={`px-5 py-3 flex gap-3 ${s.status === "intervalo" ? "opacity-50" : s.status === "aconfirmar" ? "opacity-75" : ""}`}>
                           <span className="text-[11px] font-bold text-dourado tabular-nums shrink-0 w-[86px] pt-0.5">{s.h}</span>
                           <div className="min-w-0 flex-1">
                             <div className="flex items-start justify-between gap-2">
-                              <div className={`text-[13px] leading-snug ${s.status === "intervalo" ? "text-grafite/50" : s.status === "aconfirmar" ? "font-medium text-grafite/70" : "font-semibold text-grafite"}`}>{s.o}</div>
+                              <div aria-hidden={s.status === "aconfirmar" || undefined} className={`text-[13px] leading-snug ${s.status === "intervalo" ? "text-grafite/50" : s.status === "aconfirmar" ? "font-medium text-grafite/40 blur-[3.5px] select-none pointer-events-none" : "font-semibold text-grafite"}`}>{s.o}</div>
                               {s.status === "aconfirmar" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-creme-soft text-grafite/50 mt-0.5">a confirmar</span>}
                               {s.status === "confirmado" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-musgo/20 text-oliva mt-0.5">confirmado</span>}
                             </div>
-                            {s.sub && <div className="text-[11.5px] text-grafite/55">{s.sub}</div>}
+                            {s.sub && <div aria-hidden={s.status === "aconfirmar" || undefined} className={`text-[11.5px] text-grafite/55 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}>{s.sub}</div>}
                           </div>
                         </div>
                       ))}
