@@ -166,9 +166,9 @@ function LeadForm({ tipo, onClose }: { tipo: LeadTipo; onClose: () => void }) {
 }
 
 const experiencias = [
-  { nome: "Recebendo em Casa", tag: "Experiência premium", desc: "Mesa para 30 pessoas, serviço completo e um chef convidado servindo pratos e sobremesa. Vagas limitadas por horário.", img: "/espacos/recebendo-em-casa.webp", selo: "ic-ramo" as const },
-  { nome: "Palco Gourmet", tag: "Cozinha show", desc: "Grandes nomes da culinária cearense e nacional cozinham ao vivo no Palco Gourmet. A cada dia, um chef diferente apresenta suas receitas, com transmissão em telão para todo o público.", img: "/espacos/palco-gourmet.webp" },
-  { nome: "Piano Bar", tag: "Vinhos e música", desc: "Drinks, degustação e harmonização com sommelier, ao som de música ao vivo a cada noite.", img: "/espacos/piano-bar.webp", duotone: "duotone-om", selos: ["ic-rolha", "ic-sacarolha"] as const },
+  { nome: "Recebendo em Casa", tag: "Experiência premium", desc: "Uma mesa, trinta lugares, serviço do começo ao fim e um chef convidado servindo do primeiro prato à sobremesa. Vagas limitadas por horário.", img: "/espacos/recebendo-em-casa.webp", selo: "ic-ramo" as const },
+  { nome: "Palco Gourmet", tag: "Cozinha show", desc: "Chefs cearenses e de todo o país cozinhando ao vivo, com telão para ninguém perder o detalhe. A cada dia, outras mãos e outras receitas.", img: "/espacos/palco-gourmet.webp" },
+  { nome: "Piano Bar", tag: "Vinhos e música", desc: "Taça na mão, sommelier ao lado e piano tocando. Degustação e harmonização em todas as noites.", img: "/espacos/piano-bar.webp", duotone: "duotone-om", selos: ["ic-rolha", "ic-sacarolha"] as const },
 ];
 
 const numeros = [
@@ -286,15 +286,15 @@ const galeria = ["/espacos/piano-bar.webp", ...["g02", "g03", "g04", "g05", "g06
 const instagramPreview = ["/galeria/g03.webp", "/galeria/g04.webp", "/galeria/g06.webp", "/galeria/g08.webp", "/espacos/piano-bar.webp", "/espacos/palco-gourmet.webp"];
 
 const dias = [
-  { dia: "Sexta", num: "18", mes: "SET", foco: "Noite de abertura", desc: CHEF_SURPRESA_REVELADO ? "Abertura do festival com Claude Troisgros no Palco Gourmet e o Piano Bar a noite toda." : "Abertura do festival com um chef convidado surpresa no Palco Gourmet e o Piano Bar a noite toda.", ic: "ic-vinho" },
-  { dia: "Sábado", num: "19", mes: "SET", foco: "Palco dos chefs", desc: "Cozinha show, ativações das marcas e o anúncio dos indicados às 15h no palco principal.", ic: "ic-queijo" },
-  { dia: "Domingo", num: "20", mes: "SET", foco: "Recebendo em Casa", desc: "Encerramento com a experiência intimista de mesa posta e chef convidado.", ic: "ic-cafe" },
+  { dia: "Sexta", num: "18", mes: "SET", foco: "Noite de abertura", desc: CHEF_SURPRESA_REVELADO ? "O festival abre com Claude Troisgros no Palco Gourmet e o Piano Bar servindo a noite inteira." : "O festival abre com um chef convidado surpresa no Palco Gourmet e o Piano Bar servindo a noite inteira.", ic: "ic-vinho" },
+  { dia: "Sábado", num: "19", mes: "SET", foco: "Palco dos chefs", desc: "Cozinha ao vivo do começo ao fim, marcas em ativação e, às 15h, o anúncio dos indicados no palco principal.", ic: "ic-queijo" },
+  { dia: "Domingo", num: "20", mes: "SET", foco: "Recebendo em Casa", desc: "O fim de festa é na mesa posta, com chef convidado e clima de casa cheia.", ic: "ic-cafe" },
 ];
 
 const programacaoBlocos = [
-  { t: "Cozinha Show", d: "No Palco Gourmet, grandes nomes da culinária cearense e nacional cozinham ao vivo no Palco Gourmet. A cada dia, um chef diferente apresenta suas receitas, com transmissão em telão para todo o público.", icone: "cozinha" as const },
-  { t: "Jantares e Harmonizações", d: "Recebendo em Casa: mesa para 30 pessoas, serviço completo e chef convidado. Vagas limitadas, com reserva por horário.", icone: "harmonizacao" as const },
-  { t: "Atrações musicais", d: "Piano Bar ao vivo às 19h, 20h e 21h50, e o Projeto Cearal levando música instrumental cearense pelos espaços abertos.", icone: "musica" as const },
+  { t: "Cozinha Show", d: "No Palco Gourmet, chefs cearenses e de todo o país cozinham diante do público, com telão para ninguém perder o detalhe. A cada dia, outro chef e outras receitas.", icone: "cozinha" as const },
+  { t: "Jantares e Harmonizações", d: "No Recebendo em Casa, uma mesa de trinta lugares, serviço completo e chef convidado. Vagas limitadas, com reserva por horário.", icone: "harmonizacao" as const },
+  { t: "Atrações musicais", d: "Piano Bar com música ao vivo todas as noites e o Projeto Cearal levando instrumental cearense pelos espaços abertos.", icone: "musica" as const },
 ];
 
 const programacaoVarianteContainer = {
@@ -312,7 +312,7 @@ const programacaoVarianteIcone = {
   show: { opacity: 1, scale: 1, rotate: 0, transition: { type: "spring" as const, stiffness: 260, damping: 15, delay: 0.15 } },
 };
 
-/* grade real dos 4 espaços do festival, por horário — sincronizada do cronograma ao vivo do portal interno (22/07/2026) */
+/* grade real dos espaços do festival, por horário, sincronizada do cronograma ao vivo do portal interno (18/08/2026) */
 const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; sub?: string; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
   { id: "palco", nome: "Palco Gourmet", icon: "mic", grade: [
     { dia: "Sexta", slots: [
@@ -447,7 +447,7 @@ const produtoresVarianteCard = {
   show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: [0.19, 1, 0.22, 1] as const } },
 };
 
-/* vitrine "edições anteriores" — grade em bento com lightbox */
+/* vitrine "edições anteriores": grade em bento com lightbox */
 const edicoesAnterioresImgs = [
   "/edicoes-anteriores/DSC_0098.jpg",
   "/edicoes-anteriores/DSC_0284.jpg",
@@ -477,11 +477,11 @@ const edicoesAnterioresItem = {
 
 const regras = [
   { t: "Para toda a família", d: "Ambiente para todas as idades. Menores devem estar acompanhados dos responsáveis." },
-  { t: "Chuva ou sol, o festival acontece", d: "O La Maison Coliseu é um espaço 100% coberto: nada muda com o tempo lá fora, do primeiro brinde ao último prato." },
+  { t: "Chuva ou sol, o festival acontece", d: "O La Maison Coliseu é 100% coberto. Do primeiro brinde ao último prato, o tempo lá fora não muda nada aqui dentro." },
 ];
 
 const ingressoInfo = [
-  { t: "Por dia ou combo", d: "Compre para um dia específico ou o combo com os três dias de festival. Sem limite de ingressos por pessoa." },
+  { t: "Por dia ou combo", d: "Escolha um dia ou leve os três de uma vez, no combo. Sem limite de ingressos por pessoa." },
   { t: "Meia-entrada", d: "Meia-entrada conforme a lei, com a devida comprovação na entrada." },
   { t: "Estudante de gastronomia", d: "Gratuidade para estudantes de gastronomia, mediante apresentação da credencial." },
 ];
@@ -532,7 +532,7 @@ function GaleriaEdicoesAnteriores() {
             Edições anteriores do Costume Gourmet
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-[15px] leading-relaxed text-grafite/75 text-center">
-            Um giro visual pelas edições que já passaram pelo festival. Clique numa foto pra ver em tamanho grande.
+            As edições que vieram antes desta. Clique numa foto para ver de perto.
           </p>
         </Reveal>
 
@@ -879,7 +879,7 @@ export default function Landing() {
             </h1>
           </div>
           <p data-hero className="opacity-0 mt-7 mx-auto max-w-xl text-[15px] md:text-lg leading-relaxed text-grafite/80">
-            O festival de gastronomia que celebra os 100 anos do São Luiz. Chefs, degustações, música e experiências, no La Maison Coliseu, em Fortaleza.
+            Três dias em que Fortaleza senta à mesa para celebrar os 100 anos do São Luiz. Chefs cozinhando na sua frente, taça na mão e música até o fim da noite, no La Maison Coliseu.
           </p>
           <div data-hero className="opacity-0 mt-9 flex flex-col sm:flex-row gap-3 justify-center">
             <a href={SYMPLA} target="_blank" rel="noopener" className="px-8 py-4 rounded-full bg-gradient-to-r from-dourado to-laranja text-vinho font-bold tracking-wide shadow-lg shadow-dourado/30 hover:brightness-105 transition">
@@ -935,7 +935,7 @@ export default function Landing() {
                   <div className="label-eyebrow font-bold uppercase text-dourado text-[11px]">Chef convidado</div>
                   <h3 className="font-serif font-extrabold text-vinho mt-1.5" style={{ fontSize: "clamp(26px,4.5vw,38px)" }}>Claude <span className="italic text-dourado">Troisgros</span></h3>
                   <p className="text-[14px] leading-relaxed text-grafite/75 mt-2 max-w-xl">
-                    Herdeiro de uma das famílias mais importantes da gastronomia francesa, mora no Brasil desde 1979 e passa pelo Costume Gourmet nesta sexta-feira.
+                    A família dele ajudou a reinventar a cozinha francesa. Ele escolheu o Brasil em 1979 e, nesta sexta, sobe ao Palco Gourmet em Fortaleza.
                   </p>
                   <span className="inline-flex items-center gap-1.5 mt-4 text-[13px] font-bold text-dourado group-hover:text-laranja">
                     Conhecer a história dele
@@ -957,25 +957,25 @@ export default function Landing() {
               <img loading="lazy" src="/brand/ic-livro.webp" alt="" aria-hidden="true" className="hidden sm:block absolute -top-4 -right-2 md:-right-6 w-11 md:w-12 rotate-6 drop-shadow-sm pointer-events-none select-none" />
               <Eyebrow>Sobre o evento</Eyebrow>
               <h2 className="font-serif font-extrabold text-vinho mt-2 leading-[1.02]" style={{ fontSize: "clamp(30px,5.5vw,54px)" }}>
-                História e legado
+                Cem anos que cabem numa mesa
               </h2>
             </div>
             <p className="mt-5 text-[15px] leading-relaxed text-grafite/80">
-              O Festival Costume Gourmet nasce da trajetória centenária do São Luiz Supermercado, que completa 100 anos em 2026.
+              O Festival Costume Gourmet nasce de uma história de cem anos, a do São Luiz Supermercado, que completa um século em 2026.
             </p>
             <blockquote className="relative my-6 pl-6 border-l-2 border-dourado">
               <span className="absolute -left-1 -top-5 font-serif text-dourado/25 text-6xl select-none" aria-hidden="true">"</span>
-              <p className="font-serif italic text-vinho text-xl md:text-2xl leading-snug">legado, experiência e futuro dividindo a mesma mesa.</p>
+              <p className="font-serif italic text-vinho text-xl md:text-2xl leading-snug">Legado, experiência e futuro dividindo a mesma mesa.</p>
             </blockquote>
             <p className="mt-4 text-[15px] leading-relaxed text-grafite/80">
-              Marcas, produtores, chefs, especialistas e consumidores reunidos em torno do que valoriza origem, qualidade e propósito. A curadoria se inspira na cena gastronômica cearense, onde cada receita carrega memória e cada aroma desperta lembranças.
+              Produtores, chefs, marcas e quem vem para comer, todos na mesma mesa. A curadoria olha para a cozinha cearense, onde cada receita guarda uma lembrança e cada cheiro traz alguém de volta.
             </p>
             <div className="mt-6">
               <div className="flex gap-3 items-start">
                 <img loading="lazy" src="/brand/ic-ramo.webp" alt="" aria-hidden="true" className="w-9 h-9 shrink-0 mt-0.5" />
                 <div>
                   <div className="text-[13px] font-bold text-vinho">Sustentabilidade na prática</div>
-                  <p className="text-[12.5px] text-grafite/70 leading-snug mt-0.5">Damos palco a produtores locais de décadas, como a Tijuca (desde 1969) e a Emape (desde 1963), valorizando origem e cadeia curta ao invés de importar de fora.</p>
+                  <p className="text-[12.5px] text-grafite/70 leading-snug mt-0.5">O palco é de quem alimenta o Ceará há décadas: Tijuca desde 1969, Emape desde 1963. Origem perto daqui, cadeia curta, gente com nome e rosto.</p>
                 </div>
               </div>
             </div>
@@ -999,10 +999,10 @@ export default function Landing() {
           <Reveal>
             <Eyebrow>As experiências</Eyebrow>
             <h2 className="font-serif font-extrabold text-vinho mt-2 leading-[1.02]" style={{ fontSize: "clamp(32px,6vw,60px)" }}>
-              Nossos espaços
+              Três jeitos de viver o festival
             </h2>
             <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-grafite/75">
-              Cada espaço é uma forma diferente de viver o festival, do palco à mesa que recebe você como em casa.
+              Do palco onde o chef cozinha na sua frente à mesa posta que recebe você como se a casa fosse dele.
             </p>
           </Reveal>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
@@ -1081,7 +1081,7 @@ export default function Landing() {
               Três dias, três climas
             </h2>
             <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-grafite/75">
-              Cada dia tem a sua vibe, do protagonismo feminino da sexta ao encerramento intimista de domingo. A grade completa por horário será anunciada em breve.
+              Cada dia tem o seu clima, da abertura de sexta ao encerramento de mesa posta no domingo. A grade hora a hora está logo abaixo.
             </p>
           </Reveal>
 
@@ -1135,7 +1135,7 @@ export default function Landing() {
               Os chefs do festival
             </h2>
             <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-grafite/75">
-              Os nomes confirmados da edição do centenário, do Palco Gourmet ao Piano Bar e ao Recebendo em Casa. Quem ainda está em fechamento aparece esmaecido.
+              As mãos por trás da edição do centenário, do Palco Gourmet ao Piano Bar e ao Recebendo em Casa. Quem ainda está em fechamento aparece esmaecido.
             </p>
           </Reveal>
         </div>
@@ -1196,7 +1196,7 @@ export default function Landing() {
               O que rola em cada palco
             </h3>
             <p className="mt-3 max-w-xl text-[14px] leading-relaxed text-grafite/75">
-              O que já está confirmado em cada espaço, hora a hora. Os momentos de fornecedor e o que ainda está em fechamento aparecem esmaecidos.
+              Hora a hora, o que já está de pé em cada espaço. Os momentos de fornecedor e o que ainda está em fechamento aparecem esmaecidos.
             </p>
           </Reveal>
           <Reveal>
@@ -1255,7 +1255,7 @@ export default function Landing() {
               O festival por dentro
             </h2>
             <p className="mt-4 max-w-xl mx-auto text-[15px] leading-relaxed text-grafite/75 text-center">
-              Uma prévia dos ambientes que preparamos para esta edição.
+              Os ambientes desta edição, antes de encherem de gente.
             </p>
           </Reveal>
           <Reveal>
@@ -1287,7 +1287,7 @@ export default function Landing() {
               Da terra para a mesa
             </h2>
             <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-grafite/75">
-              A curadoria de restaurantes, bares, docerias e cafeterias desta edição está em fechamento. No sábado, o festival recebe restaurantes locais e coquetelaria autoral.
+              Os restaurantes, bares, docerias e cafeterias desta edição ainda estão em fechamento. No sábado, a casa recebe cozinha local e coquetelaria autoral.
             </p>
           </Reveal>
 
@@ -1316,7 +1316,7 @@ export default function Landing() {
 
           <Reveal>
             <p className="mt-6 text-[12.5px] text-grafite/55 leading-relaxed max-w-xl">
-              Restrição alimentar? A curadoria final do cardápio, com opções vegetarianas e sem glúten identificadas por casa, será divulgada perto da data.
+              Tem restrição alimentar? O cardápio final, com as opções vegetarianas e sem glúten identificadas casa por casa, sai perto da data.
             </p>
           </Reveal>
 
@@ -1330,7 +1330,7 @@ export default function Landing() {
                 </div>
                 <h3 className="font-serif font-bold text-xl mt-1">30 kits, 5 receitas escritas à mão pelo Phe</h3>
                 <p className="text-[13px] leading-relaxed text-creme/80 mt-2 max-w-xl">
-                  Cada receita do press kit carrega a história por trás do prato. O acervo digital, aberto pra todo mundo, está em produção.
+                  Cada receita do press kit vem com a história por trás do prato. O acervo digital, aberto para todo mundo, está em produção.
                 </p>
               </div>
             </div>
@@ -1355,7 +1355,7 @@ export default function Landing() {
                 </div>
                 <h2 className="font-serif font-extrabold mt-1" style={{ fontSize: "clamp(24px,5vw,40px)" }}>da bilheteria revertida</h2>
                 <p className="mt-4 max-w-lg mx-auto text-[15px] leading-relaxed text-creme/80">
-                  Toda a renda dos ingressos vai para três instituições que cuidam de gente em Fortaleza.
+                  Cada ingresso vendido vira trabalho de três instituições que cuidam de gente em Fortaleza.
                 </p>
               </div>
               <div className="relative">
@@ -1373,7 +1373,7 @@ export default function Landing() {
             <Eyebrow>Quem faz acontecer</Eyebrow>
             <h2 className="font-serif font-extrabold text-vinho mt-2" style={{ fontSize: "clamp(30px,5.5vw,52px)" }}>Nossas marcas</h2>
             <p className="mt-4 max-w-lg mx-auto text-[15px] leading-relaxed text-grafite/75">
-              As marcas que fazem o festival acontecer, do patrocínio master ao premium.
+              Quem põe a mesa junto com a gente, do patrocínio master ao premium.
             </p>
           </Reveal>
         </div>
@@ -1398,7 +1398,7 @@ export default function Landing() {
               <Eyebrow center>Ingressos</Eyebrow>
               <h2 className="font-serif font-extrabold text-vinho mt-2" style={{ fontSize: "clamp(30px,5.5vw,52px)" }}>Garanta seu ingresso</h2>
               <p className="mt-4 max-w-xl mx-auto text-[15px] leading-relaxed text-grafite/75">
-                Toda a bilheteria é revertida para instituições sociais. Comprar ingresso aqui é também fazer o bem.
+                A bilheteria inteira vai para três instituições de Fortaleza que cuidam de crianças, de jovens e de pacientes em tratamento.
               </p>
             </div>
           </Reveal>
@@ -1421,7 +1421,7 @@ export default function Landing() {
                 <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-dourado">Votação popular</div>
                 <h3 className="font-serif font-bold text-2xl mt-1">Você elege a edição</h3>
                 <p className="text-[13.5px] leading-relaxed text-creme/80 mt-2 max-w-md">
-                  No sábado, às 15h, saem os indicados a melhor petisco e melhor serviço, com o público participando da escolha.
+                  No sábado, às 15h, saem os indicados a melhor petisco e melhor serviço. Quem come também vota.
                 </p>
               </div>
               <div className="relative shrink-0 mt-6 md:mt-0">
@@ -1476,7 +1476,7 @@ export default function Landing() {
                   </div>
                 ))}
                 <div className="rounded-2xl border border-dashed border-creme-soft p-5 text-center">
-                  <p className="text-[12.5px] text-grafite/60">Vem de outra cidade? Em breve divulgaremos parcerias de hospedagem e dicas de acesso.</p>
+                  <p className="text-[12.5px] text-grafite/60">Vem de outra cidade? As parcerias de hospedagem e as dicas de chegada saem em breve.</p>
                 </div>
               </div>
             </Reveal>
@@ -1521,14 +1521,14 @@ export default function Landing() {
                 <Eyebrow center dark>B2B e imprensa</Eyebrow>
                 <h2 className="font-serif font-extrabold mt-2 leading-tight" style={{ fontSize: "clamp(28px,5vw,46px)" }}>Seja parte da história</h2>
                 <p className="mt-4 text-[14px] leading-relaxed text-creme/80">
-                  Um público adulto e qualificado reunido em três dias. Escolha por onde falar com a gente.
+                  Três dias com um público adulto e qualificado dentro de casa. Escolha por onde falar com a gente.
                 </p>
               </div>
               <div className="grid md:grid-cols-3 gap-4 mt-10 relative">
                 <div className="bg-white/[0.04] border border-dourado/20 rounded-2xl p-6 flex flex-col">
                   <div className="font-serif italic text-dourado/40 text-3xl leading-none mb-1">01</div>
                   <h3 className="font-serif font-bold text-xl text-dourado">Marcas e patrocínio</h3>
-                  <p className="text-[13px] leading-relaxed text-creme/80 mt-2 flex-1">Conecte sua marca ao festival. Receba o mídia kit com audiência, alcance e cotas comerciais.</p>
+                  <p className="text-[13px] leading-relaxed text-creme/80 mt-2 flex-1">Coloque sua marca na mesa. Receba o mídia kit com audiência, alcance e cotas comerciais.</p>
                   {leadOpen === "patrocinio" ? (
                     <LeadForm tipo="patrocinio" onClose={() => setLeadOpen(null)} />
                   ) : (
@@ -1566,7 +1566,7 @@ export default function Landing() {
         <div className="max-w-content mx-auto">
           <Reveal>
             <h2 className="font-serif font-extrabold text-vinho leading-tight" style={{ fontSize: "clamp(34px,7vw,72px)" }}>
-              Garanta seu lugar<br /><span className="text-dourado italic">no evento</span>
+              Garanta seu lugar<br /><span className="text-dourado italic">à mesa</span>
             </h2>
             <p className="mt-4 text-[15px] text-grafite/75">Ingressos pela Sympla. Estudantes de gastronomia têm gratuidade.</p>
             <a href={SYMPLA} target="_blank" rel="noopener" className="inline-block mt-8 px-10 py-4 rounded-full bg-gradient-to-r from-dourado to-laranja text-vinho font-bold tracking-wide shadow-lg shadow-dourado/30 hover:brightness-105 transition">
@@ -1585,7 +1585,7 @@ export default function Landing() {
             Siga <span className="italic text-dourado">@festivalcostumegourmet</span>
           </h2>
           <p className="mt-4 max-w-lg mx-auto text-[14px] leading-relaxed text-creme/70">
-            Acompanhe os bastidores da montagem, os chefs confirmados e as novidades da edição do centenário direto no Instagram.
+            A montagem por dentro, os chefs que vão sendo confirmados e o que ainda ninguém viu, tudo primeiro no Instagram.
           </p>
           <div className="grid grid-cols-3 gap-1.5 md:gap-2 mt-9 max-w-2xl mx-auto">
             {instagramPreview.map((src, i) => (
@@ -1612,10 +1612,10 @@ export default function Landing() {
           <div className="max-w-2xl mx-auto text-center">
             <Eyebrow center>Engajamento</Eyebrow>
             <h2 className="font-serif font-extrabold text-vinho mt-2 leading-[1.05]" style={{ fontSize: "clamp(24px,4.5vw,38px)" }}>
-              Fique por dentro de cada novidade
+              Saiba antes de todo mundo
             </h2>
             <p className="mt-3 text-[14px] leading-relaxed text-grafite/75">
-              Entre no nosso canal do Instagram e receba em primeira mão: chefs confirmados, abertura da bilheteria e programação por dia.
+              Entre no nosso canal do Instagram e receba antes de todo mundo: chefs confirmados, abertura da bilheteria e a programação de cada dia.
             </p>
             <a href={NEWSLETTER} target="_blank" rel="noopener" className="inline-flex items-center gap-2 mt-6 px-7 py-3.5 rounded-full bg-vinho text-creme font-bold text-[13.5px] tracking-wide hover:bg-[#4E1714] transition">
               Quero receber novidades
