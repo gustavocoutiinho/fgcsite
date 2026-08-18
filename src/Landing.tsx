@@ -174,7 +174,7 @@ const experiencias = [
 const numeros = [
   { to: 35, prefix: "+", suffix: "", l: "estandes", glow: "#D8992F" },
   { to: 3, prefix: "", suffix: "", l: "dias de festa", glow: "#DC463C" },
-  { to: 20, prefix: "+", suffix: "", l: "chefs confirmados", glow: "#A0A04E" },
+  { to: 30, prefix: "+", suffix: "", l: "chefs confirmados", glow: "#A0A04E" },
   { to: 3, prefix: "", suffix: "", l: "espaços", glow: "#D8992F" },
   { to: 30, prefix: "+", suffix: "", l: "marcas parceiras", glow: "#DC463C" },
   { to: 100, prefix: "", suffix: "%", l: "da renda destinada à doação", glow: "#A0A04E" },
@@ -193,16 +193,47 @@ const numeroVarianteItem = {
   },
 };
 
-const chefs = [
+const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: string; cor: string; foto?: string; link?: string; instagram?: string; bio?: string; pronome?: string; status?: "aconfirmar" }[] = [
+  // SEXTA
+  { nome: "Georgia Santiago", casa: "Muá Tuá", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-oliva", foto: "/chefs/georgia-santiago.webp" },
+  { nome: "Daniel Sabbá", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-bordo", foto: "/chefs/daniel-sabba.webp", instagram: "https://instagram.com/danielsabba", link: "/chefs/daniel-sabba" },
+  { nome: "Zena", sub: "Sabores de uma bela História", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-vinho", foto: "/chefs/zena.webp" },
   { nome: "Claude Troisgros", casa: "São Luiz", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-vinho", foto: "/chefs/claude-troisgros.webp", link: "/chefs/claude-troisgros" },
-  { nome: "Daniel Sabbá", casa: "", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-bordo", instagram: "https://instagram.com/danielsabba", link: "/chefs/daniel-sabba" },
-  { nome: "Brunno Malheiros", casa: "Cheiro do Pão", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-oliva", link: "/chefs/brunno-malheiros" },
-  { nome: "Felipe Caputo", casa: "São Luiz", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-vinho", instagram: "https://instagram.com/felipecaputo", link: "/chefs/felipe-caputo" },
-  { nome: "Thales Romão", casa: "NOM · Molino Padaria Artesanal", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-[#8a3d18]", instagram: "https://instagram.com/thalesromao_", bio: "Transforme o impossível em pequenos possíveis", link: "/chefs/thales-romao" },
-  { nome: "Chef Well", sub: "Wellington Teixeira", casa: "MasterChef Confeitaria", atracao: "Cozinha show", dia: "DOM", cor: "bg-vinho", foto: "/chefs/well.webp", instagram: "https://instagram.com/well.chef", link: "/chefs/chef-well" },
-  { nome: "Matheus Vieira", casa: "Arroz Tio João", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-oliva", foto: "/chefs/matheus-vieira.webp", instagram: "https://instagram.com/chefmatheusvieira", bio: "Cozinheiro, professor e empreendedor · Fortaleza, CE" },
-  { nome: "Chef Zinda", casa: "La France", atracao: "Sabor de uma história", dia: "DOM", cor: "bg-bordo", link: "/chefs/chef-zinda", pronome: "dela" },
-  { nome: "Pepê e Diego", sub: "@muvucoboteco · @zboyspizza", casa: "Netumar", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-[#8a3d18]", instagram: "https://instagram.com/pepemva", bio: "Cozinheiro registrando memórias", link: "/chefs/pepe-e-diego", pronome: "deles" },
+  { nome: "Brunno Malheiros", casa: "Cheiro do Pão", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-oliva", foto: "/chefs/brunno-malheiros.webp", link: "/chefs/brunno-malheiros" },
+  { nome: "Edil Costa", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-[#8a3d18]", foto: "/chefs/edil-costa.webp" },
+  { nome: "Maria Braz", atracao: "Piano Bar", dia: "SEX", cor: "bg-bordo", foto: "/chefs/maria-braz.webp" },
+  { nome: "Marbenia", atracao: "Piano Bar", dia: "SEX", cor: "bg-vinho", foto: "/chefs/marbenia.webp" },
+  { nome: "Leiliane", casa: "Wineladies", atracao: "Piano Bar", dia: "SEX", cor: "bg-oliva", foto: "/chefs/leiliane.webp" },
+  { nome: "Karime Loureiro", casa: "Alentejo", atracao: "Piano Bar", dia: "SEX", cor: "bg-bordo", foto: "/chefs/karime-loureiro.webp" },
+  { nome: "Jardenia", casa: "D'Origem", atracao: "Piano Bar", dia: "SEX", cor: "bg-vinho", foto: "/chefs/jardenia.webp" },
+  { nome: "Isabela Fiúza", casa: "La Maison · São Luiz", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-oliva", foto: "/chefs/isabela-fiuza.webp" },
+  { nome: "Bia Araújo", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-vinho", foto: "/chefs/bia-araujo.webp" },
+  { nome: "Mona", casa: "Netas de Olga", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-bordo", foto: "/chefs/mona.webp" },
+  // SÁBADO
+  { nome: "Matu Macêdo", sub: "Sabor de uma bela história", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-vinho", foto: "/chefs/matu-macedo.webp" },
+  { nome: "Felipe Caputo", casa: "São Luiz", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-vinho", foto: "/chefs/felipe-caputo.webp", instagram: "https://instagram.com/felipecaputo", link: "/chefs/felipe-caputo" },
+  { nome: "Thales Romão", casa: "NOM · Molino Padaria Artesanal", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-[#8a3d18]", foto: "/chefs/thales-romao.webp", instagram: "https://instagram.com/thalesromao_", link: "/chefs/thales-romao" },
+  { nome: "Ralfo", casa: "Parrilleiro", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-bordo", foto: "/chefs/ralfo.webp" },
+  { nome: "Fernanda Dantas", casa: "Coktelitas", atracao: "Piano Bar", dia: "SAB", cor: "bg-oliva", foto: "/chefs/fernanda-dantas.webp" },
+  { nome: "Carol Barreto", casa: "Santa Clara", atracao: "Piano Bar", dia: "SAB", cor: "bg-vinho", foto: "/chefs/carol-barreto.webp" },
+  { nome: "Mauro Tirabosto", sub: "Degustação de whisky", atracao: "Piano Bar", dia: "SAB", cor: "bg-bordo", foto: "/chefs/mauro-tirabosto.webp" },
+  { nome: "Luiz de França", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-vinho", foto: "/chefs/luiz-de-franca.webp" },
+  { nome: "Ana Paula Rezende", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-oliva", foto: "/chefs/ana-paula-rezende.webp" },
+  { nome: "Dani Gondim", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-bordo", foto: "/chefs/dani-gondim.webp" },
+  { nome: "Felipe Cicconato", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-[#8a3d18]", foto: "/chefs/felipe-cicconato.webp" },
+  // DOMINGO
+  { nome: "Matheus Vieira", casa: "Arroz Tio João", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-oliva", foto: "/chefs/matheus-vieira.webp", instagram: "https://instagram.com/chefmatheusvieira" },
+  { nome: "Pepê", sub: "Pepê e Diego", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-[#8a3d18]", foto: "/chefs/pepe.webp", link: "/chefs/pepe-e-diego", pronome: "deles" },
+  { nome: "Diego", sub: "Pepê e Diego", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/diego.webp", link: "/chefs/pepe-e-diego", pronome: "deles" },
+  { nome: "Elcio e Bia Nagano", sub: "Oficina", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-bordo", foto: "/chefs/elcio-e-bia-nagano.webp" },
+  { nome: "Marco Ferrari", casa: "Opção", atracao: "Piano Bar", dia: "DOM", cor: "bg-vinho", foto: "/chefs/marco-ferrari.webp" },
+  { nome: "Marina Araújo", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-oliva", foto: "/chefs/marina-araujo.webp" },
+  { nome: "Gabi Barreto", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-bordo", foto: "/chefs/gabi-barreto.webp" },
+  { nome: "Renata", casa: "Azucar", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-vinho", foto: "/chefs/renata-azucar.webp" },
+  { nome: "Lia Quinderé", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-[#8a3d18]", foto: "/chefs/lia-quindere.webp" },
+  // AINDA EM CONFIRMAÇÃO
+  { nome: "Chef Well", sub: "Wellington Teixeira", casa: "MasterChef Confeitaria", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/well.webp", instagram: "https://instagram.com/well.chef", link: "/chefs/chef-well", status: "aconfirmar" },
+  { nome: "Chef Zinda", casa: "La France", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-bordo", link: "/chefs/chef-zinda", pronome: "dela", status: "aconfirmar" },
   { nome: "Phe", casa: "Curadoria gastronômica", atracao: "Embaixador", dia: "", cor: "bg-telha" },
 ];
 
@@ -285,107 +316,105 @@ const programacaoVarianteIcone = {
 const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; sub?: string; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
   { id: "palco", nome: "Palco Gourmet", icon: "mic", grade: [
     { dia: "Sexta", slots: [
-      { h: "16h00 - 16h40", o: "Oficina de Abertura · Phê + Edil Costa", status: "aconfirmar" },
+      { h: "16h00 - 16h40", o: "Georgia Santiago · Muá Tuá", sub: "Arroz Tio João + Pomar da Polpa", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Momento fornecedor", status: "aconfirmar" },
-      { h: "17h00 - 17h40", o: "Daniel Sabbá", status: "aconfirmar" },
+      { h: "17h00 - 17h40", o: "Daniel Sabbá", sub: "Pronto Carnes", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Momento fornecedor", status: "aconfirmar" },
-      { h: "18h00 - 18h40", o: "Sabores de uma bela História | Phelipe Carvalho + Zena", status: "aconfirmar" },
+      { h: "18h00 - 18h40", o: "Sabores de uma bela História · Phelipe Carvalho + Zena", sub: "Granja Regina", status: "confirmado" },
       { h: "18h40 - 19h20", o: "Momento fornecedor", status: "aconfirmar" },
       { h: "19h20 - 20h20", o: CHEF_SURPRESA_REVELADO ? "Claude Troisgros" : "Chef convidado surpresa", sub: "São Luiz", status: "confirmado" },
-      { h: "20h00 - 20h40", o: "Brunno Malheiros · Cheiro do Pão", status: "aconfirmar" },
-      { h: "21h00 - 21h40", o: "Georgia Santiago - Muá Tuá", status: "aconfirmar" },
+      { h: "20h00 - 20h40", o: "Brunno Malheiros · Cheiro do Pão", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Edil Costa", sub: "Vinho culinário · Le Cuisinier · São Braz", status: "confirmado" },
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Sábado", slots: [
-      { h: "16h00 - 16h40", o: "Oficina Prokichten", sub: "Prokichten", status: "aconfirmar" },
+      { h: "16h00 - 16h40", o: "Oficina Prokichten", sub: "Prokichten", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Momento fornecedor", status: "aconfirmar" },
-      { h: "17h00 - 18h00", o: "Sabor de uma bela história por Matu Macêdo + Phelipe Carvalho", status: "aconfirmar" },
+      { h: "17h00 - 18h00", o: "Sabor de uma bela história · Matu Macêdo + Phelipe Carvalho", sub: "Pomar da Polpa", status: "confirmado" },
       { h: "18h00 - 18h20", o: "Momento fornecedor", status: "aconfirmar" },
       { h: "18h20 - 19h20", o: "Felipe Caputo", sub: "São Luiz", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Momento fornecedor", status: "aconfirmar" },
-      { h: "19h40 - 20h20", o: "Rafael Kim", status: "aconfirmar" },
-      { h: "20h20 - 21h00", o: "Thales Romão - NOM | Molino", status: "aconfirmar" },
-      { h: "21h00 - 21h40", o: "Ralfo - Parrilleiro", status: "aconfirmar" },
+      { h: "19h40 - 20h20", o: "Rafael Kim · Comida asiática", sub: "Arroz Tio João", status: "aconfirmar" },
+      { h: "20h20 - 21h00", o: "Thales Romão · NOM", sub: "Molino", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Ralfo · Parrilleiro", sub: "Arroz Tio João + BR Spices", status: "confirmado" },
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Domingo", slots: [
       { h: "16h00 - 16h40", o: "Chef Well", status: "aconfirmar" },
       { h: "16h40 - 17h00", o: "Momento fornecedor", status: "aconfirmar" },
-      { h: "17h00 - 17h40", o: "Matheus Vieira", sub: "Arroz Tio João", status: "aconfirmar" },
+      { h: "17h00 - 17h40", o: "Matheus Vieira", sub: "Arroz Tio João + BR Spices", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Momento fornecedor", status: "aconfirmar" },
       { h: "18h00 - 18h40", o: "Sabor de uma história · Chef Zinda + Phê", sub: "La France", status: "aconfirmar" },
       { h: "18h40 - 19h00", o: "Momento fornecedor", status: "aconfirmar" },
-      { h: "19h00 - 19h40", o: "Pepê e Diego", sub: "Netumar", status: "aconfirmar" },
+      { h: "19h00 - 19h40", o: "Pepê e Diego", sub: "Netumar + BR Spices", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Fechamento", status: "fixo" },
+      { h: "20h00 - 21h00", o: "Elcio e Bia Nagano · Oficina", status: "confirmado" },
     ]},
   ]},
   { id: "piano", nome: "Piano Bar", icon: "wine", grade: [
     { dia: "Sexta", slots: [
-      { h: "15h50 - 16h00", o: "Welcome Drink · Happy Hour", status: "fixo" },
-      { h: "16h00 - 16h50", o: "Maria São Braz - Vinhos", status: "aconfirmar" },
-      { h: "16h50 - 17h00", o: "Intervalo", status: "intervalo" },
-      { h: "17h00 - 17h50", o: "Marbenia", status: "aconfirmar" },
-      { h: "17h50 - 18h00", o: "Intervalo", status: "intervalo" },
-      { h: "18h00 - 18h50", o: "Leiliane", status: "aconfirmar" },
-      { h: "18h50 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h50", o: "Monin", sub: "Monin", status: "confirmado" },
-      { h: "19h50 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h50", o: "Jardenia | D'Origem", sub: "Dorigem", status: "aconfirmar" },
-      { h: "20h50 - 21h00", o: "Intervalo", status: "intervalo" },
-      { h: "21h00 - 21h50", o: "Karime Loureiro - espumantes", status: "confirmado" },
-      { h: "21h50 - 22h00", o: "Fechamento", status: "fixo" },
+      { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
+      { h: "16h00 - 16h40", o: "Maria Braz · Degustação", status: "confirmado" },
+      { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
+      { h: "17h00 - 17h40", o: "Marbenia · Degustação", status: "confirmado" },
+      { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
+      { h: "18h00 - 18h40", o: "Leiliane · Wineladies", status: "confirmado" },
+      { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
+      { h: "19h00 - 19h40", o: "Karime Loureiro · Alentejo", sub: "São Luiz", status: "confirmado" },
+      { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
+      { h: "20h00 - 20h40", o: "Jardenia · D'Origem", status: "confirmado" },
+      { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
+      { h: "21h00 - 21h40", o: "João Filho · Heineken", sub: "Heineken", status: "confirmado" },
     ]},
     { dia: "Sábado", slots: [
-      { h: "15h50 - 16h00", o: "Welcome Drink · Happy Hour", status: "fixo" },
-      { h: "16h00 - 16h50", o: "Drinks autorais por Coktelitas House of Drinks", status: "confirmado" },
-      { h: "16h50 - 17h00", o: "Intervalo", status: "intervalo" },
-      { h: "17h00 - 17h50", o: "Rangel Barbosa", status: "aconfirmar" },
-      { h: "17h50 - 18h00", o: "Intervalo", status: "intervalo" },
-      { h: "18h00 - 18h50", o: "Campari", sub: "Campari", status: "aconfirmar" },
-      { h: "18h50 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h50", o: "Gengibrada do Giz", status: "aconfirmar" },
-      { h: "19h50 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h50", o: "Drinks autorais por Amecari", status: "aconfirmar" },
-      { h: "20h50 - 21h00", o: "Intervalo", status: "intervalo" },
-      { h: "21h00 - 21h50", o: "BTCH 746 - vinho - sommelier da casa", status: "aconfirmar" },
+      { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
+      { h: "16h00 - 16h40", o: "Fernanda Dantas por Coktelitas", sub: "Spritz · Campari", status: "confirmado" },
+      { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
+      { h: "17h00 - 17h40", o: "Carol Barreto · Santa Clara", status: "confirmado" },
+      { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
+      { h: "18h00 - 18h40", o: "Jack Daniel's", status: "confirmado" },
+      { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
+      { h: "19h00 - 19h40", o: "Mauro Tirabosto · Whisky", status: "confirmado" },
+      { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
+      { h: "20h00 - 20h40", o: "Cervejaria por Heineken · Degustação", status: "confirmado" },
+      { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
+      { h: "21h00 - 21h40", o: "Carne & Vinho · Marcelo", sub: "BTCH 746", status: "confirmado" },
       { h: "21h50 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Domingo", slots: [
-      { h: "15h50 - 16h00", o: "Welcome Drink · Happy Hour", status: "fixo" },
-      { h: "16h00 - 16h50", o: "Marco Ferarri", sub: "Opção", status: "aconfirmar" },
-      { h: "16h50 - 17h00", o: "Intervalo", status: "intervalo" },
-      { h: "17h00 - 17h50", o: "espaço para café (LOR)", status: "aconfirmar" },
-      { h: "17h50 - 18h00", o: "Intervalo", status: "intervalo" },
-      { h: "18h00 - 18h50", o: "Drinks autorais por Zelig", status: "confirmado" },
-      { h: "18h50 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h50", o: "Drinks autorais por Ciranda Brasa", status: "confirmado" },
+      { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
+      { h: "16h00 - 16h40", o: "Marco Ferrari · Opção", status: "confirmado" },
+      { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
+      { h: "17h00 - 17h40", o: "Horário livre", status: "aconfirmar" },
+      { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
+      { h: "18h00 - 18h40", o: "Clovis Holanda · Vinho", status: "confirmado" },
+      { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
+      { h: "19h00 - 19h40", o: "Momento Heineken", sub: "Heineken", status: "confirmado" },
       { h: "19h50 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h50", o: "Drinks autorais por Jass", status: "confirmado" },
-      { h: "20h50 - 21h00", o: "Intervalo", status: "intervalo" },
-      { h: "21h00 - 21h50", o: "Drinks autorais por Misaki (tem uma pessoa da casa)", status: "aconfirmar" },
-      { h: "21h50 - 22h00", o: "Fechamento", status: "fixo" },
+      { h: "20h00 - 20h40", o: "Vinho para iniciantes", sub: "Domaine Montes Claros", status: "confirmado" },
+      { h: "20h40 - 21h00", o: "Fechamento", status: "fixo" },
     ]},
   ]},
   { id: "casa", nome: "Recebendo em Casa", icon: "home", grade: [
     { dia: "Sexta", slots: [
-      { h: "16h00 - 17h30", o: "Isabela Fiúza + Phê", status: "aconfirmar" },
+      { h: "16h00 - 17h30", o: "Isabela Fiúza + Phê", sub: "La Maison · São Luiz", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração · Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "Felipe Cicconato + Bia Araújo + Karime Loureiro", sub: "Opção", status: "aconfirmar" },
+      { h: "17h50 - 19h20", o: "Bia Araújo + João Filho", sub: "Heineken · Dry Aged 1953", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração · Eduardo Santos", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Convidados | Phelipe Carvalho + Lorena Machado", sub: "Netas de Olga", status: "aconfirmar" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Phelipe Carvalho + Mona", sub: "Netas de Olga", status: "confirmado" },
     ]},
     { dia: "Sábado", slots: [
-      { h: "16h00 - 17h30", o: "Chef Luiz de França | Ana Paula Rezende", status: "aconfirmar" },
-      { h: "17h30 - 17h50", o: "Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "Pepê + Chef Well", sub: "Heineken", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Convidados | Phelipe Carvalho + Karol Theodoro", sub: "Heineken", status: "aconfirmar" },
+      { h: "16h00 - 17h30", o: "Chef Luiz de França + Ana Paula Rezende", sub: "Lor · Pronto Carnes", status: "confirmado" },
+      { h: "17h30 - 17h50", o: "Atração · Eduardo Santos", status: "aconfirmar" },
+      { h: "17h50 - 19h20", o: "João Filho + Dani Gondim", sub: "Heineken", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Phelipe Carvalho + Felipe Cicconato + Karime Loureiro", sub: "Dry Aged 1953 · BR Spices", status: "confirmado" },
     ]},
     { dia: "Domingo", slots: [
-      { h: "16h00 - 17h30", o: "Chef Marina Araújo + Lia Quinderé", status: "aconfirmar" },
+      { h: "16h00 - 17h30", o: "Chef Marina Araújo + João Filho", sub: "Heineken · Granja Regina", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração · Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "Gabi Barreto + Karime + Renata (Azucar)", sub: "Heineken", status: "aconfirmar" },
+      { h: "17h50 - 19h20", o: "Gabi Barreto + Renata (Azucar)", sub: "D'Origem", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração · Eduardo Santos", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Convidados | Phelipe Carvalho + Netas de Olga", sub: "Opção", status: "aconfirmar" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Phelipe Carvalho + Lia Quinderé", sub: "D'Origem", status: "confirmado" },
     ]},
   ]},
 ];
@@ -1106,16 +1135,16 @@ export default function Landing() {
               Os chefs do festival
             </h2>
             <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-grafite/75">
-              Prévia do line-up: os chefs ainda estão em fechamento com o time, por isso os cards aparecem esmaecidos por enquanto.
+              Os nomes confirmados da edição do centenário, do Palco Gourmet ao Piano Bar e ao Recebendo em Casa. Quem ainda está em fechamento aparece esmaecido.
             </p>
           </Reveal>
         </div>
         <Reveal>
           <div className="relative max-w-content mx-auto">
-            <div ref={chefsTrackRef} className="flex gap-4 overflow-x-auto snap-x snap-mandatory px-5 pb-4 select-none pointer-events-none [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden" style={{ WebkitMaskImage: "linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)", maskImage: "linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)", filter: "blur(3.5px)", opacity: 0.55 }}>
+            <div ref={chefsTrackRef} className="flex gap-4 overflow-x-auto snap-x snap-mandatory px-5 pb-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden" style={{ WebkitMaskImage: "linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)", maskImage: "linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)" }}>
               {chefs.filter((c) => CHEF_SURPRESA_REVELADO || c.nome !== "Claude Troisgros").map((c) => (
-                <div key={c.nome} className="flex-shrink-0 w-[248px] snap-start bg-white rounded-3xl shadow-sm border border-creme-soft overflow-hidden">
-                  <div className={`${c.cor} h-56 flex items-center justify-center relative overflow-hidden`} style={{ backgroundImage: "radial-gradient(circle at 50% 30%, rgba(255,255,255,.12), transparent 60%)" }}>
+                <div key={c.nome} className={`flex-shrink-0 w-[248px] snap-start bg-white rounded-3xl shadow-sm border border-creme-soft overflow-hidden ${c.status === "aconfirmar" ? "opacity-60" : ""}`}>
+                  <div className={`${c.cor} h-[300px] flex items-center justify-center relative overflow-hidden`} style={{ backgroundImage: "radial-gradient(circle at 50% 30%, rgba(255,255,255,.12), transparent 60%)" }}>
                     {c.foto ? (
                       <img loading="lazy" src={c.foto} alt={c.nome} className="absolute inset-0 w-full h-full object-cover foto-real" />
                     ) : (
@@ -1127,6 +1156,9 @@ export default function Landing() {
                     )}
                     {c.dia && (
                       <span className="absolute top-3 left-3 text-[10px] font-bold tracking-[0.14em] px-2.5 py-1 rounded-full bg-creme/90 text-vinho z-10">{c.dia}</span>
+                    )}
+                    {c.status === "aconfirmar" && (
+                      <span className="absolute top-3 right-3 text-[9px] font-bold tracking-[0.1em] uppercase px-2 py-1 rounded-full bg-grafite/70 text-creme z-10">a confirmar</span>
                     )}
                     {!c.foto && <img loading="lazy" src="/brand/ilustra-mesa-vinho.webp" alt="" className="absolute -right-7 -bottom-7 w-28 opacity-10 pointer-events-none" />}
                     <div className="absolute inset-0" style={{ background: c.foto ? "linear-gradient(to top, rgba(0,0,0,.55), transparent 60%)" : "radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,.25) 100%)" }} />
@@ -1152,14 +1184,8 @@ export default function Landing() {
                 </div>
               ))}
             </div>
-            <button aria-label="Chef anterior" onClick={() => chefsTrackRef.current?.scrollBy({ left: -264, behavior: "smooth" })} className="hidden md:grid absolute left-0 top-[104px] -translate-x-1/2 w-11 h-11 rounded-full bg-white shadow-md border border-creme-soft text-vinho place-items-center hover:bg-vinho hover:text-creme transition z-10">‹</button>
-            <button aria-label="Próximo chef" onClick={() => chefsTrackRef.current?.scrollBy({ left: 264, behavior: "smooth" })} className="hidden md:grid absolute right-0 top-[104px] translate-x-1/2 w-11 h-11 rounded-full bg-white shadow-md border border-creme-soft text-vinho place-items-center hover:bg-vinho hover:text-creme transition z-10">›</button>
-            <div className="absolute inset-0 grid place-items-center pointer-events-none">
-              <div className="bg-vinho text-creme px-6 py-3 rounded-full shadow-lg text-center">
-                <div className="text-[12px] font-bold tracking-wide">Line-up em fechamento</div>
-                <div className="text-[11px] text-creme/70">Os chefs confirmados são revelados perto do evento</div>
-              </div>
-            </div>
+            <button aria-label="Chef anterior" onClick={() => chefsTrackRef.current?.scrollBy({ left: -264, behavior: "smooth" })} className="hidden md:grid absolute left-0 top-[150px] -translate-x-1/2 w-11 h-11 rounded-full bg-white shadow-md border border-creme-soft text-vinho place-items-center hover:bg-vinho hover:text-creme transition z-10">‹</button>
+            <button aria-label="Próximo chef" onClick={() => chefsTrackRef.current?.scrollBy({ left: 264, behavior: "smooth" })} className="hidden md:grid absolute right-0 top-[150px] translate-x-1/2 w-11 h-11 rounded-full bg-white shadow-md border border-creme-soft text-vinho place-items-center hover:bg-vinho hover:text-creme transition z-10">›</button>
           </div>
         </Reveal>
 
@@ -1170,7 +1196,7 @@ export default function Landing() {
               O que rola em cada palco
             </h3>
             <p className="mt-3 max-w-xl text-[14px] leading-relaxed text-grafite/75">
-              Prévia do cronograma: a grade ainda está em fechamento com o time, por isso os detalhes aparecem esmaecidos por enquanto.
+              O que já está confirmado em cada espaço, hora a hora. Os momentos de fornecedor e o que ainda está em fechamento aparecem esmaecidos.
             </p>
           </Reveal>
           <Reveal>
@@ -1189,7 +1215,7 @@ export default function Landing() {
             </div>
           </Reveal>
           <div className="relative mt-6">
-            <div className="grid md:grid-cols-3 gap-4 select-none pointer-events-none" style={{ filter: "blur(3.5px)", opacity: 0.55 }}>
+            <div className="grid md:grid-cols-3 gap-4">
               {gradeEspacos[espacoAtivo].grade.map((g, gi) => (
                 <Reveal key={`${gradeEspacos[espacoAtivo].id}-${g.dia}`} delay={gi * 90}>
                   <div className="bg-white rounded-3xl border border-creme-soft shadow-sm overflow-hidden h-full flex flex-col">
@@ -1198,11 +1224,11 @@ export default function Landing() {
                     </div>
                     <div className="divide-y divide-creme-soft flex-1">
                       {g.slots.map((s, i) => (
-                        <div key={i} className={`px-5 py-3 flex gap-3 ${s.status === "intervalo" ? "opacity-50" : ""}`}>
+                        <div key={i} className={`px-5 py-3 flex gap-3 ${s.status === "intervalo" ? "opacity-50" : s.status === "aconfirmar" ? "opacity-45" : ""}`}>
                           <span className="text-[11px] font-bold text-dourado tabular-nums shrink-0 w-[86px] pt-0.5">{s.h}</span>
                           <div className="min-w-0 flex-1">
                             <div className="flex items-start justify-between gap-2">
-                              <div className={`text-[13px] leading-snug ${s.status === "intervalo" ? "text-grafite/50" : "font-semibold text-grafite"}`}>{s.o}</div>
+                              <div className={`text-[13px] leading-snug ${s.status === "intervalo" ? "text-grafite/50" : s.status === "aconfirmar" ? "font-medium text-grafite/70" : "font-semibold text-grafite"}`}>{s.o}</div>
                               {s.status === "aconfirmar" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-creme-soft text-grafite/50 mt-0.5">a confirmar</span>}
                               {s.status === "confirmado" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-musgo/20 text-oliva mt-0.5">confirmado</span>}
                             </div>
@@ -1214,12 +1240,6 @@ export default function Landing() {
                   </div>
                 </Reveal>
               ))}
-            </div>
-            <div className="absolute inset-0 grid place-items-center pointer-events-none">
-              <div className="bg-vinho text-creme px-6 py-3 rounded-full shadow-lg text-center">
-                <div className="text-[12px] font-bold tracking-wide">Grade em fechamento</div>
-                <div className="text-[11px] text-creme/70">A programação completa é revelada perto do evento</div>
-              </div>
             </div>
           </div>
         </div>
