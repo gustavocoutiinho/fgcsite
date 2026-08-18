@@ -322,40 +322,40 @@ const programacaoVarianteIcone = {
 };
 
 /* grade real dos espaços do festival, por horário, sincronizada do cronograma ao vivo do portal interno (18/08/2026) */
-const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; sub?: string; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
+const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
   { id: "palco", nome: "Palco Gourmet", icon: "mic", grade: [
     { dia: "Sexta", slots: [
-      { h: "16h00 - 16h40", o: "Georgia Santiago · Muá Tuá", sub: "Arroz Tio João + Pomar da Polpa", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Georgia Santiago · Muá Tuá", status: "confirmado" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
-      { h: "17h00 - 17h40", o: "Daniel Sabbá", sub: "Pronto Carnes", status: "confirmado" },
+      { h: "17h00 - 17h40", o: "Daniel Sabbá", status: "confirmado" },
       { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
-      { h: "18h00 - 18h40", o: "Sabores de uma bela História · Phelipe Carvalho + Zena", sub: "Granja Regina", status: "confirmado" },
+      { h: "18h00 - 18h40", o: "Sabores de uma bela História · Phelipe Carvalho + Zena", status: "confirmado" },
       { h: "18h40 - 19h20", o: "A definir", status: "aconfirmar" },
-      { h: "19h20 - 20h20", o: CHEF_SURPRESA_REVELADO ? "Claude Troisgros" : "Chef convidado surpresa", sub: "São Luiz", status: "confirmado" },
+      { h: "19h20 - 20h20", o: CHEF_SURPRESA_REVELADO ? "Claude Troisgros" : "Chef convidado surpresa", status: "confirmado" },
       { h: "20h00 - 20h40", o: "Brunno Malheiros · Cheiro do Pão", status: "confirmado" },
-      { h: "21h00 - 21h40", o: "Edil Costa", sub: "Vinho culinário · Le Cuisinier · São Braz", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Edil Costa", status: "confirmado" },
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Sábado", slots: [
-      { h: "16h00 - 16h40", o: "Oficina Prokichten", sub: "Prokichten", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Oficina Prokichten", status: "confirmado" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
-      { h: "17h00 - 18h00", o: "Sabor de uma bela história · Matu Macêdo + Phelipe Carvalho", sub: "Pomar da Polpa", status: "confirmado" },
+      { h: "17h00 - 18h00", o: "Sabor de uma bela história · Matu Macêdo + Phelipe Carvalho", status: "confirmado" },
       { h: "18h00 - 18h20", o: "A definir", status: "aconfirmar" },
-      { h: "18h20 - 19h20", o: "Felipe Caputo", sub: "São Luiz", status: "confirmado" },
+      { h: "18h20 - 19h20", o: "Felipe Caputo", status: "confirmado" },
       { h: "19h20 - 19h40", o: "A definir", status: "aconfirmar" },
-      { h: "19h40 - 20h20", o: "Rafael Kim · Comida asiática", sub: "Arroz Tio João", status: "aconfirmar" },
-      { h: "20h20 - 21h00", o: "Thales Romão · NOM", sub: "Molino", status: "confirmado" },
-      { h: "21h00 - 21h40", o: "Ralfo · Parrilleiro", sub: "Arroz Tio João + BR Spices", status: "confirmado" },
+      { h: "19h40 - 20h20", o: "Rafael Kim · Comida asiática", status: "aconfirmar" },
+      { h: "20h20 - 21h00", o: "Thales Romão · NOM", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Ralfo · Parrilleiro", status: "confirmado" },
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Domingo", slots: [
       { h: "16h00 - 16h40", o: "Chef Well", status: "aconfirmar" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
-      { h: "17h00 - 17h40", o: "Matheus Vieira", sub: "Arroz Tio João + BR Spices", status: "confirmado" },
+      { h: "17h00 - 17h40", o: "Matheus Vieira", status: "confirmado" },
       { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
-      { h: "18h00 - 18h40", o: "Sabor de uma história · Chef Zinda + Phê", sub: "La France", status: "aconfirmar" },
+      { h: "18h00 - 18h40", o: "Sabor de uma história · Chef Zinda + Phê", status: "aconfirmar" },
       { h: "18h40 - 19h00", o: "A definir", status: "aconfirmar" },
-      { h: "19h00 - 19h40", o: "Pepê e Diego", sub: "Netumar + BR Spices", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Pepê e Diego", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Fechamento", status: "fixo" },
       { h: "20h00 - 21h00", o: "Elcio e Bia Nagano · Oficina", status: "confirmado" },
     ]},
@@ -369,15 +369,15 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
       { h: "18h00 - 18h40", o: "Leiliane · Wineladies", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h40", o: "Karime Loureiro · Alentejo", sub: "São Luiz", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Karime Loureiro · Alentejo", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
       { h: "20h00 - 20h40", o: "Jardenia · D'Origem", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
-      { h: "21h00 - 21h40", o: "João Filho · Heineken", sub: "Heineken", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "João Filho · Heineken", status: "confirmado" },
     ]},
     { dia: "Sábado", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
-      { h: "16h00 - 16h40", o: "Fernanda Dantas por Coktelitas", sub: "Spritz · Campari", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Fernanda Dantas por Coktelitas", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
       { h: "17h00 - 17h40", o: "Carol Barreto · Santa Clara", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
@@ -387,7 +387,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
       { h: "20h00 - 20h40", o: "Cervejaria por Heineken · Degustação", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
-      { h: "21h00 - 21h40", o: "Carne & Vinho · Marcelo", sub: "BTCH 746", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Carne & Vinho · Marcelo", status: "confirmado" },
       { h: "21h50 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Domingo", slots: [
@@ -398,32 +398,32 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
       { h: "18h00 - 18h40", o: "Clovis Holanda · Vinho", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h40", o: "Momento Heineken", sub: "Heineken", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Momento Heineken", status: "confirmado" },
       { h: "19h50 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h40", o: "Vinho para iniciantes", sub: "Domaine Montes Claros", status: "confirmado" },
+      { h: "20h00 - 20h40", o: "Vinho para iniciantes", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Fechamento", status: "fixo" },
     ]},
   ]},
   { id: "casa", nome: "Recebendo em Casa", icon: "home", grade: [
     { dia: "Sexta", slots: [
-      { h: "16h00 - 17h30", o: "Isabela Fiúza + Phê", sub: "La Maison · São Luiz", status: "confirmado" },
+      { h: "16h00 - 17h30", o: "Isabela Fiúza + Phê", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração · Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "Bia Araújo + João Filho", sub: "Heineken · Dry Aged 1953", status: "confirmado" },
+      { h: "17h50 - 19h20", o: "Bia Araújo + João Filho", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração · Eduardo Santos", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Phelipe Carvalho + Mona", sub: "Netas de Olga", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Phelipe Carvalho + Mona", status: "confirmado" },
     ]},
     { dia: "Sábado", slots: [
-      { h: "16h00 - 17h30", o: "Chef Luiz de França + Ana Paula Rezende", sub: "Lor · Pronto Carnes", status: "confirmado" },
+      { h: "16h00 - 17h30", o: "Chef Luiz de França + Ana Paula Rezende", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração · Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "João Filho + Dani Gondim", sub: "Heineken", status: "confirmado" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Phelipe Carvalho + Felipe Cicconato + Karime Loureiro", sub: "Dry Aged 1953 · BR Spices", status: "confirmado" },
+      { h: "17h50 - 19h20", o: "João Filho + Dani Gondim", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Phelipe Carvalho + Felipe Cicconato + Karime Loureiro", status: "confirmado" },
     ]},
     { dia: "Domingo", slots: [
-      { h: "16h00 - 17h30", o: "Chef Marina Araújo + João Filho", sub: "Heineken · Granja Regina", status: "confirmado" },
+      { h: "16h00 - 17h30", o: "Chef Marina Araújo + João Filho", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração · Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "Gabi Barreto + Renata (Azucar)", sub: "D'Origem", status: "confirmado" },
+      { h: "17h50 - 19h20", o: "Gabi Barreto + Renata (Azucar)", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração · Eduardo Santos", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Phelipe Carvalho + Lia Quinderé", sub: "D'Origem", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz · Phelipe Carvalho + Lia Quinderé", status: "confirmado" },
     ]},
   ]},
 ];
@@ -1247,7 +1247,6 @@ export default function Landing() {
                               {s.status === "aconfirmar" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-creme-soft text-grafite/50 mt-0.5">a confirmar</span>}
                               {s.status === "confirmado" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-musgo/20 text-oliva mt-0.5">confirmado</span>}
                             </div>
-                            {s.sub && <div aria-hidden={s.status === "aconfirmar" || undefined} className={`text-[11.5px] text-grafite/55 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}>{s.sub}</div>}
                           </div>
                         </div>
                       ))}
