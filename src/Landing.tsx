@@ -321,8 +321,10 @@ const programacaoVarianteIcone = {
   show: { opacity: 1, scale: 1, rotate: 0, transition: { type: "spring" as const, stiffness: 260, damping: 15, delay: 0.15 } },
 };
 
-/* grade real dos espaços do festival, por horário, sincronizada do cronograma ao vivo do portal interno (18/08/2026) */
-const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
+/* grade real dos espaços do festival, por horário, sincronizada do cronograma ao vivo do portal interno (18/08/2026).
+   "nota" descreve a atração (o que é servido, o formato). O campo Participação do portal, que traz o
+   patrocinador do momento, NÃO entra aqui: nome de patrocinador não aparece na grade pública. */
+const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; nota?: string; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
   { id: "palco", nome: "Palco Gourmet", icon: "mic", grade: [
     { dia: "Sexta", slots: [
       { h: "16h00 - 16h40", o: "Georgia Santiago · Muá Tuá", status: "confirmado" },
@@ -333,7 +335,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "18h40 - 19h20", o: "A definir", status: "aconfirmar" },
       { h: "19h20 - 20h20", o: CHEF_SURPRESA_REVELADO ? "Claude Troisgros" : "Chef convidado surpresa", status: "confirmado" },
       { h: "20h00 - 20h40", o: "Brunno Malheiros · Cheiro do Pão", status: "confirmado" },
-      { h: "21h00 - 21h40", o: "Edil Costa", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Edil Costa", nota: "Vinho culinário", status: "confirmado" },
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Sábado", slots: [
@@ -377,7 +379,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
     ]},
     { dia: "Sábado", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
-      { h: "16h00 - 16h40", o: "Fernanda Dantas por Coktelitas", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Fernanda Dantas por Coktelitas", nota: "Spritz", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
       { h: "17h00 - 17h40", o: "Carol Barreto · Santa Clara", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
@@ -1247,6 +1249,7 @@ export default function Landing() {
                               {s.status === "aconfirmar" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-creme-soft text-grafite/50 mt-0.5">a confirmar</span>}
                               {s.status === "confirmado" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-musgo/20 text-oliva mt-0.5">confirmado</span>}
                             </div>
+                            {s.nota && <div aria-hidden={s.status === "aconfirmar" || undefined} className={`text-[11.5px] text-grafite/55 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}>{s.nota}</div>}
                           </div>
                         </div>
                       ))}
