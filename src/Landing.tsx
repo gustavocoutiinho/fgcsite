@@ -278,7 +278,7 @@ const masterLogos = [
 const premiumLogos = [
   "turatti", "avine", "br-spices", "brutal-fruit", "imac", "la-maison", "doritos", "madi",
   "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
-  "lecuisinier","dolcedivino"
+  "lecuisinier","dolcedivino","piraque","adria"
 ].map((n) => `/patrocinadores/premium-${n}.webp`);
 
 const faq = [
@@ -437,7 +437,7 @@ const produtoresLocais = [
   { nome: "Granja Regina", logo: "/produtores/granja-regina.webp" },
   { nome: "D'origem", logo: "/patrocinadores/master-dorigem.webp" },
   { nome: "M. Dias Branco", logo: "/patrocinadores/master-mdiasbranco.webp" },
-  { nome: "JBS", logo: "/patrocinadores/master-jbs.webp" },
+  { nome: "Friboi", logo: "/patrocinadores/master-friboi.webp" },
   { nome: "Galbani", logo: "/patrocinadores/premium-galbani.webp" },
   { nome: "Naturágua", logo: "/patrocinadores/premium-naturagua.webp" },
   { nome: "Opção", logo: "/patrocinadores/master-opcao.webp" },
