@@ -462,9 +462,10 @@ const produtoresVarianteCard = {
 const edicoesAnterioresImgs = [
   "/edicoes-anteriores/DSC_0098.jpg",
   "/edicoes-anteriores/DSC_0284.jpg",
-  "/edicoes-anteriores/DSC_0289.jpg",
   "/edicoes-anteriores/DSC_0355.jpg",
-  "/edicoes-anteriores/DSC_0649.jpg",
+  "/edicoes-anteriores/ea1.jpeg",
+  "/edicoes-anteriores/ea2.jpeg",
+  "/edicoes-anteriores/ea3.jpeg",
 ];
 
 const edicoesAnterioresSpan = [
