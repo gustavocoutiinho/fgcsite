@@ -1441,7 +1441,7 @@ export default function Landing() {
               </Reveal>
             ))}
           </div>
-          <Reveal>
+          {/* <Reveal>
             <div className="mt-5 text-creme rounded-3xl p-7 md:p-9 md:flex items-center justify-between gap-8 relative overflow-hidden" style={{ background: "radial-gradient(ellipse at 30% 100%,#4E1714 0%,#3A0F0E 60%)" }}>
               <img loading="lazy" src="/brand/ondas-vinho.webp" alt="" aria-hidden="true" className="absolute -top-5 -right-5 w-40 opacity-90 pointer-events-none select-none" />
               <div className="md:flex-1 relative">
@@ -1458,7 +1458,7 @@ export default function Landing() {
                 </a>
               </div>
             </div>
-          </Reveal>
+          </Reveal> */}
         </div>
       </section>
 
