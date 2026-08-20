@@ -353,11 +353,11 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
     { dia: "Domingo", slots: [
       { h: "16h00 - 16h40", o: "Chef Well", status: "aconfirmar" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
-      { h: "17h00 - 17h40", o: "Matheus Vieira", status: "confirmado" },
+      { h: "17h00 - 17h40", o: "Matheus Vieira", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
       { h: "18h00 - 18h40", o: "Sabor de uma história · Chef Zinda + Phê", status: "aconfirmar" },
       { h: "18h40 - 19h00", o: "A definir", status: "aconfirmar" },
-      { h: "19h00 - 19h40", o: "Pepê e Diego", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Pepê e Diego", patrocinadorLogo: "/patrocinadores/logo-netumar.webp", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Fechamento", status: "fixo" },
       { h: "20h00 - 21h00", o: "Elcio e Bia Nagano · Oficina", status: "confirmado" },
     ]},
