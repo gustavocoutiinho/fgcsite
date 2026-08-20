@@ -324,7 +324,7 @@ const programacaoVarianteIcone = {
 /* grade real dos espaços do festival, por horário, sincronizada do cronograma ao vivo do portal interno (18/08/2026).
    "nota" descreve a atração (o que é servido, o formato). O campo Participação do portal, que traz o
    patrocinador do momento, NÃO entra aqui: nome de patrocinador não aparece na grade pública. */
-const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; nota?: string; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
+const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; nota?: string; patrocinadorLogo?: string; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
   { id: "palco", nome: "Palco Gourmet", icon: "mic", grade: [
     { dia: "Sexta", slots: [
       { h: "16h00 - 16h40", o: "Georgia Santiago · Muá Tuá", status: "confirmado" },
@@ -339,7 +339,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Sábado", slots: [
-      { h: "16h00 - 16h40", o: "Oficina Prokichten", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Oficina Prokichten", patrocinadorLogo: "/patrocinadores/logo-prokitchen.webp", status: "confirmado" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
       { h: "17h00 - 18h00", o: "Sabor de uma bela história · Matu Macêdo + Phelipe Carvalho", status: "confirmado" },
       { h: "18h00 - 18h20", o: "A definir", status: "aconfirmar" },
@@ -373,34 +373,34 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
       { h: "19h00 - 19h40", o: "Karime Loureiro · Alentejo", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h40", o: "Jardenia · D'Origem", status: "confirmado" },
+      { h: "20h00 - 20h40", o: "Jardenia · D'Origem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
-      { h: "21h00 - 21h40", o: "João Filho · Heineken", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "João Filho · Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
     ]},
     { dia: "Sábado", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
       { h: "16h00 - 16h40", o: "Fernanda Dantas por Coktelitas", nota: "Spritz", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
-      { h: "17h00 - 17h40", o: "Carol Barreto · Santa Clara", status: "confirmado" },
+      { h: "17h00 - 17h40", o: "Carol Barreto · Santa Clara", patrocinadorLogo: "/patrocinadores/master-santa-clara.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
       { h: "18h00 - 18h40", o: "Jack Daniel's", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
       { h: "19h00 - 19h40", o: "Mauro Tirabosto · Whisky", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h40", o: "Cervejaria por Heineken · Degustação", status: "confirmado" },
+      { h: "20h00 - 20h40", o: "Cervejaria por Heineken · Degustação", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
       { h: "21h00 - 21h40", o: "Carne & Vinho · Marcelo", status: "confirmado" },
       { h: "21h50 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Domingo", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
-      { h: "16h00 - 16h40", o: "Marco Ferrari · Opção", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Marco Ferrari · Opção", patrocinadorLogo: "/patrocinadores/master-opcao.webp", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
       { h: "17h00 - 17h40", o: "Horário livre", status: "aconfirmar" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
       { h: "18h00 - 18h40", o: "Clovis Holanda · Vinho", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h40", o: "Momento Heineken", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Momento Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "19h50 - 20h00", o: "Intervalo", status: "intervalo" },
       { h: "20h00 - 20h40", o: "Vinho para iniciantes", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Fechamento", status: "fixo" },
@@ -442,7 +442,7 @@ const produtoresLocais = [
   { nome: "Naturágua", logo: "/patrocinadores/premium-naturagua.webp" },
   { nome: "Opção", logo: "/patrocinadores/master-opcao.webp" },
   { nome: "La Maison", logo: "/patrocinadores/premium-la-maison.webp" },
-  { nome: "Heineken", logo: "/patrocinadores/master-heineken.png" },
+  { nome: "Heineken", logo: "/patrocinadores/master-heineken.webp" },
   { nome: "Dolce Divino", logo: "/patrocinadores/premium-dolcedivino.webp" },
   { nome: "Le Cuisinier", logo: "/patrocinadores/premium-lecuisinier.webp" },
 
@@ -1251,6 +1251,15 @@ export default function Landing() {
                               {s.status === "confirmado" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-musgo/20 text-oliva mt-0.5">confirmado</span>}
                             </div>
                             {s.nota && <div aria-hidden={s.status === "aconfirmar" || undefined} className={`text-[11.5px] text-grafite/55 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}>{s.nota}</div>}
+                            {s.patrocinadorLogo && (
+                              <img
+                                loading="lazy"
+                                src={s.patrocinadorLogo}
+                                alt=""
+                                aria-hidden="true"
+                                className={`h-4 w-auto max-w-[86px] object-contain object-left mt-1.5 opacity-70 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}
+                              />
+                            )}
                           </div>
                         </div>
                       ))}
