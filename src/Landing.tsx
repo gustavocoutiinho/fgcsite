@@ -443,8 +443,6 @@ const produtoresLocais = [
   { nome: "Opção", logo: "/patrocinadores/master-opcao.webp" },
   { nome: "La Maison", logo: "/patrocinadores/premium-la-maison.webp" },
   { nome: "Heineken", logo: "/patrocinadores/master-heineken.webp" },
-  { nome: "Dolce Divino", logo: "/patrocinadores/premium-dolcedivino.webp" },
-  { nome: "Le Cuisinier", logo: "/patrocinadores/premium-lecuisinier.webp" },
 
 ];
 
