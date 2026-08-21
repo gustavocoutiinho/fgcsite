@@ -206,7 +206,7 @@ const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: 
   { nome: "Leiliane", casa: "Wineladies", atracao: "Piano Bar", dia: "SEX", cor: "bg-oliva", foto: "/chefs/leiliane.webp" },
   { nome: "Karime Loureiro", casa: "Alentejo", atracao: "Piano Bar", dia: "SEX", cor: "bg-bordo", foto: "/chefs/karime-loureiro.webp" },
   { nome: "Jardenia", casa: "D'Origem", atracao: "Piano Bar", dia: "SEX", cor: "bg-vinho", foto: "/chefs/jardenia.webp" },
-  { nome: "Isabela Fiúza", casa: "La Maison · São Luiz", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-oliva", foto: "/chefs/isabela-fiuza.webp" },
+  { nome: "Izabela Fiúza", casa: "La Maison · São Luiz", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-oliva", foto: "/chefs/isabela-fiuza.webp" },
   { nome: "Bia Araújo", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-vinho", foto: "/chefs/bia-araujo.webp" },
   { nome: "Mona", casa: "Netas de Olga", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-bordo", foto: "/chefs/mona.webp" },
   // SÁBADO
@@ -408,7 +408,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
   ]},
   { id: "casa", nome: "Recebendo em Casa", icon: "home", grade: [
     { dia: "Sexta", slots: [
-      { h: "16h00 - 17h30", o: "Isabela Fiúza + Phelipe Carvalho", status: "confirmado" },
+      { h: "16h00 - 17h30", o: "Izabela Fiúza + Phelipe Carvalho", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
       { h: "17h50 - 19h20", o: "Bia Araújo + João Filho", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
