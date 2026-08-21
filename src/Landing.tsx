@@ -278,7 +278,7 @@ const masterLogos = [
 const premiumLogos = [
   "turatti", "avine", "br-spices", "brutal-fruit", "imac", "la-maison", "doritos", "madi",
   "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
-  "lecuisinier","dolcedivino","piraque","adria"
+  "lecuisinier","dolcedivino","piraque","adria","president"
 ].map((n) => `/patrocinadores/premium-${n}.webp`);
 
 const faq = [
@@ -355,7 +355,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
       { h: "17h00 - 17h40", o: "Matheus Vieira", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
-      { h: "18h00 - 18h40", o: "Sabor de uma história", nota: "Chef Zinda + Phê", status: "aconfirmar" },
+      { h: "18h00 - 18h40", o: "Sabor de uma história", nota: "Chef Zinda + Phelipe Carvalho", status: "aconfirmar" },
       { h: "18h40 - 19h00", o: "A definir", status: "aconfirmar" },
       { h: "19h00 - 19h40", o: "Pepê e Diego", patrocinadorLogo: "/patrocinadores/logo-netumar.webp", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Fechamento", status: "fixo" },
@@ -408,7 +408,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
   ]},
   { id: "casa", nome: "Recebendo em Casa", icon: "home", grade: [
     { dia: "Sexta", slots: [
-      { h: "16h00 - 17h30", o: "Isabela Fiúza + Phê", status: "confirmado" },
+      { h: "16h00 - 17h30", o: "Isabela Fiúza + Phelipe Carvalho", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
       { h: "17h50 - 19h20", o: "Bia Araújo + João Filho", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
@@ -440,9 +440,10 @@ const produtoresLocais = [
   { nome: "Friboi", logo: "/patrocinadores/master-friboi.webp" },
   { nome: "Galbani", logo: "/patrocinadores/premium-galbani.webp" },
   { nome: "Naturágua", logo: "/patrocinadores/premium-naturagua.webp" },
-  { nome: "Opção", logo: "/patrocinadores/master-opcao.webp" },
+  { nome: "Opção", logo: "/patrocinadores/master-opcao.webp" }, 
   { nome: "La Maison", logo: "/patrocinadores/premium-la-maison.webp" },
   { nome: "Heineken", logo: "/patrocinadores/master-heineken.webp" },
+  { nome: "Emape ALimentos", logo: "/patrocinadores/master-emape.webp"}
 
 ];
 
@@ -493,7 +494,7 @@ const regras = [
 const ingressoInfo = [
   { t: "Por dia ou combo", d: "Escolha um dia ou leve os três de uma vez, no combo. Sem limite de ingressos por pessoa." },
   { t: "Meia-entrada", d: "Meia-entrada conforme a lei, com a devida comprovação na entrada." },
-  { t: "Estudante de gastronomia", d: "Gratuidade para estudantes de gastronomia, mediante apresentação da credencial." },
+  { t: "Estudante de gastronomia", d: "Gratuidade para estudantes de gastronomia, mediante apresentação da credencial ou comprovante de metrícula." },
 ];
 
 function LogoMarquee({ logos, dur, reverse = false }: { logos: string[]; dur: string; reverse?: boolean }) {
@@ -1255,12 +1256,13 @@ export default function Landing() {
                                 src={s.patrocinadorLogo}
                                 alt=""
                                 aria-hidden="true"
-                                className={`h-6 w-auto max-w-[110px] object-contain object-left mt-1.5 opacity-90 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}
+                                className={`${s.patrocinadorLogo.includes("heineken") ? "h-12" : "h-6"} w-auto object-contain object-left mt-1.5 opacity-90 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}
                               />
                             )}
                           </div>
                         </div>
                       ))}
+
                     </div>
                   </div>
                 </Reveal>
