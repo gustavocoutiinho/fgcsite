@@ -494,7 +494,7 @@ const regras = [
 const ingressoInfo = [
   { t: "Por dia ou combo", d: "Escolha um dia ou leve os três de uma vez, no combo. Sem limite de ingressos por pessoa." },
   { t: "Meia-entrada", d: "Meia-entrada conforme a lei, com a devida comprovação na entrada." },
-  { t: "Estudante de gastronomia", d: "Gratuidade para estudantes de gastronomia, mediante apresentação da credencial ou comprovante de metrícula." },
+  { t: "Estudante de gastronomia", d: "Gratuidade para estudantes de gastronomia, mediante apresentação da credencial ou comprovante de matrícula." },
 ];
 
 function LogoMarquee({ logos, dur, reverse = false }: { logos: string[]; dur: string; reverse?: boolean }) {
