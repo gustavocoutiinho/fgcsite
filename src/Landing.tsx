@@ -272,13 +272,13 @@ const instituicoes = [
 
 const masterLogos = [
   "dorigem", "emape", "granja-regina",
-  "sao-jose", "tijuca", "opcao", "santa-clara", "stella-artois",
+  "sao-jose", "tijuca", "opcao", "santa-clara", "stella-artois","piraque","adria"
 ].map((n) => `/patrocinadores/master-${n}.webp`);
 
 const premiumLogos = [
   "turatti", "avine", "br-spices", "brutal-fruit", "imac", "la-maison", "doritos", "madi",
   "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
-  "lecuisinier","dolcedivino","piraque","adria","president"
+  "lecuisinier","dolcedivino","president"
 ].map((n) => `/patrocinadores/premium-${n}.webp`);
 
 const faq = [
