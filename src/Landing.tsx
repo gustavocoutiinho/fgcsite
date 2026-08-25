@@ -214,6 +214,8 @@ const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: 
   { nome: "Felipe Caputo", casa: "São Luiz", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-vinho", foto: "/chefs/felipe-caputo.webp", instagram: "https://instagram.com/felipecaputo", link: "/chefs/felipe-caputo" },
   { nome: "Thales Romão", casa: "NOM · Molino Padaria Artesanal", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-[#8a3d18]", foto: "/chefs/thales-romao.webp", instagram: "https://instagram.com/thalesromao_", link: "/chefs/thales-romao" },
   { nome: "Ralfo", casa: "Parrilleiro", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-bordo", foto: "/chefs/ralfo.webp" },
+  { nome: "Ivan Prado", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-oliva", foto: "/chefs/ivan-prado.webp" },
+  { nome: "Marco Frossard", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-[#8a3d18]", foto: "/chefs/marco-frossard.webp" },
   { nome: "Fernanda Dantas", casa: "Coktelitas", atracao: "Piano Bar", dia: "SAB", cor: "bg-oliva", foto: "/chefs/fernanda-dantas.webp" },
   { nome: "Carol Barreto", casa: "Santa Clara", atracao: "Piano Bar", dia: "SAB", cor: "bg-vinho", foto: "/chefs/carol-barreto.webp" },
   { nome: "Mauro Tirabosto", sub: "Degustação de whisky", atracao: "Piano Bar", dia: "SAB", cor: "bg-bordo", foto: "/chefs/mauro-tirabosto.webp" },
@@ -226,6 +228,7 @@ const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: 
   { nome: "Pepê", sub: "Pepê e Diego", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-[#8a3d18]", foto: "/chefs/pepe.webp", link: "/chefs/pepe-e-diego", pronome: "deles" },
   { nome: "Diego", sub: "Pepê e Diego", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/diego.webp", link: "/chefs/pepe-e-diego", pronome: "deles" },
   { nome: "Elcio e Bia Nagano", sub: "Oficina", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-bordo", foto: "/chefs/elcio-e-bia-nagano.webp" },
+  { nome: "Rafael Kim", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/rafael-kim.webp" },
   { nome: "Marco Ferrari", casa: "Opção", atracao: "Piano Bar", dia: "DOM", cor: "bg-vinho", foto: "/chefs/marco-ferrari.webp" },
   { nome: "Marina Araújo", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-oliva", foto: "/chefs/marina-araujo.webp" },
   { nome: "Gabi Barreto", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-bordo", foto: "/chefs/gabi-barreto.webp" },
@@ -339,19 +342,19 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Sábado", slots: [
-      { h: "16h00 - 16h40", o: "Oficina Prokichten", patrocinadorLogo: "/patrocinadores/logo-prokitchen.webp", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Marco Frossard", nota: "Prokitchen", patrocinadorLogo: "/patrocinadores/logo-prokitchen.webp", status: "confirmado" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
       { h: "17h00 - 18h00", o: "Sabor de uma bela história", nota: "Matu Macêdo + Phelipe Carvalho", status: "confirmado" },
       { h: "18h00 - 18h20", o: "A definir", status: "aconfirmar" },
       { h: "18h20 - 19h20", o: "Felipe Caputo", status: "confirmado" },
       { h: "19h20 - 19h40", o: "A definir", status: "aconfirmar" },
-      { h: "19h40 - 20h20", o: "Rafael Kim", nota: "Comida asiática", status: "aconfirmar" },
+      { h: "19h40 - 20h20", o: "Ivan Prado", nota: "Arroz Tio João", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
       { h: "20h20 - 21h00", o: "Thales Romão", nota: "NOM", status: "confirmado" },
       { h: "21h00 - 21h40", o: "Ralfo", nota: "Parrilleiro", status: "confirmado" },
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Domingo", slots: [
-      { h: "16h00 - 16h40", o: "Chef Well", status: "aconfirmar" },
+      { h: "16h00 - 16h40", o: "Rafael Kim", nota: "Arroz Tio João", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
       { h: "17h00 - 17h40", o: "Matheus Vieira", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
@@ -383,7 +386,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
       { h: "17h00 - 17h40", o: "Carol Barreto", nota: "Santa Clara", patrocinadorLogo: "/patrocinadores/master-santa-clara.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
-      { h: "18h00 - 18h40", o: "Jack Daniel's", status: "confirmado" },
+      { h: "18h00 - 18h40", o: "Jack Daniel's", patrocinadorLogo: "/patrocinadores/logo-jackdaniels.webp", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
       { h: "19h00 - 19h40", o: "Mauro Tirabosto", nota: "Whisky", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
@@ -1256,7 +1259,7 @@ export default function Landing() {
                                 src={s.patrocinadorLogo}
                                 alt=""
                                 aria-hidden="true"
-                                className={`${s.patrocinadorLogo.includes("heineken") ? "h-12" : "h-6"} w-auto object-contain object-left mt-1.5 opacity-90 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}
+                                className={`${s.patrocinadorLogo.includes("heineken") ? "h-12" : s.patrocinadorLogo.includes("jackdaniels") ? "h-8" : "h-6"} w-auto object-contain object-left mt-1.5 opacity-90 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}
                               />
                             )}
                           </div>
