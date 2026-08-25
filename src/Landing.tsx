@@ -1053,7 +1053,7 @@ export default function Landing() {
       {/* ===== NAV ===== */}
       <header className={`fixed top-0 inset-x-0 z-50 transition-all ${scrolled ? "bg-creme/90 backdrop-blur border-b border-creme-soft" : ""}`}>
         <div className="max-w-content mx-auto px-5 h-16 flex items-center justify-between">
-          <span className="w-24 md:w-40 shrink-0" aria-hidden="true" />
+          <span className="w-16 sm:w-24 md:w-40 shrink-0" aria-hidden="true" />
           <nav className="hidden lg:flex items-center gap-6 text-[13px] font-semibold tracking-wide text-grafite/80">
             {navLinks.slice(0, 7).map(([href, label]) => (
               <a key={href} href={href} className="hover:text-dourado transition">{label}</a>
@@ -1078,8 +1078,10 @@ export default function Landing() {
           </div>
         )}
         {/* logotipo em aba retangular, colada no topo, cantos arredondados só embaixo */}
-        <a href="#topo" className="absolute top-0 left-5 md:left-8 flex items-center bg-vinho rounded-b-2xl md:rounded-b-3xl shadow-md px-4 py-2.5 md:px-7 md:py-4">
-          <img src="/brand/logo-fcg.webp" alt="Festival Costume Gourmet" className="h-9 md:h-14 w-auto" />
+        <a href="#topo" className="absolute top-0 left-3 sm:left-5 md:left-8 flex items-center gap-1.5 sm:gap-3 md:gap-4 bg-vinho rounded-b-2xl md:rounded-b-3xl shadow-md px-2.5 py-1.5 sm:px-4 sm:py-2.5 md:px-7 md:py-4">
+          <img src="/brand/logo-fcg.webp" alt="Festival Costume Gourmet" className="h-6 sm:h-9 md:h-14 w-auto" />
+          <span className="w-px h-4 sm:h-6 md:h-9 bg-creme/25" aria-hidden="true" />
+          <img src="/brand/logo-saoluiz.webp" alt="São Luiz Supermercado" className="h-4 sm:h-6 md:h-9 w-auto" />
         </a>
       </header>
 
