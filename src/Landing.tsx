@@ -185,7 +185,7 @@ const numeroVarianteContainer = {
   show: { transition: { staggerChildren: 0.14, delayChildren: 0.05 } },
 };
 
-const numeroVarianteItem = {
+const numeroVarianteItem = {  
   hidden: { opacity: 0, y: 56, scale: 0.8, filter: "blur(10px)" },
   show: {
     opacity: 1, y: 0, scale: 1, filter: "blur(0px)",
@@ -282,7 +282,15 @@ const premiumLogos = [
   "turatti", "avine", "br-spices", "brutal-fruit", "imac", "la-maison", "doritos", "madi",
   "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
   "lecuisinier","dolcedivino","president"
-].map((n) => `/patrocinadores/premium-${n}.webp`);
+].map((n) => `/patrocinadores/premium-${n}.webp`).concat([
+  "/patrocinadores/logo-jackdaniels.webp",
+  "/patrocinadores/logo-lor.webp",
+  "/patrocinadores/master-friboi.webp",
+  "/patrocinadores/master-jbs.webp",
+  "/impacto/iprede.webp",
+  "/impacto/ipom.webp",
+  "/impacto/icc.webp",
+]);
 
 const faq = [
   ["Posso comprar por dia ou o combo dos três dias?", "Os dois. Tem ingresso por dia e o combo para os três dias de festival."],
@@ -293,7 +301,7 @@ const faq = [
   ["Posso sair e voltar no mesmo dia?", "Pode, é só usar a pulseira de acesso entregue na entrada."],
 ];
 
-const galeria = ["/espacos/piano-bar.webp", ...["g02", "g03", "g04", "g05", "g06", "g07", "g08"].map((n) => `/galeria/${n}.webp`)];
+const galeria = Array.from({ length: 22 }, (_, i) => `/galeria/${i}.jpg`);
 
 const instagramPreview = ["/galeria/g03.webp", "/galeria/g04.webp", "/galeria/g06.webp", "/galeria/g08.webp", "/espacos/piano-bar.webp", "/espacos/palco-gourmet.webp"];
 
@@ -330,51 +338,51 @@ const programacaoVarianteIcone = {
 const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; nota?: string; patrocinadorLogo?: string; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
   { id: "palco", nome: "Palco Gourmet", icon: "mic", grade: [
     { dia: "Sexta", slots: [
-      { h: "16h00 - 16h40", o: "Georgia Santiago", nota: "Muá Tuá", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Georgia Santiago", nota: "Muá Tuá + Pomar da Polpa", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
-      { h: "17h00 - 17h40", o: "Daniel Sabbá", status: "confirmado" },
+      { h: "17h00 - 17h40", o: "Daniel Sabbá", nota: "Pronto Carnes", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
-      { h: "18h00 - 18h40", o: "Sabores de uma bela História", nota: "Phelipe Carvalho + Zena", status: "confirmado" },
+      { h: "18h00 - 18h40", o: "Sabores de uma bela História", nota: "Phelipe Carvalho + Zena · Granja Regina", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
       { h: "18h40 - 19h20", o: "A definir", status: "aconfirmar" },
-      { h: "19h20 - 20h20", o: CHEF_SURPRESA_REVELADO ? "Claude Troisgros" : "Chef convidado surpresa", status: "confirmado" },
-      { h: "20h00 - 20h40", o: "Brunno Malheiros", nota: "Cheiro do Pão", status: "confirmado" },
-      { h: "21h00 - 21h40", o: "Edil Costa", nota: "Vinho culinário", status: "confirmado" },
+      { h: "19h20 - 20h20", o: CHEF_SURPRESA_REVELADO ? "Claude Troisgros" : "Chef convidado surpresa", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
+      { h: "20h00 - 20h40", o: "Brunno Malheiros", nota: "Cheiro do Pão", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Edil Costa", nota: "Le Cuiser · Netumar", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Sábado", slots: [
       { h: "16h00 - 16h40", o: "Marco Frossard", nota: "Prokitchen", patrocinadorLogo: "/patrocinadores/logo-prokitchen.webp", status: "confirmado" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
-      { h: "17h00 - 18h00", o: "Sabor de uma bela história", nota: "Matu Macêdo + Phelipe Carvalho", status: "confirmado" },
+      { h: "17h00 - 18h00", o: "Sabor de uma bela história", nota: "Matu Macêdo + Phelipe Carvalho · Pomar da Polpa", patrocinadorLogo: "/patrocinadores/premium-pomar.webp", status: "confirmado" },
       { h: "18h00 - 18h20", o: "A definir", status: "aconfirmar" },
-      { h: "18h20 - 19h20", o: "Felipe Caputo", status: "confirmado" },
+      { h: "18h20 - 19h20", o: "Felipe Caputo", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
       { h: "19h20 - 19h40", o: "A definir", status: "aconfirmar" },
       { h: "19h40 - 20h20", o: "Ivan Prado", nota: "Arroz Tio João", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
-      { h: "20h20 - 21h00", o: "Thales Romão", nota: "NOM", status: "confirmado" },
-      { h: "21h00 - 21h40", o: "Ralfo", nota: "Parrilleiro", status: "confirmado" },
+      { h: "20h20 - 21h00", o: "Thales Romão", nota: "NOM · Molino", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Ralfo", nota: "Parrilleiro · Br Spices", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Domingo", slots: [
-      { h: "16h00 - 16h40", o: "Rafael Kim", nota: "Arroz Tio João", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Rafael Kim", nota: "Comida Asiática · Arroz Tio João", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
-      { h: "17h00 - 17h40", o: "Matheus Vieira", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
+      { h: "17h00 - 17h40", o: "Matheus Vieira", nota: "Br Spices", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
-      { h: "18h00 - 18h40", o: "Sabor de uma história", nota: "Chef Zinda + Phelipe Carvalho", status: "aconfirmar" },
+      { h: "18h00 - 18h40", o: "Sabor de uma história", nota: "Chef Zinda + Phelipe Carvalho", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "aconfirmar" },
       { h: "18h40 - 19h00", o: "A definir", status: "aconfirmar" },
-      { h: "19h00 - 19h40", o: "Pepê e Diego", patrocinadorLogo: "/patrocinadores/logo-netumar.webp", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Pepê e Diego", nota: "Br Spices", patrocinadorLogo: "/patrocinadores/logo-netumar.webp", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Fechamento", status: "fixo" },
-      { h: "20h00 - 21h00", o: "Elcio e Bia Nagano", nota: "Oficina", status: "confirmado" },
+      { h: "20h00 - 21h00", o: "Elcio e Bia Nagano", nota: "Oficina", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
     ]},
   ]},
   { id: "piano", nome: "Piano Bar", icon: "wine", grade: [
     { dia: "Sexta", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
-      { h: "16h00 - 16h40", o: "Maria Braz", nota: "Degustação", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Maria Braz", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
-      { h: "17h00 - 17h40", o: "Marbenia", nota: "Degustação", status: "confirmado" },
+      { h: "17h00 - 17h40", o: "Marbenia", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
-      { h: "18h00 - 18h40", o: "Leiliane", nota: "Wineladies", status: "confirmado" },
+      { h: "18h00 - 18h40", o: "Leiliane", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h40", o: "Karime Loureiro", nota: "Alentejo", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Karime Loureiro", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
       { h: "20h00 - 20h40", o: "Jardenia", nota: "D'Origem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
@@ -382,53 +390,53 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
     ]},
     { dia: "Sábado", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
-      { h: "16h00 - 16h40", o: "Fernanda Dantas por Coktelitas", nota: "Spritz", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Fernanda Dantas por Coktelitas", nota: "Spritz + Campari", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
       { h: "17h00 - 17h40", o: "Carol Barreto", nota: "Santa Clara", patrocinadorLogo: "/patrocinadores/master-santa-clara.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
-      { h: "18h00 - 18h40", o: "Jack Daniel's", patrocinadorLogo: "/patrocinadores/logo-jackdaniels.webp", status: "confirmado" },
+      { h: "18h00 - 18h40", o: "Jack Daniel's", nota: "Apresentador a confirmar", patrocinadorLogo: "/patrocinadores/logo-jackdaniels.webp", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h40", o: "Mauro Tirabosto", nota: "Whisky", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Mauro Tirabosto", nota: "Whisky · São Luiz", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
       { h: "20h00 - 20h40", o: "Cervejaria por Heineken", nota: "Degustação", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
-      { h: "21h00 - 21h40", o: "Carne & Vinho", nota: "Marcelo", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Carne & Vinho", nota: "Marcelo + Carlos · BTCH 746", patrocinadorLogo: "/patrocinadores/logo-butchers.webp", status: "confirmado" },
       { h: "21h50 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Domingo", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
       { h: "16h00 - 16h40", o: "Marco Ferrari", nota: "Opção", patrocinadorLogo: "/patrocinadores/master-opcao.webp", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
-      { h: "17h00 - 17h40", o: "Horário livre", status: "aconfirmar" },
+      { h: "17h00 - 17h40", o: "Vitoria Oliver", status: "aconfirmar" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
-      { h: "18h00 - 18h40", o: "Clovis Holanda", nota: "Vinho", status: "confirmado" },
+      { h: "18h00 - 18h40", o: "Clovis Holanda", nota: "Vinho · São Luiz", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
       { h: "19h00 - 19h40", o: "Momento Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "19h50 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h40", o: "Vinho para iniciantes", status: "confirmado" },
+      { h: "20h00 - 20h40", o: "Vinho para iniciantes", nota: "Domaine Montes Claros", patrocinadorLogo: "/patrocinadores/logo-montes-claros.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Fechamento", status: "fixo" },
     ]},
   ]},
   { id: "casa", nome: "Recebendo em Casa", icon: "home", grade: [
     { dia: "Sexta", slots: [
-      { h: "16h00 - 17h30", o: "Izabela Fiúza + Phelipe Carvalho", status: "confirmado" },
+      { h: "16h00 - 17h30", o: "Izabela Fiúza + Phelipe Carvalho", nota: "La Maison · São Luiz · Opção", patrocinadorLogo: "/patrocinadores/premium-la-maison.webp", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "Bia Araújo + João Filho", status: "confirmado" },
+      { h: "17h50 - 19h20", o: "Bia Araújo + João Filho", nota: "Heineken · Dry aged 1953", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Mona", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Mona · Opção", patrocinadorLogo: "/brand/logo-saoluiz.webp", status: "confirmado" },
     ]},
     { dia: "Sábado", slots: [
-      { h: "16h00 - 17h30", o: "Chef Luiz de França + Ana Paula Rezende", status: "confirmado" },
+      { h: "16h00 - 17h30", o: "Chef Luiz de França + Ana Paula Rezende", nota: "Lor · Pronto Carnes", patrocinadorLogo: "/patrocinadores/logo-lor.webp", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "João Filho + Dani Gondim", status: "confirmado" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Felipe Cicconato + Karime Loureiro", status: "confirmado" },
+      { h: "17h50 - 19h20", o: "João Filho + Dani Gondim", nota: "Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Felipe Cicconato + Karime Loureiro · Br Spices", patrocinadorLogo: "/patrocinadores/master-friboi.webp", status: "confirmado" },
     ]},
     { dia: "Domingo", slots: [
-      { h: "16h00 - 17h30", o: "Chef Marina Araújo + João Filho", status: "confirmado" },
+      { h: "16h00 - 17h30", o: "Chef Marina Araújo + João Filho", nota: "Heineken · Granja Regina", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "Gabi Barreto + Renata (Azucar)", status: "confirmado" },
+      { h: "17h50 - 19h20", o: "Gabi Barreto + Renata (Azucar)", nota: "Dorigem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Lia Quinderé", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Lia Quinderé · Pagueti + Dorigem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
     ]},
   ]},
 ];
@@ -440,9 +448,7 @@ const produtoresLocais = [
   { nome: "Granja Regina", logo: "/produtores/granja-regina.webp" },
   { nome: "D'origem", logo: "/patrocinadores/master-dorigem.webp" },
   { nome: "M. Dias Branco", logo: "/patrocinadores/master-mdiasbranco.webp" },
-  { nome: "Friboi", logo: "/patrocinadores/master-friboi.webp" },
   { nome: "Galbani", logo: "/patrocinadores/premium-galbani.webp" },
-  { nome: "Naturágua", logo: "/patrocinadores/premium-naturagua.webp" },
   { nome: "Opção", logo: "/patrocinadores/master-opcao.webp" }, 
   { nome: "La Maison", logo: "/patrocinadores/premium-la-maison.webp" },
   { nome: "Heineken", logo: "/patrocinadores/master-heineken.webp" },
@@ -645,6 +651,214 @@ function GaleriaEdicoesAnteriores() {
               <img
                 src={edicoesAnterioresImgs[aberto]}
                 alt="Registro de uma edição anterior do Festival Costume Gourmet"
+                className="w-full max-h-[80vh] object-contain rounded-xl shadow-2xl foto-real"
+              />
+              <div className="mt-3 text-center text-[12px] tracking-[0.15em] uppercase text-creme/60">
+                {aberto + 1} / {total}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </section>
+  );
+}
+
+/* vitrine "o festival por dentro": carrossel horizontal com lightbox por clique */
+function GaleriaFestival() {
+  const [aberto, setAberto] = useState<number | null>(null);
+  const total = galeria.length;
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [podeVoltar, setPodeVoltar] = useState(false);
+  const [podeAvancar, setPodeAvancar] = useState(true);
+  const [progresso, setProgresso] = useState(0);
+
+  useEffect(() => {
+    if (aberto === null) return;
+    const overflowAnterior = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setAberto(null);
+      if (e.key === "ArrowRight") setAberto((i) => (i === null ? i : (i + 1) % total));
+      if (e.key === "ArrowLeft") setAberto((i) => (i === null ? i : (i - 1 + total) % total));
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = overflowAnterior;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [aberto, total]);
+
+  const medirScroll = () => {
+    const el = trackRef.current;
+    if (!el) return;
+    const max = el.scrollWidth - el.clientWidth;
+    setPodeVoltar(el.scrollLeft > 8);
+    setPodeAvancar(el.scrollLeft < max - 8);
+    setProgresso(max > 0 ? el.scrollLeft / max : 0);
+  };
+
+  useEffect(() => {
+    medirScroll();
+    const el = trackRef.current;
+    if (!el) return;
+    const onResize = () => medirScroll();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+  const mover = (dir: 1 | -1) => {
+    const el = trackRef.current;
+    if (!el) return;
+    const card = el.querySelector<HTMLElement>("[data-card]");
+    const passo = card ? card.offsetWidth + 12 : el.clientWidth * 0.8;
+    el.scrollBy({ left: dir * passo, behavior: "smooth" });
+  };
+
+  return (
+    <section id="galeria" className="px-5 pb-4 md:pb-8 relative overflow-hidden">
+      <img loading="lazy" src="/brand/carimbo-oliva.webp" alt="" aria-hidden="true" className="absolute -bottom-20 -right-20 w-[480px] opacity-[0.10] -rotate-[8deg] pointer-events-none select-none hidden md:block" />
+      <div className="max-w-content mx-auto relative">
+        <Reveal>
+          <Eyebrow center>Galeria</Eyebrow>
+          <h2 className="font-serif font-extrabold text-vinho mt-2 text-center" style={{ fontSize: "clamp(30px,5.5vw,54px)" }}>
+            O festival por dentro
+          </h2>
+          <p className="mt-4 max-w-xl mx-auto text-[15px] leading-relaxed text-grafite/75 text-center">
+            Os ambientes desta edição, antes de encherem de gente. Clique numa foto para ver de perto.
+          </p>
+        </Reveal>
+        <Reveal>
+          <div className="relative mt-10">
+            <div
+              className="pointer-events-none absolute inset-y-0 left-0 w-10 sm:w-24 z-10 bg-gradient-to-r from-creme to-transparent transition-opacity duration-300"
+              style={{ opacity: podeVoltar ? 1 : 0 }}
+            />
+            <div
+              className="pointer-events-none absolute inset-y-0 right-0 w-10 sm:w-24 z-10 bg-gradient-to-l from-creme to-transparent transition-opacity duration-300"
+              style={{ opacity: podeAvancar ? 1 : 0 }}
+            />
+
+            <button
+              type="button"
+              aria-label="Voltar fotos"
+              onClick={() => mover(-1)}
+              disabled={!podeVoltar}
+              className="hidden sm:grid absolute left-1 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-creme shadow-lg border border-creme-soft place-items-center text-vinho transition-all duration-300 hover:scale-105 hover:bg-white disabled:opacity-0 disabled:pointer-events-none"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M15 5l-7 7 7 7" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              aria-label="Avançar fotos"
+              onClick={() => mover(1)}
+              disabled={!podeAvancar}
+              className="hidden sm:grid absolute right-1 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-creme shadow-lg border border-creme-soft place-items-center text-vinho transition-all duration-300 hover:scale-105 hover:bg-white disabled:opacity-0 disabled:pointer-events-none"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            <div
+              ref={trackRef}
+              onScroll={medirScroll}
+              className="flex gap-3 overflow-x-auto pb-3 snap-x snap-mandatory scroll-px-5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+              style={{ maskImage: "linear-gradient(to right, transparent, black 4%, black 96%, transparent)", WebkitMaskImage: "linear-gradient(to right, transparent, black 4%, black 96%, transparent)" }}
+            >
+              {galeria.map((src, i) => (
+                <button
+                  key={src}
+                  data-card
+                  type="button"
+                  onClick={() => setAberto(i)}
+                  className="group relative shrink-0 snap-start rounded-2xl overflow-hidden frame-real foto-grain text-left w-[72vw] sm:w-[300px] md:w-[340px] aspect-[4/3]"
+                  aria-label={`Ver foto ${i + 1} de ${total} em tamanho grande`}
+                >
+                  <img
+                    src={src} alt="Ambiente do festival" loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 foto-real"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dourado/0 opacity-0 group-hover:opacity-100 group-hover:from-dourado/30 to-transparent transition-opacity duration-500" />
+                  <div className="absolute inset-0 grid place-items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="w-11 h-11 rounded-full bg-creme/90 grid place-items-center shadow-lg scale-90 group-hover:scale-100 transition-transform duration-300">
+                      <svg viewBox="0 0 24 24" className="w-5 h-5 text-vinho" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7" />
+                        <path d="M21 21l-4.3-4.3" strokeLinecap="round" />
+                        <path d="M11 8v6M8 11h6" strokeLinecap="round" />
+                      </svg>
+                    </span>
+                  </div>
+                </button>
+              ))}
+            </div>
+
+            <div className="mt-4 h-[3px] w-full max-w-[220px] mx-auto rounded-full bg-creme-soft overflow-hidden">
+              <div
+                className="h-full rounded-full bg-dourado transition-[width] duration-150 ease-out"
+                style={{ width: `${8 + progresso * 92}%` }}
+              />
+            </div>
+          </div>
+        </Reveal>
+      </div>
+
+      <AnimatePresence>
+        {aberto !== null && (
+          <motion.div
+            className="fixed inset-0 z-[70] bg-[#1a0605]/95 backdrop-blur-sm grid place-items-center px-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            onClick={() => setAberto(null)}
+          >
+            <button
+              type="button"
+              aria-label="Fechar"
+              onClick={() => setAberto(null)}
+              className="absolute top-5 right-5 w-11 h-11 rounded-full bg-creme/10 hover:bg-creme/20 grid place-items-center text-creme transition-colors"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M5 5l14 14M19 5L5 19" strokeLinecap="round" />
+              </svg>
+            </button>
+
+            <button
+              type="button"
+              aria-label="Foto anterior"
+              onClick={(e) => { e.stopPropagation(); setAberto((i) => (i === null ? i : (i - 1 + total) % total)); }}
+              className="absolute left-3 md:left-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-creme/10 hover:bg-creme/20 grid place-items-center text-creme transition-colors"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M15 5l-7 7 7 7" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              aria-label="Próxima foto"
+              onClick={(e) => { e.stopPropagation(); setAberto((i) => (i === null ? i : (i + 1) % total)); }}
+              className="absolute right-3 md:right-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-creme/10 hover:bg-creme/20 grid place-items-center text-creme transition-colors"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            <motion.div
+              key={aberto}
+              className="relative max-w-4xl max-h-[80vh] w-full"
+              initial={{ opacity: 0, scale: 0.92 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.96 }}
+              transition={{ duration: 0.35, ease: [0.19, 1, 0.22, 1] as const }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={galeria[aberto]}
+                alt="Ambiente do festival"
                 className="w-full max-h-[80vh] object-contain rounded-xl shadow-2xl foto-real"
               />
               <div className="mt-3 text-center text-[12px] tracking-[0.15em] uppercase text-creme/60">
@@ -1276,36 +1490,7 @@ export default function Landing() {
       </section>
 
       {/* ===== GALERIA ===== */}
-      <section id="galeria" className="px-5 pb-4 md:pb-8 relative overflow-hidden">
-        <img loading="lazy" src="/brand/carimbo-oliva.webp" alt="" aria-hidden="true" className="absolute -bottom-20 -right-20 w-[480px] opacity-[0.10] -rotate-[8deg] pointer-events-none select-none hidden md:block" />
-        <div className="max-w-content mx-auto relative">
-          <Reveal>
-            <Eyebrow center>Galeria</Eyebrow>
-            <h2 className="font-serif font-extrabold text-vinho mt-2 text-center" style={{ fontSize: "clamp(30px,5.5vw,54px)" }}>
-              O festival por dentro
-            </h2>
-            <p className="mt-4 max-w-xl mx-auto text-[15px] leading-relaxed text-grafite/75 text-center">
-              Os ambientes desta edição, antes de encherem de gente.
-            </p>
-          </Reveal>
-          <Reveal>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10" style={{ gridAutoFlow: "dense" }}>
-              {galeria.map((src, i) => (
-                <div key={src} className={`group relative rounded-2xl overflow-hidden aspect-[4/3] frame-real foto-grain ${i === 0 ? "md:col-span-2 md:row-span-2 md:aspect-square" : ""}`}>
-                  <img
-                    src={src} alt="Ambiente do festival" loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 foto-real"
-                    style={i % 4 !== 1 ? { filter: "url(#duotone-vl)" } : undefined}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dourado/0 opacity-0 group-hover:opacity-100 group-hover:from-dourado/30 to-transparent transition-opacity duration-500" />
-                  {i === 2 && <img loading="lazy" src="/brand/ic-alho.webp" alt="" aria-hidden="true" className="absolute bottom-2 right-2 w-9 ring-2 ring-creme/40 rounded-full drop-shadow-sm pointer-events-none select-none" />}
-                  {i === 5 && <img loading="lazy" src="/brand/ic-pao.webp" alt="" aria-hidden="true" className="absolute bottom-2 left-2 w-9 ring-2 ring-creme/40 rounded-full drop-shadow-sm pointer-events-none select-none" />}
-                </div>
-              ))}
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      <GaleriaFestival />
 
       {/* ===== CARDÁPIO E EXPOSITORES ===== */}
       <section id="cardapio" className="px-5 py-20 md:py-28 relative overflow-hidden">
