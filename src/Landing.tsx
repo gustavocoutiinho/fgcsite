@@ -194,6 +194,7 @@ const numeroVarianteItem = {
 };
 
 const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: string; cor: string; foto?: string; link?: string; instagram?: string; bio?: string; pronome?: string; status?: "aconfirmar" }[] = [
+  { nome: "Phelipe Carvalho", casa: "Curadoria gastronômica", atracao: "Embaixador São Luiz", dia: "", cor: "bg-telha", foto:"/chefs/phelipe-carvalho.webp" },
   // SEXTA
   { nome: "Georgia Santiago", casa: "Muá Tuá", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-oliva", foto: "/chefs/georgia-santiago.webp" },
   { nome: "Daniel Sabbá", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-bordo", foto: "/chefs/daniel-sabba.webp", instagram: "https://instagram.com/danielsabba", link: "/chefs/daniel-sabba" },
@@ -235,9 +236,6 @@ const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: 
   { nome: "Renata", casa: "Azucar", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-vinho", foto: "/chefs/renata-azucar.webp" },
   { nome: "Lia Quinderé", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-[#8a3d18]", foto: "/chefs/lia-quindere.webp" },
   // AINDA EM CONFIRMAÇÃO
-  { nome: "Chef Well", sub: "Wellington Teixeira", casa: "MasterChef Confeitaria", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/well.webp", instagram: "https://instagram.com/well.chef", link: "/chefs/chef-well", status: "aconfirmar" },
-  { nome: "Chef Zinda", casa: "La France", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-bordo", link: "/chefs/chef-zinda", pronome: "dela", status: "aconfirmar" },
-  { nome: "Phe", casa: "Curadoria gastronômica", atracao: "Embaixador", dia: "", cor: "bg-telha" },
 ];
 
 const instituicoes = [
@@ -275,21 +273,17 @@ const instituicoes = [
 
 const masterLogos = [
   "dorigem", "emape", "granja-regina",
-  "sao-jose", "tijuca", "opcao", "santa-clara", "stella-artois","piraque","adria"
+  "sao-jose", "tijuca", "opcao", "santa-clara", "stella-artois","piraque","adria","heineken","la-maison","galbani"
 ].map((n) => `/patrocinadores/master-${n}.webp`);
 
 const premiumLogos = [
-  "turatti", "avine", "br-spices", "brutal-fruit", "imac", "la-maison", "doritos", "madi",
+  "turatti", "avine", "br-spices", "brutal-fruit", "imac", "doritos", "madi",
   "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
-  "lecuisinier","dolcedivino","president"
+  "lecuisinier","dolcedivino","president","unimed","aperol","castelo","rio-valley"
 ].map((n) => `/patrocinadores/premium-${n}.webp`).concat([
   "/patrocinadores/logo-jackdaniels.webp",
   "/patrocinadores/logo-lor.webp",
-  "/patrocinadores/master-friboi.webp",
-  "/patrocinadores/master-jbs.webp",
-  "/impacto/iprede.webp",
-  "/impacto/ipom.webp",
-  "/impacto/icc.webp",
+  "/patrocinadores/master-friboi.webp"
 ]);
 
 const faq = [
@@ -335,12 +329,12 @@ const programacaoVarianteIcone = {
 /* grade real dos espaços do festival, por horário, sincronizada do cronograma ao vivo do portal interno (18/08/2026).
    "nota" descreve a atração (o que é servido, o formato). O campo Participação do portal, que traz o
    patrocinador do momento, NÃO entra aqui: nome de patrocinador não aparece na grade pública. */
-const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; nota?: string; patrocinadorLogo?: string; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
+const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; nota?: string; patrocinadorLogo?: string | string[]; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
   { id: "palco", nome: "Palco Gourmet", icon: "mic", grade: [
     { dia: "Sexta", slots: [
-      { h: "16h00 - 16h40", o: "Georgia Santiago", nota: "Muá Tuá + Pomar da Polpa", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Georgia Santiago", nota: "Muá Tuá + Pomar da Polpa", patrocinadorLogo: ["/patrocinadores/logo-arroztiojoao.webp", "/patrocinadores/premium-pomar.webp"], status: "confirmado" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
-      { h: "17h00 - 17h40", o: "Daniel Sabbá", nota: "Pronto Carnes", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
+      { h: "17h00 - 17h40", o: "Daniel Sabbá", nota: "Pronto Carnes", patrocinadorLogo: "/patrocinadores/premium-br-spices.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
       { h: "18h00 - 18h40", o: "Sabores de uma bela História", nota: "Phelipe Carvalho + Zena · Granja Regina", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "18h40 - 19h20", o: "A definir", status: "aconfirmar" },
@@ -356,19 +350,19 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "18h00 - 18h20", o: "A definir", status: "aconfirmar" },
       { h: "18h20 - 19h20", o: "Felipe Caputo", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "19h20 - 19h40", o: "A definir", status: "aconfirmar" },
-      { h: "19h40 - 20h20", o: "Ivan Prado", nota: "Arroz Tio João", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
+      { h: "19h40 - 20h20", o: "Ivan Prado", nota: "Arroz Tio João", patrocinadorLogo: "", status: "confirmado" },
       { h: "20h20 - 21h00", o: "Thales Romão", nota: "NOM · Molino", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
-      { h: "21h00 - 21h40", o: "Ralfo", nota: "Parrilleiro · Br Spices", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Ralfo", nota: "Parrilleiro · Br Spices", patrocinadorLogo: ["/patrocinadores/logo-arroztiojoao.webp", "/patrocinadores/premium-br-spices.webp"], status: "confirmado" },
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Domingo", slots: [
-      { h: "16h00 - 16h40", o: "Rafael Kim", nota: "Comida Asiática · Arroz Tio João", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Rafael Kim", nota: "Comida Asiática · Arroz Tio João", patrocinadorLogo: "", status: "confirmado" },
       { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
       { h: "17h00 - 17h40", o: "Matheus Vieira", nota: "Br Spices", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
       { h: "18h00 - 18h40", o: "Sabor de uma história", nota: "Chef Zinda + Phelipe Carvalho", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "aconfirmar" },
       { h: "18h40 - 19h00", o: "A definir", status: "aconfirmar" },
-      { h: "19h00 - 19h40", o: "Pepê e Diego", nota: "Br Spices", patrocinadorLogo: "/patrocinadores/logo-netumar.webp", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Pepê e Diego", nota: "Br Spices", patrocinadorLogo: "/patrocinadores/premium-br-spices.webp", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Fechamento", status: "fixo" },
       { h: "20h00 - 21h00", o: "Elcio e Bia Nagano", nota: "Oficina", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
     ]},
@@ -386,7 +380,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
       { h: "20h00 - 20h40", o: "Jardenia", nota: "D'Origem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
-      { h: "21h00 - 21h40", o: "João Filho", nota: "Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Momento Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
     ]},
     { dia: "Sábado", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
@@ -398,7 +392,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
       { h: "19h00 - 19h40", o: "Mauro Tirabosto", nota: "Whisky · São Luiz", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h40", o: "Cervejaria por Heineken", nota: "Degustação", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
+      { h: "20h00 - 20h40", o: "Momento Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
       { h: "21h00 - 21h40", o: "Carne & Vinho", nota: "Marcelo + Carlos · BTCH 746", patrocinadorLogo: "/patrocinadores/logo-butchers.webp", status: "confirmado" },
       { h: "21h50 - 22h00", o: "Fechamento", status: "fixo" },
@@ -413,15 +407,15 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
       { h: "19h00 - 19h40", o: "Momento Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "19h50 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h40", o: "Vinho para iniciantes", nota: "Domaine Montes Claros", patrocinadorLogo: "/patrocinadores/logo-montes-claros.webp", status: "confirmado" },
+      { h: "20h00 - 20h40", o: "Vinho para iniciantes", nota: "Domaine Montes Claros", patrocinadorLogo: "", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Fechamento", status: "fixo" },
     ]},
   ]},
   { id: "casa", nome: "Recebendo em Casa", icon: "home", grade: [
     { dia: "Sexta", slots: [
-      { h: "16h00 - 17h30", o: "Izabela Fiúza + Phelipe Carvalho", nota: "La Maison · São Luiz · Opção", patrocinadorLogo: "/patrocinadores/premium-la-maison.webp", status: "confirmado" },
+      { h: "16h00 - 17h30", o: "Izabela Fiúza + Phelipe Carvalho", nota: "La Maison · São Luiz · Opção", patrocinadorLogo: "/patrocinadores/master-la-maison.webp", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "Bia Araújo + João Filho", nota: "Heineken · Dry aged 1953", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
+      { h: "17h50 - 19h20", o: "Bia Araújo + João Filho", nota: "Heineken · Dry aged 1953", patrocinadorLogo: ["/patrocinadores/logo-arroztiojoao.webp", "/patrocinadores/master-friboi.webp"], status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
       { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Mona · Opção", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
     ]},
@@ -436,7 +430,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
       { h: "17h50 - 19h20", o: "Gabi Barreto + Renata (Azucar)", nota: "Dorigem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Lia Quinderé · Pagueti + Dorigem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Lia Quinderé · Pagueti + Dorigem", patrocinadorLogo: "", status: "confirmado" },
     ]},
   ]},
 ];
@@ -448,9 +442,9 @@ const produtoresLocais = [
   { nome: "Granja Regina", logo: "/produtores/granja-regina.webp" },
   { nome: "D'origem", logo: "/patrocinadores/master-dorigem.webp" },
   { nome: "M. Dias Branco", logo: "/patrocinadores/master-mdiasbranco.webp" },
-  { nome: "Galbani", logo: "/patrocinadores/premium-galbani.webp" },
+  { nome: "Galbani", logo: "/patrocinadores/master-galbani.webp" },
   { nome: "Opção", logo: "/patrocinadores/master-opcao.webp" }, 
-  { nome: "La Maison", logo: "/patrocinadores/premium-la-maison.webp" },
+  { nome: "La Maison", logo: "/patrocinadores/master-la-maison.webp" },
   { nome: "Heineken", logo: "/patrocinadores/master-heineken.webp" },
   { nome: "Emape ALimentos", logo: "/patrocinadores/master-emape.webp"}
 
@@ -1168,7 +1162,8 @@ export default function Landing() {
                   <span className="absolute top-3 left-3 text-[10px] font-bold tracking-[0.14em] px-2.5 py-1 rounded-full bg-vinho text-creme">SEXTA</span>
                 </div>
                 <div className="p-7 md:p-9 flex-1 flex flex-col justify-center">
-                  <div className="label-eyebrow font-bold uppercase text-dourado text-[11px]">Chef convidado</div>
+                  <img loading="lazy" src="/brand/logo-sao-luiz-cor.webp" alt="São Luiz" className="h-9 w-auto self-start mb-4" />
+                  <div className="label-eyebrow font-bold uppercase text-dourado text-[11px]">São luiz apresenta</div>
                   <h3 className="font-serif font-extrabold text-vinho mt-1.5" style={{ fontSize: "clamp(26px,4.5vw,38px)" }}>Claude <span className="italic text-dourado">Troisgros</span></h3>
                   <p className="text-[14px] leading-relaxed text-grafite/75 mt-2 max-w-xl">
                     A família dele ajudou a reinventar a cozinha francesa. Ele escolheu o Brasil em 1979 e, nesta sexta, sobe ao Palco Gourmet em Fortaleza.
@@ -1468,15 +1463,19 @@ export default function Landing() {
                               {s.status === "aconfirmar" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-creme-soft text-grafite/50 mt-0.5">a confirmar</span>}
                               {s.status === "confirmado" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-musgo/20 text-oliva mt-0.5">confirmado</span>}
                             </div>
-                            {s.nota && <div aria-hidden={s.status === "aconfirmar" || undefined} className={`text-[11.5px] text-grafite/55 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}>{s.nota}</div>}
                             {s.patrocinadorLogo && (
-                              <img
-                                loading="lazy"
-                                src={s.patrocinadorLogo}
-                                alt=""
-                                aria-hidden="true"
-                                className={`${s.patrocinadorLogo.includes("heineken") ? "h-12" : s.patrocinadorLogo.includes("jackdaniels") ? "h-8" : "h-6"} w-auto object-contain object-left mt-1.5 opacity-90 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}
-                              />
+                              <div className={`flex items-center gap-3 mt-1.5 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}>
+                                {(Array.isArray(s.patrocinadorLogo) ? s.patrocinadorLogo : [s.patrocinadorLogo]).map((logo) => (
+                                  <img
+                                    key={logo}
+                                    loading="lazy"
+                                    src={logo}
+                                    alt=""
+                                    aria-hidden="true"
+                                    className={`${logo.includes("heineken") || logo.includes("friboi") ? "h-12" : logo.includes("jackdaniels") ? "h-8" : "h-6"} w-auto object-contain object-left opacity-90`}
+                                  />
+                                ))}
+                              </div>
                             )}
                           </div>
                         </div>
