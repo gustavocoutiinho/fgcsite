@@ -279,7 +279,7 @@ const masterLogos = [
 const premiumLogos = [
   "turatti", "avine", "br-spices", "brutal-fruit", "imac", "doritos", "madi",
   "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
-  "lecuisinier","dolcedivino","president","unimed","aperol","castelo","rio-valley"
+  "lecuisinier","dolcedivino","president","unimed","aperol","castelo","rio-valley","bone","chivas"
 ].map((n) => `/patrocinadores/premium-${n}.webp`).concat([
   "/patrocinadores/logo-jackdaniels.webp",
   "/patrocinadores/logo-lor.webp",
@@ -376,7 +376,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
       { h: "18h00 - 18h40", o: "Leiliane", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h40", o: "Karime Loureiro", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Momento Pernod Ricard", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
       { h: "20h00 - 20h40", o: "Jardenia", nota: "D'Origem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
@@ -384,7 +384,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
     ]},
     { dia: "Sábado", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
-      { h: "16h00 - 16h40", o: "Fernanda Dantas por Coktelitas", nota: "Spritz + Campari", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Fernanda Dantas por Pernod Ricard", nota: "Spritz + Campari", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
       { h: "17h00 - 17h40", o: "Carol Barreto", nota: "Santa Clara", patrocinadorLogo: "/patrocinadores/master-santa-clara.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
@@ -407,17 +407,17 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
       { h: "19h00 - 19h40", o: "Momento Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "19h50 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h40", o: "Vinho para iniciantes", nota: "Domaine Montes Claros", patrocinadorLogo: "", status: "confirmado" },
+      { h: "20h00 - 20h40", o: "Momento Pernod Ricard", nota: "Domaine Montes Claros", patrocinadorLogo: "", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Fechamento", status: "fixo" },
     ]},
   ]},
   { id: "casa", nome: "Recebendo em Casa", icon: "home", grade: [
     { dia: "Sexta", slots: [
-      { h: "16h00 - 17h30", o: "Izabela Fiúza + Phelipe Carvalho", nota: "La Maison · São Luiz · Opção", patrocinadorLogo: "/patrocinadores/master-la-maison.webp", status: "confirmado" },
+      { h: "16h00 - 17h30", o: "Izabela Fiúza + Phelipe Carvalho + João Filho", nota: "La Maison · São Luiz · Opção", patrocinadorLogo: ["/patrocinadores/master-la-maison.webp","/patrocinadores/master-heineken.webp"], status: "confirmado" },
       { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "Bia Araújo + João Filho", nota: "Heineken · Dry aged 1953", patrocinadorLogo: ["/patrocinadores/logo-arroztiojoao.webp", "/patrocinadores/master-friboi.webp"], status: "confirmado" },
+      { h: "17h50 - 19h20", o: "Bia Araújo + Karime Loureiro", nota: "Heineken · Dry aged 1953", patrocinadorLogo: ["/patrocinadores/master-friboi.webp"], status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Mona · Opção", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Mona · Opção", patrocinadorLogo: ["/brand/logo-sao-luiz-cor.webp", "/patrocinadores/master-opcao.webp"], status: "confirmado" },
     ]},
     { dia: "Sábado", slots: [
       { h: "16h00 - 17h30", o: "Chef Luiz de França + Ana Paula Rezende", nota: "Lor · Pronto Carnes", patrocinadorLogo: "/patrocinadores/logo-lor.webp", status: "confirmado" },
@@ -430,7 +430,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
       { h: "17h50 - 19h20", o: "Gabi Barreto + Renata (Azucar)", nota: "Dorigem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Lia Quinderé · Pagueti + Dorigem", patrocinadorLogo: "", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Lia Quinderé · Pagueti + Dorigem", patrocinadorLogo: "/patrocinadores/logo-pagueti.webp", status: "confirmado" },
     ]},
   ]},
 ];
