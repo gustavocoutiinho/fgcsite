@@ -1852,7 +1852,7 @@ export default function Landing() {
           <div className="h-px w-full max-w-xs mx-auto bg-gradient-to-r from-transparent via-dourado/40 to-transparent my-7" aria-hidden="true" />
           <div className="flex flex-col items-center gap-3 text-[13px] text-creme/70">
             <a href="https://instagram.com/festivalcostumegourmet" target="_blank" rel="noopener" className="hover:text-dourado">Instagram <b className="text-dourado">@festivalcostumegourmet</b></a>
-            <a href="https://wa.me/5585999842234" target="_blank" rel="noopener" className="hover:text-dourado">Comercial <b className="text-dourado">(85) 99984-2234</b></a>
+            <a href="mailto:festivalsaoluiz@mslz.com.br" target="_blank" rel="noopener" className="hover:text-dourado">Contato  <b className="text-dourado">festivalsaoluiz@mslz.com.br</b></a>
           </div>
           <div className="text-[11px] leading-relaxed text-creme/45 mt-7">
             Festival Costume Gourmet 2026 · Apresentado pelo São Luiz Supermercado, 100 anos<br />
