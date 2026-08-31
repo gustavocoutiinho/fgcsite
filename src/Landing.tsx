@@ -274,12 +274,12 @@ const instituicoes = [
 ];
 
 const masterLogos = [
-  "moura","dorigem", "emape", "granja-regina",
+  "dorigem", "emape", "granja-regina",
   "sao-jose", "tijuca", "opcao", "santa-clara", "stella-artois","piraque","adria","heineken","la-maison","galbani"
 ].map((n) => `/patrocinadores/master-${n}.webp`);
 
 const premiumLogos = [
-  "santo-oleo","campari","turatti", "avine", "br-spices", "brutal-fruit", "imac", "doritos", "madi",
+  "moura","santo-oleo","campari","turatti", "avine", "br-spices", "brutal-fruit", "imac", "doritos", "madi",
   "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
   "lecuisinier","dolcedivino","president","unimed","aperol","castelo","rio-valley","bone","chivas"
 ].map((n) => `/patrocinadores/premium-${n}.webp`).concat([
