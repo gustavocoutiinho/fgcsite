@@ -224,6 +224,7 @@ const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: 
   { nome: "Ana Paula Rezende", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-oliva", foto: "/chefs/ana-paula-rezende.webp" },
   { nome: "Dani Gondim", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-bordo", foto: "/chefs/dani-gondim.webp" },
   { nome: "Felipe Cicconato", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-[#8a3d18]", foto: "/chefs/felipe-cicconato.webp" },
+  { nome: "Frederico Jayme", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-vinho", foto: "/chefs/frederico-jayme.webp" },
   // DOMINGO
   { nome: "Matheus Vieira", casa: "Arroz Tio João", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-oliva", foto: "/chefs/matheus-vieira.webp", instagram: "https://instagram.com/chefmatheusvieira" },
   { nome: "Pepê", sub: "Pepê e Diego", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-[#8a3d18]", foto: "/chefs/pepe.webp", link: "/chefs/pepe-e-diego", pronome: "deles" },
@@ -231,6 +232,7 @@ const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: 
   { nome: "Elcio e Bia Nagano", sub: "Oficina", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-bordo", foto: "/chefs/elcio-e-bia-nagano.webp" },
   { nome: "Rafael Kim", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/rafael-kim.webp" },
   { nome: "Marco Ferrari", casa: "Opção", atracao: "Piano Bar", dia: "DOM", cor: "bg-vinho", foto: "/chefs/marco-ferrari.webp" },
+  { nome: "Clovis Holanda", atracao: "Piano Bar", dia: "DOM", cor: "bg-oliva", foto: "/chefs/clovis-holanda.webp" },
   { nome: "Marina Araújo", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-oliva", foto: "/chefs/marina-araujo.webp" },
   { nome: "Gabi Barreto", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-bordo", foto: "/chefs/gabi-barreto.webp" },
   { nome: "Renata", casa: "Azucar", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-vinho", foto: "/chefs/renata-azucar.webp" },
@@ -272,12 +274,12 @@ const instituicoes = [
 ];
 
 const masterLogos = [
-  "dorigem", "emape", "granja-regina",
+  "moura","dorigem", "emape", "granja-regina",
   "sao-jose", "tijuca", "opcao", "santa-clara", "stella-artois","piraque","adria","heineken","la-maison","galbani"
 ].map((n) => `/patrocinadores/master-${n}.webp`);
 
 const premiumLogos = [
-  "turatti", "avine", "br-spices", "brutal-fruit", "imac", "doritos", "madi",
+  "santo-oleo","campari","turatti", "avine", "br-spices", "brutal-fruit", "imac", "doritos", "madi",
   "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
   "lecuisinier","dolcedivino","president","unimed","aperol","castelo","rio-valley","bone","chivas"
 ].map((n) => `/patrocinadores/premium-${n}.webp`).concat([
@@ -446,7 +448,8 @@ const produtoresLocais = [
   { nome: "Opção", logo: "/patrocinadores/master-opcao.webp" }, 
   { nome: "La Maison", logo: "/patrocinadores/master-la-maison.webp" },
   { nome: "Heineken", logo: "/patrocinadores/master-heineken.webp" },
-  { nome: "Emape ALimentos", logo: "/patrocinadores/master-emape.webp"}
+  { nome: "Emape ALimentos", logo: "/patrocinadores/master-emape.webp"},
+  { nome: "Moura Dubeux", logo: "/patrocinadores/master-moura.webp"}
 
 ];
 
