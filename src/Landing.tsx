@@ -409,7 +409,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
       { h: "19h00 - 19h40", o: "Momento Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "19h50 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h40", o: "Momento Pernod Ricard", nota: "Domaine Montes Claros", patrocinadorLogo: "", status: "confirmado" },
+      { h: "20h00 - 20h40", o: "Momento Pernod Ricard", nota: "Domaine Montes Claros", patrocinadorLogo: "/patrocinadores/premium-chivas.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Fechamento", status: "fixo" },
     ]},
   ]},
