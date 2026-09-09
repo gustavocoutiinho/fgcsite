@@ -984,6 +984,7 @@ const navLinks: [string, string][] = [
   ["#galeria", "Galeria"],
   ["#cardapio", "Cardápio"],
   ["#social", "Impacto"],
+  ["#b2b", "Imprensa"],
   ["#ingressos", "Ingressos"],
   ["#visite", "Visite"],
   ["#faq", "FAQ"],
@@ -1051,8 +1052,8 @@ export default function Landing() {
         <div className="max-w-content mx-auto px-5 h-16 flex items-center justify-between">
           <span className="w-16 sm:w-24 md:w-40 shrink-0" aria-hidden="true" />
           <nav className="hidden lg:flex items-center gap-6 text-[13px] font-semibold tracking-wide text-grafite/80">
-            {navLinks.slice(0, 7).map(([href, label]) => (
-              <a key={href} href={href} className="hover:text-dourado transition">{label}</a>
+            {navLinks.slice(0, 8).map(([href, label]) => (
+              <a key={href} href={href} onClick={href === "#b2b" ? () => setLeadOpen("imprensa") : undefined} className="hover:text-dourado transition">{label}</a>
             ))}
           </nav>
           <div className="flex items-center gap-2">
@@ -1068,7 +1069,7 @@ export default function Landing() {
           <div className="lg:hidden bg-creme border-t border-creme-soft shadow-xl">
             <div className="max-w-content mx-auto px-5 py-3 grid grid-cols-2 gap-x-4 gap-y-1">
               {navLinks.map(([href, label]) => (
-                <a key={href} href={href} onClick={() => setMenuOpen(false)} className="py-2.5 text-[14px] font-bold text-vinho hover:text-dourado border-b border-creme-soft">{label}</a>
+                <a key={href} href={href} onClick={() => { setMenuOpen(false); if (href === "#b2b") setLeadOpen("imprensa"); }} className="py-2.5 text-[14px] font-bold text-vinho hover:text-dourado border-b border-creme-soft">{label}</a>
               ))}
             </div>
           </div>
