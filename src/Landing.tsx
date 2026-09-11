@@ -384,7 +384,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
       { h: "20h00 - 20h40", o: "Beatriz Marcondes", nota: "D'Origem", subtitulo: "Remy Cointreau / Interfood", patrocinadorLogo: "/patrocinadores/master-opcao.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
-      { h: "21h00 - 21h40", o: "Momento Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
+      { h: "21h00 - 21h40", o: "Momento Heineken por João Filho", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
     ]},
     { dia: "Sábado", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
