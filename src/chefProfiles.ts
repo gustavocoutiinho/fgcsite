@@ -169,10 +169,10 @@ export const chefProfiles: Record<string, ChefProfileData> = {
     slug: "thales-romao",
     primeiroNome: "Thales",
     resto: "Romão",
-    dia: "SÁBADO",
+    dia: "SEXTA",
     cor: "bg-[#8a3d18]",
-    bioCurta: "Do Crato para o litoral de Fortaleza: o chef do NOM Frutos do Mar e da padaria Molino sobe ao Palco Gourmet no sábado do Costume Gourmet 2026.",
-    metaDescription: "Conheça Thales Romão, chef do NOM Frutos do Mar e da padaria Molino em Fortaleza, que sobe ao Palco Gourmet no sábado do Festival Costume Gourmet 2026.",
+    bioCurta: "Do Crato para o litoral de Fortaleza: o chef do NOM Frutos do Mar e da padaria Molino sobe ao Palco Gourmet na sexta do Costume Gourmet 2026.",
+    metaDescription: "Conheça Thales Romão, chef do NOM Frutos do Mar e da padaria Molino em Fortaleza, que sobe ao Palco Gourmet na sexta do Festival Costume Gourmet 2026.",
     tituloPagina: "Thales Romão no Festival Costume Gourmet 2026",
     artigo: [
       {
@@ -213,9 +213,9 @@ export const chefProfiles: Record<string, ChefProfileData> = {
         paragrafos: [
           "É justamente esse histórico de participação em eventos gastronômicos que faz da presença de Thales Romão no Festival Costume Gourmet 2026 algo natural, e não uma estreia. O festival acontece entre os dias 18 e 20 de setembro de 2026, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026, uma efeméride que dá ao evento um peso simbólico especial nesta edição.",
           "O Costume Gourmet é estruturado em três espaços centrais. O Palco Gourmet funciona como uma cozinha show, onde um chef diferente cozinha ao vivo a cada dia de evento, expondo ao público não só o prato pronto, mas o processo, a técnica e as escolhas por trás dele. Há também o Piano Bar, dedicado a drinks e música ao vivo, e o Recebendo em Casa, um jantar intimista para até 30 pessoas conduzido por um chef convidado, no formato mais próximo possível de uma mesa de casa, ainda que dentro da estrutura do festival.",
-          "Thales Romão se apresenta no Palco Gourmet no sábado do festival, levando para o público em tempo real a mesma lógica que aplica na cozinha do NOM Frutos do Mar: produto do litoral cearense tratado com técnica, atenção ao detalhe e respeito pela cadeia que traz o peixe do mar até o prato. É provável que o público reconheça ali ecos do cardápio que já assina em Fortaleza, adaptados ao formato de show cooking, mais direto e mais exposto ao olhar de quem assiste.",
+          "Thales Romão se apresenta no Palco Gourmet na sexta do festival, levando para o público em tempo real a mesma lógica que aplica na cozinha do NOM Frutos do Mar: produto do litoral cearense tratado com técnica, atenção ao detalhe e respeito pela cadeia que traz o peixe do mar até o prato. É provável que o público reconheça ali ecos do cardápio que já assina em Fortaleza, adaptados ao formato de show cooking, mais direto e mais exposto ao olhar de quem assiste.",
           "Uma frase do próprio chef, usada no site oficial do festival, resume bem o espírito com que ele encara esse tipo de apresentação ao vivo: \"Transforme o impossível em pequenos possíveis\". É uma síntese que também descreve boa parte da carreira de Thales até aqui, entre a cozinha do mar e a padaria, entre a sala de aula e o fogão, sempre resolvendo, um passo de cada vez, o que parecia distante no início.",
-          "Vale lembrar que o Costume Gourmet tem uma característica que o diferencia de boa parte dos eventos gastronômicos do país: 100% da renda da bilheteria é revertida para três instituições sociais de Fortaleza, o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC). Isso significa que assistir Thales Romão cozinhar ao vivo no Palco Gourmet, no sábado do festival, é também parte de um gesto coletivo maior, que transforma gastronomia em apoio direto a causas sociais da cidade onde o chef construiu sua carreira. Mais informações sobre a programação completa estão disponíveis no site oficial do evento, costumegourmet.minerbz.com.br.",
+          "Vale lembrar que o Costume Gourmet tem uma característica que o diferencia de boa parte dos eventos gastronômicos do país: 100% da renda da bilheteria é revertida para três instituições sociais de Fortaleza, o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC). Isso significa que assistir Thales Romão cozinhar ao vivo no Palco Gourmet, na sexta do festival, é também parte de um gesto coletivo maior, que transforma gastronomia em apoio direto a causas sociais da cidade onde o chef construiu sua carreira. Mais informações sobre a programação completa estão disponíveis no site oficial do evento, costumegourmet.minerbz.com.br.",
         ],
       },
     ],
