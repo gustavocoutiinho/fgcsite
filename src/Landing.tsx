@@ -193,49 +193,51 @@ const numeroVarianteItem = {
   },
 };
 
-const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: string; cor: string; foto?: string; link?: string; instagram?: string; bio?: string; pronome?: string; status?: "aconfirmar" }[] = [
-  { nome: "Phelipe Carvalho", casa: "Curadoria gastronômica", atracao: "Embaixador São Luiz", dia: "", cor: "bg-telha", foto:"/chefs/phelipe-carvalho.webp" },
+const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: string; cor: string; foto?: string; link?: string; instagram?: string; instagram2?: string; bio?: string; pronome?: string; status?: "aconfirmar" }[] = [
+  { nome: "Phelipe Carvalho", casa: "Curadoria gastronômica", atracao: "Embaixador São Luiz", dia: "", cor: "bg-telha", foto:"/chefs/phelipe-carvalho.webp", instagram: "https://www.instagram.com/phecarvalhopaduo/" },
   // SEXTA
-  { nome: "Georgia Santiago", casa: "Muá Tuá", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-oliva", foto: "/chefs/georgia-santiago.webp" },
+  { nome: "Georgia Santiago", casa: "Muá Tuá", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-oliva", foto: "/chefs/georgia-santiago.webp", instagram: "https://www.instagram.com/georgiasantiago/" },
   { nome: "Daniel Sabbá", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-bordo", foto: "/chefs/daniel-sabba.webp", instagram: "https://instagram.com/danielsabba", link: "/chefs/daniel-sabba" },
-  { nome: "Zena", sub: "Sabores de uma bela História", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-vinho", foto: "/chefs/zena.webp" },
-  { nome: "Claude Troisgros", casa: "São Luiz", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-vinho", foto: "/chefs/claude-troisgros.webp", link: "/chefs/claude-troisgros" },
-  { nome: "Brunno Malheiros", casa: "Cheiro do Pão", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-oliva", foto: "/chefs/brunno-malheiros.webp", link: "/chefs/brunno-malheiros" },
-  { nome: "Edil Costa", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-[#8a3d18]", foto: "/chefs/edil-costa.webp" },
-  { nome: "Maria Braz", atracao: "Piano Bar", dia: "SEX", cor: "bg-bordo", foto: "/chefs/maria-braz.webp" },
-  { nome: "Marbenia", atracao: "Piano Bar", dia: "SEX", cor: "bg-vinho", foto: "/chefs/marbenia.webp" },
-  { nome: "Leiliane", casa: "Wineladies", atracao: "Piano Bar", dia: "SEX", cor: "bg-oliva", foto: "/chefs/leiliane.webp" },
-  { nome: "Karime Loureiro", casa: "Alentejo", atracao: "Piano Bar", dia: "SEX", cor: "bg-bordo", foto: "/chefs/karime-loureiro.webp" },
-  { nome: "Jardenia", casa: "D'Origem", atracao: "Piano Bar", dia: "SEX", cor: "bg-vinho", foto: "/chefs/jardenia.webp" },
-  { nome: "Izabela Fiúza", casa: "La Maison · São Luiz", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-oliva", foto: "/chefs/isabela-fiuza.webp" },
-  { nome: "Bia Araújo", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-vinho", foto: "/chefs/bia-araujo.webp" },
-  { nome: "Mona", casa: "Netas de Olga", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-bordo", foto: "/chefs/mona.webp" },
+  { nome: "Zena", sub: "Sabores de uma bela História", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-vinho", foto: "/chefs/zena.webp", instagram: "https://www.instagram.com/restaurante.zena/" },
+  { nome: "Claude Troisgros", casa: "São Luiz", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-vinho", foto: "/chefs/claude-troisgros.webp", link: "/chefs/claude-troisgros", instagram: "https://www.instagram.com/c_troisgros/?hl=pt" },
+  { nome: "Brunno Malheiros", casa: "Cheiro do Pão", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-oliva", foto: "/chefs/brunno-malheiros.webp", link: "/chefs/brunno-malheiros", instagram: "https://www.instagram.com/brunnopadeiro/" },
+  { nome: "Edil Costa", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-[#8a3d18]", foto: "/chefs/edil-costa.webp", instagram: "https://www.instagram.com/edilcostaoficial/" },
+  { nome: "Maria Braz", atracao: "Piano Bar", dia: "SEX", cor: "bg-bordo", foto: "/chefs/maria-braz.webp", instagram: "https://www.instagram.com/mariabrazmb/" },
+  { nome: "Marbenia", atracao: "Piano Bar", dia: "SEX", cor: "bg-vinho", foto: "/chefs/marbenia.webp", instagram: "https://www.instagram.com/marbenia/" },
+  { nome: "Leiliane", casa: "Wineladies", atracao: "Piano Bar", dia: "SEX", cor: "bg-oliva", foto: "/chefs/leiliane.webp", instagram: "https://www.instagram.com/leilianepinheiro/" },
+  { nome: "Karime Loureiro", casa: "Alentejo", atracao: "Piano Bar", dia: "SEX", cor: "bg-bordo", foto: "/chefs/karime-loureiro.webp", instagram: "https://www.instagram.com/karimeloureiro/" },
+  // { nome: "Jardenia", casa: "D'Origem", atracao: "Piano Bar", dia: "SEX", cor: "bg-vinho", foto: "/chefs/jardenia.webp" },
+  { nome: "Izabela Fiúza", casa: "La Maison · São Luiz", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-oliva", foto: "/chefs/isabela-fiuza.webp", instagram: "https://www.instagram.com/izabelafiuza/" },
+  { nome: "Bia Araújo", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-vinho", foto: "/chefs/bia-araujo.webp", instagram: "https://www.instagram.com/beatricearaujo/" },
+  { nome: "Mona", casa: "Netas de Olga", atracao: "Recebendo em Casa", dia: "SEX", cor: "bg-bordo", foto: "/chefs/mona.webp", instagram: "https://www.instagram.com/asnetasdeolga/" },
   // SÁBADO
-  { nome: "Matu Macêdo", sub: "Sabor de uma bela história", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-vinho", foto: "/chefs/matu-macedo.webp" },
+  { nome: "Matu Macêdo", sub: "Sabor de uma bela história", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-vinho", foto: "/chefs/matu-macedo.webp", instagram: "https://www.instagram.com/mattumacedo/" },
   { nome: "Felipe Caputo", casa: "São Luiz", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-vinho", foto: "/chefs/felipe-caputo.webp", instagram: "https://instagram.com/felipecaputo", link: "/chefs/felipe-caputo" },
   { nome: "Thales Romão", casa: "NOM · Molino Padaria Artesanal", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-[#8a3d18]", foto: "/chefs/thales-romao.webp", instagram: "https://instagram.com/thalesromao_", link: "/chefs/thales-romao" },
-  { nome: "Ralfo", casa: "Parrilleiro", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-bordo", foto: "/chefs/ralfo.webp" },
-  { nome: "Marco Frossard", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-[#8a3d18]", foto: "/chefs/marco-frossard.webp" },
-  { nome: "Fernanda Dantas", casa: "Coktelitas", atracao: "Piano Bar", dia: "SAB", cor: "bg-oliva", foto: "/chefs/fernanda-dantas.webp" },
-  { nome: "Carol Barreto", casa: "Santa Clara", atracao: "Piano Bar", dia: "SAB", cor: "bg-vinho", foto: "/chefs/carol-barreto.webp" },
-  { nome: "Mauro Tirabosto", sub: "Degustação de whisky", atracao: "Piano Bar", dia: "SAB", cor: "bg-bordo", foto: "/chefs/mauro-tirabosto.webp" },
-  { nome: "Luiz de França", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-vinho", foto: "/chefs/luiz-de-franca.webp" },
-  { nome: "Ana Paula Rezende", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-oliva", foto: "/chefs/ana-paula-rezende.webp" },
-  { nome: "Dani Gondim", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-bordo", foto: "/chefs/dani-gondim.webp" },
-  { nome: "Felipe Cicconato", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-[#8a3d18]", foto: "/chefs/felipe-cicconato.webp" },
-  { nome: "Frederico Jayme", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-vinho", foto: "/chefs/frederico-jayme.webp" },
+  { nome: "Ralfo", casa: "Parrilleiro", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-bordo", foto: "/chefs/ralfo.webp", instagram: "https://www.instagram.com/chefralfo/" },
+  { nome: "Marco Frossard", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-[#8a3d18]", foto: "/chefs/marco-frossard.webp", instagram: "https://www.instagram.com/chefmarcofrossard/" },
+  { nome: "Fernanda Dantas", casa: "Coktelitas", atracao: "Piano Bar", dia: "SAB", cor: "bg-oliva", foto: "/chefs/fernanda-dantas.webp", instagram: "https://www.instagram.com/coktelitasdrinks/" },
+  { nome: "Carol Barreto", casa: "Santa Clara", atracao: "Piano Bar", dia: "SAB", cor: "bg-vinho", foto: "/chefs/carol-barreto.webp", instagram: "https://www.instagram.com/carolbarreto3/" },
+  { nome: "Mauro Tirabosco", sub: "Degustação de whisky", atracao: "Piano Bar", dia: "SAB", cor: "bg-bordo", foto: "/chefs/mauro-tirabosto.webp", instagram: "https://www.instagram.com/maurotirabosco/" },
+  { nome: "Luiz de França", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-vinho", foto: "/chefs/luiz-de-franca.webp", instagram: "https://www.instagram.com/chef_luizdefranca/" },
+  { nome: "Ana Paula Rezende", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-oliva", foto: "/chefs/ana-paula-rezende.webp", instagram: "https://www.instagram.com/chefannapaularezende/" },
+  { nome: "Dani Gondim", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-bordo", foto: "/chefs/dani-gondim.webp", instagram: "https://www.instagram.com/dani.gondim_/" },
+  { nome: "Felipe Cicconato", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-[#8a3d18]", foto: "/chefs/felipe-cicconato.webp", instagram: "https://www.instagram.com/felipecicconato/" },
+  { nome: "Frederico Jayme", atracao: "Recebendo em Casa", dia: "SAB", cor: "bg-vinho", foto: "/chefs/frederico-jayme.webp", instagram: "https://www.instagram.com/cheffredericojayme/" },
   // DOMINGO
   { nome: "Matheus Vieira", casa: "Arroz Tio João", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-oliva", foto: "/chefs/matheus-vieira.webp", instagram: "https://instagram.com/chefmatheusvieira" },
-  { nome: "Pepê", sub: "Pepê e Diego", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-[#8a3d18]", foto: "/chefs/pepe.webp", link: "/chefs/pepe-e-diego", pronome: "deles" },
-  { nome: "Diego", sub: "Pepê e Diego", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/diego.webp", link: "/chefs/pepe-e-diego", pronome: "deles" },
-  { nome: "Elcio e Bia Nagano", sub: "Oficina", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-bordo", foto: "/chefs/elcio-e-bia-nagano.webp" },
-  { nome: "Rafael Kim", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/rafael-kim.webp" },
-  { nome: "Marco Ferrari", casa: "Opção", atracao: "Piano Bar", dia: "DOM", cor: "bg-vinho", foto: "/chefs/marco-ferrari.webp" },
-  { nome: "Clovis Holanda", atracao: "Piano Bar", dia: "DOM", cor: "bg-oliva", foto: "/chefs/clovis-holanda.webp" },
-  { nome: "Marina Araújo", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-oliva", foto: "/chefs/marina-araujo.webp" },
-  { nome: "Gabi Barreto", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-bordo", foto: "/chefs/gabi-barreto.webp" },
-  { nome: "Renata", casa: "Azucar", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-vinho", foto: "/chefs/renata-azucar.webp" },
-  { nome: "Lia Quinderé", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-[#8a3d18]", foto: "/chefs/lia-quindere.webp" },
+  { nome: "Pepê", sub: "Pepê e Diego", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-[#8a3d18]", foto: "/chefs/pepe.webp", link: "/chefs/pepe-e-diego", pronome: "deles", instagram: "https://www.instagram.com/pepemva/" },
+  { nome: "Diego", sub: "Pepê e Diego", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/diego.webp", link: "/chefs/pepe-e-diego", pronome: "deles", instagram: "https://www.instagram.com/_diegofreire/" },
+  { nome: "Elcio e Bia Nagano", sub: "Oficina", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-bordo", foto: "/chefs/elcio-e-bia-nagano.webp", instagram: "https://www.instagram.com/elcionagano/", instagram2: "https://www.instagram.com/bianagano/" },
+  { nome: "DJ Itaque", sub: "Participação com Elcio e Bia Nagano", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/dj-itaque.webp", instagram: "https://www.instagram.com/itaque/" },
+  { nome: "Rafael Kim", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/rafael-kim.webp", instagram: "https://www.instagram.com/_rafaelkim/" },
+  { nome: "Chef Zinda", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-oliva", foto: "/chefs/chef-zinda.webp", instagram: "https://www.instagram.com/restaurante.lafrance/" },
+  { nome: "Marco Ferrari", casa: "Opção", atracao: "Piano Bar", dia: "DOM", cor: "bg-vinho", foto: "/chefs/marco-ferrari.webp", instagram: "https://www.instagram.com/vinhofortaleza/" },
+  { nome: "Clovis Holanda", atracao: "Piano Bar", dia: "DOM", cor: "bg-oliva", foto: "/chefs/clovis-holanda.webp", instagram: "https://www.instagram.com/clovisholandajornalista/" },
+  { nome: "Marina Araújo", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-oliva", foto: "/chefs/marina-araujo.webp", instagram: "https://www.instagram.com/marinaaraujo/" },
+  { nome: "Gabi Barreto", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-bordo", foto: "/chefs/gabi-barreto.webp", instagram: "https://www.instagram.com/gabibarretoa_/" },
+  { nome: "Renata", casa: "", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-vinho", foto: "/chefs/renata-azucar.webp", instagram: "https://www.instagram.com/azucar.atelier/" },
+  { nome: "Lia Quinderé", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-[#8a3d18]", foto: "/chefs/lia-quindere.webp", instagram: "https://www.instagram.com/liaquindere/" },
   // AINDA EM CONFIRMAÇÃO
 ];
 
@@ -278,7 +280,7 @@ const masterLogos = [
 ].map((n) => `/patrocinadores/master-${n}.webp`);
 
 const premiumLogos = [
-  "byd","moncoc","alentejo","luckys","haciendas","nescau-protein","moura","santo-oleo","campari","turatti", "avine", "br-spices", "brutal-fruit", "imac", "doritos", "madi",
+  "kimura","byd","moncoc","alentejo","luckys","haciendas","nescau-protein","moura","santo-oleo","campari","turatti", "avine", "br-spices", "brutal-fruit", "imac", "doritos", "madi",
   "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
   "lecuisinier","dolcedivino","president","unimed","aperol","castelo","rio-valley","bone","chivas"
 ].map((n) => `/patrocinadores/premium-${n}.webp`).concat([
@@ -330,15 +332,15 @@ const programacaoVarianteIcone = {
 /* grade real dos espaços do festival, por horário, sincronizada do cronograma ao vivo do portal interno (18/08/2026).
    "nota" descreve a atração (o que é servido, o formato). O campo Participação do portal, que traz o
    patrocinador do momento, NÃO entra aqui: nome de patrocinador não aparece na grade pública. */
-const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; nota?: string; patrocinadorLogo?: string | string[]; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
+const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: string; slots: { h: string; o: string; nota?: string; subtitulo?: string; patrocinadorLogo?: string | string[]; status: "confirmado" | "aconfirmar" | "fixo" | "intervalo" }[] }[] }[] = [
   { id: "palco", nome: "Palco Gourmet", icon: "mic", grade: [
     { dia: "Sexta", slots: [
       { h: "16h00 - 16h40", o: "Georgia Santiago", nota: "Muá Tuá + Pomar da Polpa", patrocinadorLogo: ["/patrocinadores/logo-arroztiojoao.webp", "/patrocinadores/premium-pomar.webp"], status: "confirmado" },
-      { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
+      { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
       { h: "17h00 - 17h40", o: "Daniel Sabbá", nota: "Pronto Carnes", patrocinadorLogo: "/patrocinadores/premium-br-spices.webp", status: "confirmado" },
-      { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
-      { h: "18h00 - 18h40", o: "Sabores de uma bela História", nota: "Phelipe Carvalho + Zena · Granja Regina", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
-      { h: "18h40 - 19h20", o: "A definir", status: "aconfirmar" },
+      { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
+      { h: "18h00 - 18h40", o: "Chef Zena + Zenilda Bezerra", nota: "Zena + Zenilda Bezerra · Granja Regina", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
+      { h: "18h40 - 19h20", o: "Intervalo", status: "intervalo" },
       { h: "19h20 - 20h20", o: CHEF_SURPRESA_REVELADO ? "Claude Troisgros" : "Chef convidado surpresa", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "20h00 - 20h40", o: "Brunno Malheiros", nota: "Cheiro do Pão", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "21h00 - 21h40", o: "Edil Costa", nota: "Le Cuiser · Netumar", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
@@ -346,26 +348,26 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
     ]},
     { dia: "Sábado", slots: [
       { h: "16h00 - 16h40", o: "Marco Frossard", nota: "Prokitchen", patrocinadorLogo: "/patrocinadores/logo-prokitchen.webp", status: "confirmado" },
-      { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
-      { h: "17h00 - 18h00", o: "Sabor de uma bela história", nota: "Matu Macêdo + Phelipe Carvalho · Pomar da Polpa", patrocinadorLogo: "/patrocinadores/premium-pomar.webp", status: "confirmado" },
-      { h: "18h00 - 18h20", o: "A definir", status: "aconfirmar" },
+      { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
+      { h: "17h00 - 18h00", o: "Matu Macêdo + Phelipe Carvalho", nota: "Matu Macêdo + Phelipe Carvalho · Pomar da Polpa", patrocinadorLogo: "/patrocinadores/premium-pomar.webp", status: "confirmado" },
+      { h: "18h00 - 18h20", o: "Intervalo", status: "intervalo" },
       { h: "18h20 - 19h20", o: "Felipe Caputo", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
-      { h: "19h20 - 19h40", o: "A definir", status: "aconfirmar" },
-      { h: "19h40 - 20h20", o: "A definir", status: "aconfirmar" },
+      { h: "19h20 - 19h40", o: "Intervalo", status: "intervalo" },
+      { h: "19h40 - 20h20", o: "Bárbara Saunders", status: "confirmado" },
       { h: "20h20 - 21h00", o: "Thales Romão", nota: "NOM · Molino", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "21h00 - 21h40", o: "Ralfo", nota: "Parrilleiro · Br Spices", patrocinadorLogo: ["/patrocinadores/logo-arroztiojoao.webp", "/patrocinadores/premium-br-spices.webp"], status: "confirmado" },
       { h: "21h40 - 22h00", o: "Fechamento", status: "fixo" },
     ]},
     { dia: "Domingo", slots: [
       { h: "16h00 - 16h40", o: "Rafael Kim", nota: "Comida Asiática · Arroz Tio João", patrocinadorLogo: "", status: "confirmado" },
-      { h: "16h40 - 17h00", o: "A definir", status: "aconfirmar" },
+      { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
       { h: "17h00 - 17h40", o: "Matheus Vieira", nota: "Br Spices", patrocinadorLogo: "/patrocinadores/logo-arroztiojoao.webp", status: "confirmado" },
-      { h: "17h40 - 18h00", o: "A definir", status: "aconfirmar" },
-      { h: "18h00 - 18h40", o: "Sabor de uma história", nota: "Chef Zinda + Phelipe Carvalho", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "aconfirmar" },
-      { h: "18h40 - 19h00", o: "A definir", status: "aconfirmar" },
+      { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
+      { h: "18h00 - 18h40", o: "Chef Zinda + Phelipe Carvalho", nota: "Chef Zinda + Phelipe Carvalho", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
+      { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
       { h: "19h00 - 19h40", o: "Pepê e Diego", nota: "Br Spices", patrocinadorLogo: "/patrocinadores/premium-br-spices.webp", status: "confirmado" },
-      { h: "19h40 - 20h00", o: "Fechamento", status: "fixo" },
-      { h: "20h00 - 21h00", o: "Elcio e Bia Nagano", nota: "Oficina", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
+      { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
+      { h: "20h00 - 21h00", o: "Elcio e Bia Nagano (Part. DJ Itaque)", nota: "Oficina", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
     ]},
   ]},
   { id: "piano", nome: "Piano Bar", icon: "wine", grade: [
@@ -379,7 +381,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
       { h: "19h00 - 19h40", o: "Momento Pernod Ricard", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
-      { h: "20h00 - 20h40", o: "Jardenia", nota: "D'Origem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
+      { h: "20h00 - 20h40", o: "Beatriz Marcondes", nota: "D'Origem", subtitulo: "Remy Cointreau / Interfood", patrocinadorLogo: "/patrocinadores/master-opcao.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
       { h: "21h00 - 21h40", o: "Momento Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
     ]},
@@ -391,7 +393,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
       { h: "18h00 - 18h40", o: "Jack Daniel's", nota: "Apresentador a confirmar", patrocinadorLogo: "/patrocinadores/logo-jackdaniels.webp", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h40", o: "Mauro Tirabosto", nota: "Whisky · São Luiz", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Karime Loureiro", nota: "Whisky · São Luiz", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
       { h: "20h00 - 20h40", o: "Momento Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
@@ -402,7 +404,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
       { h: "16h00 - 16h40", o: "Marco Ferrari", nota: "Opção", patrocinadorLogo: "/patrocinadores/master-opcao.webp", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
-      { h: "17h00 - 17h40", o: "Vitoria Oliver", status: "aconfirmar" },
+      { h: "17h00 - 17h40", o: "Mauro Tirabosco", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
       { h: "18h00 - 18h40", o: "Clovis Holanda", nota: "Vinho · São Luiz", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
@@ -415,23 +417,23 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
   { id: "casa", nome: "Recebendo em Casa", icon: "home", grade: [
     { dia: "Sexta", slots: [
       { h: "16h00 - 17h30", o: "Izabela Fiúza + Phelipe Carvalho + João Filho", nota: "La Maison · São Luiz · Opção", patrocinadorLogo: ["/patrocinadores/master-la-maison.webp","/patrocinadores/master-heineken.webp"], status: "confirmado" },
-      { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
+      { h: "17h30 - 17h50", o: "Intervalo", status: "intervalo" },
       { h: "17h50 - 19h20", o: "Bia Araújo + Karime Loureiro", nota: "Heineken · Dry aged 1953", patrocinadorLogo: ["/patrocinadores/master-friboi.webp"], status: "confirmado" },
-      { h: "19h20 - 19h40", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Mona · Opção", patrocinadorLogo: ["/brand/logo-sao-luiz-cor.webp", "/patrocinadores/master-opcao.webp"], status: "confirmado" },
+      { h: "19h20 - 19h40", o: "Intervalo", status: "intervalo" },
+      { h: "19h40 - 22h00", o: "Phelipe Carvalho + Mona", nota: "Phelipe Carvalho + Mona · Opção", patrocinadorLogo: ["/brand/logo-sao-luiz-cor.webp", "/patrocinadores/master-opcao.webp"], status: "confirmado" },
     ]},
     { dia: "Sábado", slots: [
       { h: "16h00 - 17h30", o: "Chef Luiz de França + Ana Paula Rezende", nota: "Lor · Pronto Carnes", patrocinadorLogo: "/patrocinadores/logo-lor.webp", status: "confirmado" },
-      { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
+      { h: "17h30 - 17h50", o: "Intervalo", status: "intervalo" },
       { h: "17h50 - 19h20", o: "João Filho + Dani Gondim", nota: "Heineken", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Felipe Cicconato + Karime Loureiro · Br Spices", patrocinadorLogo: "/patrocinadores/master-friboi.webp", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Frederico Jayme + Felipe Cicconato + Karime Loureiro", nota: " Br Spices", patrocinadorLogo: "/patrocinadores/master-friboi.webp", status: "confirmado" },
     ]},
     { dia: "Domingo", slots: [
       { h: "16h00 - 17h30", o: "Chef Marina Araújo + João Filho", nota: "Heineken · Granja Regina", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
-      { h: "17h30 - 17h50", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "17h50 - 19h20", o: "Gabi Barreto + Renata (Azucar)", nota: "Dorigem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
-      { h: "19h20 - 19h40", o: "Atração", nota: "Eduardo Santos", status: "aconfirmar" },
-      { h: "19h40 - 22h00", o: "Recebendo em Casa São Luiz", nota: "Phelipe Carvalho + Lia Quinderé · Pagueti + Dorigem", patrocinadorLogo: "/patrocinadores/logo-pagueti.webp", status: "confirmado" },
+      { h: "17h30 - 17h50", o: "Intervalo", status: "intervalo" },
+      { h: "17h50 - 19h20", o: "Gabi Barreto + Renata", nota: "Dorigem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
+      { h: "19h20 - 19h40", o: "Intervalo", status: "intervalo" },
+      { h: "19h40 - 22h00", o: "Phelipe Carvalho + Lia Quinderé", nota: "Phelipe Carvalho + Lia Quinderé · Pagueti + Dorigem", patrocinadorLogo: "/patrocinadores/logo-pagueti.webp", status: "confirmado" },
     ]},
   ]},
 ];
@@ -1365,7 +1367,7 @@ export default function Landing() {
           <Reveal>
             <Eyebrow>Curadoria gastronômica</Eyebrow>
             <h2 className="font-serif font-extrabold text-vinho mt-2 leading-[1.02]" style={{ fontSize: "clamp(30px,5.5vw,54px)" }}>
-              Os chefs do festival
+              Personalidades do festival
             </h2>
             <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-grafite/75">
               As mãos por trás da edição do centenário, do Palco Gourmet ao Piano Bar e ao Recebendo em Casa. Quem ainda não está confirmado fica esmaecido, sem detalhe, até fechar.
@@ -1408,10 +1410,18 @@ export default function Landing() {
                       </Link>
                     )}
                     {c.instagram && c.status !== "aconfirmar" && (
-                      <a href={c.instagram} target="_blank" rel="noopener" className="inline-flex items-center gap-1.5 mt-2.5 text-[11.5px] font-bold text-dourado hover:text-laranja">
-                        <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="3.5" /><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" /></svg>
-                        Instagram
-                      </a>
+                      <div className="flex items-center gap-3 mt-2.5">
+                        <a href={c.instagram} target="_blank" rel="noopener" className="inline-flex items-center gap-1.5 text-[11.5px] font-bold text-dourado hover:text-laranja">
+                          <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="3.5" /><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" /></svg>
+                          Instagram
+                        </a>
+                        {c.instagram2 && (
+                          <a href={c.instagram2} target="_blank" rel="noopener" className="inline-flex items-center gap-1.5 text-[11.5px] font-bold text-dourado hover:text-laranja">
+                            <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="3.5" /><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" /></svg>
+                            Instagram
+                          </a>
+                        )}
+                      </div>
                     )}
                   </div>
                 </div>
@@ -1457,14 +1467,15 @@ export default function Landing() {
                     </div>
                     <div className="divide-y divide-creme-soft flex-1">
                       {g.slots.map((s, i) => (
-                        <div key={i} className={`px-5 py-3 flex gap-3 ${s.status === "intervalo" ? "opacity-50" : s.status === "aconfirmar" ? "opacity-75" : ""}`}>
+                        <div key={i} className={`px-5 py-3 flex gap-3 ${s.status === "intervalo" ? "bg-vinho/5" : s.status === "aconfirmar" ? "opacity-75" : ""}`}>
                           <span className="text-[11px] font-bold text-dourado tabular-nums shrink-0 w-[86px] pt-0.5">{s.h}</span>
                           <div className="min-w-0 flex-1">
                             <div className="flex items-start justify-between gap-2">
-                              <div aria-hidden={s.status === "aconfirmar" || undefined} className={`text-[13px] leading-snug ${s.status === "intervalo" ? "text-grafite/50" : s.status === "aconfirmar" ? "font-medium text-grafite/40 blur-[3.5px] select-none pointer-events-none" : "font-semibold text-grafite"}`}>{s.o}</div>
+                              <div aria-hidden={s.status === "aconfirmar" || undefined} className={`text-[13px] leading-snug ${s.status === "intervalo" ? "font-medium text-vinho/50" : s.status === "aconfirmar" ? "font-medium text-grafite/40 blur-[3.5px] select-none pointer-events-none" : "font-semibold text-grafite"}`}>{s.o}</div>
                               {s.status === "aconfirmar" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-creme-soft text-grafite/50 mt-0.5">a confirmar</span>}
                               {s.status === "confirmado" && <span className="shrink-0 text-[8.5px] font-bold tracking-[0.08em] uppercase px-1.5 py-0.5 rounded bg-musgo/20 text-oliva mt-0.5">confirmado</span>}
                             </div>
+                            {s.subtitulo && <div className="text-[11px] text-grafite/60 mt-0.5">{s.subtitulo}</div>}
                             {s.patrocinadorLogo && (
                               <div className={`flex items-center gap-3 mt-1.5 ${s.status === "aconfirmar" ? "blur-[3.5px] select-none pointer-events-none" : ""}`}>
                                 {(Array.isArray(s.patrocinadorLogo) ? s.patrocinadorLogo : [s.patrocinadorLogo]).map((logo) => (
