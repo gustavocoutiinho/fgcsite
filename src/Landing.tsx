@@ -380,7 +380,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
       { h: "18h00 - 18h40", o: "Leiliane", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h40", o: "Momento Pernod Ricard", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Momento Chivas Regal", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
       { h: "20h00 - 20h40", o: "Beatriz Marcondes", nota: "D'Origem", subtitulo: "Remy Cointreau / Interfood", patrocinadorLogo: "/patrocinadores/master-opcao.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
@@ -388,7 +388,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
     ]},
     { dia: "Sábado", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
-      { h: "16h00 - 16h40", o: "Fernanda Dantas por Pernod Ricard", nota: "Spritz + Campari", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Fernanda Dantas com Momento Chivas Regal", nota: "Spritz + Campari", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
       { h: "17h00 - 17h40", o: "Carol Barreto", nota: "Santa Clara", patrocinadorLogo: "/patrocinadores/master-santa-clara.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
