@@ -217,6 +217,7 @@ const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: 
   { nome: "Thales Romão", casa: "NOM · Molino Padaria Artesanal", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-[#8a3d18]", foto: "/chefs/thales-romao.webp", instagram: "https://instagram.com/thalesromao_", link: "/chefs/thales-romao" },
   { nome: "Ralfo", casa: "Parrilleiro", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-bordo", foto: "/chefs/ralfo.webp", instagram: "https://www.instagram.com/chefralfo/" },
   { nome: "Marco Frossard", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-[#8a3d18]", foto: "/chefs/marco-frossard.webp", instagram: "https://www.instagram.com/chefmarcofrossard/" },
+  { nome: "Barbara Saunders e Leune", atracao: "Palco Gourmet", dia: "SAB", cor: "bg-vinho", foto: "/chefs/barbara-saunders.webp", instagram: "https://www.instagram.com/barbarasaunders/" },
   { nome: "Fernanda Dantas", casa: "Coktelitas", atracao: "Piano Bar", dia: "SAB", cor: "bg-oliva", foto: "/chefs/fernanda-dantas.webp", instagram: "https://www.instagram.com/coktelitasdrinks/" },
   { nome: "Carol Barreto", casa: "Santa Clara", atracao: "Piano Bar", dia: "SAB", cor: "bg-vinho", foto: "/chefs/carol-barreto.webp", instagram: "https://www.instagram.com/carolbarreto3/" },
   { nome: "Mauro Tirabosco", sub: "Degustação de whisky", atracao: "Piano Bar", dia: "DOM", cor: "bg-bordo", foto: "/chefs/mauro-tirabosto.webp", instagram: "https://www.instagram.com/maurotirabosco/" },
@@ -239,6 +240,7 @@ const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: 
   { nome: "Gabi Barreto", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-bordo", foto: "/chefs/gabi-barreto.webp", instagram: "https://www.instagram.com/gabibarretoa_/" },
   { nome: "Renata", casa: "", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-vinho", foto: "/chefs/renata-azucar.webp", instagram: "https://www.instagram.com/azucar.atelier/" },
   { nome: "Lia Quinderé", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-[#8a3d18]", foto: "/chefs/lia-quindere.webp", instagram: "https://www.instagram.com/liaquindere/" },
+  { nome: "Jardenia", casa: "D'Origem", atracao: "Recebendo em Casa", dia: "DOM", cor: "bg-oliva", foto: "/chefs/jardenia.webp", instagram: "https://www.instagram.com/jardenia_siqueira/" },
   // AINDA EM CONFIRMAÇÃO
 ];
 
@@ -380,7 +382,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
       { h: "18h00 - 18h40", o: "Leiliane", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
       { h: "18h40 - 19h00", o: "Intervalo", status: "intervalo" },
-      { h: "19h00 - 19h40", o: "Momento Chivas Regal", nota: "São Luiz · Degustação", patrocinadorLogo: "/brand/logo-sao-luiz-cor.webp", status: "confirmado" },
+      { h: "19h00 - 19h40", o: "Momento Chivas Regal", nota: "São Luiz · Degustação", patrocinadorLogo: ["/patrocinadores/premium-chivas.webp"], status: "confirmado" },
       { h: "19h40 - 20h00", o: "Intervalo", status: "intervalo" },
       { h: "20h00 - 20h40", o: "Beatriz Marcondes", nota: "D'Origem", subtitulo: "Remy Cointreau / Interfood", patrocinadorLogo: "/patrocinadores/master-opcao.webp", status: "confirmado" },
       { h: "20h40 - 21h00", o: "Intervalo", status: "intervalo" },
@@ -388,7 +390,7 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
     ]},
     { dia: "Sábado", slots: [
       { h: "15h00 - 16h00", o: "Piano", status: "fixo" },
-      { h: "16h00 - 16h40", o: "Fernanda Dantas com Momento Chivas Regal", nota: "Spritz + Campari", status: "confirmado" },
+      { h: "16h00 - 16h40", o: "Fernanda Dantas com Momento Chivas Regal", nota: "Spritz + Campari", patrocinadorLogo: "/patrocinadores/premium-chivas.webp", status: "confirmado" },
       { h: "16h40 - 17h00", o: "Intervalo", status: "intervalo" },
       { h: "17h00 - 17h40", o: "Carol Barreto", nota: "Santa Clara", patrocinadorLogo: "/patrocinadores/master-santa-clara.webp", status: "confirmado" },
       { h: "17h40 - 18h00", o: "Intervalo", status: "intervalo" },
@@ -432,9 +434,9 @@ const gradeEspacos: { id: string; nome: string; icon: string; grade: { dia: stri
     { dia: "Domingo", slots: [
       { h: "16h00 - 17h30", o: "Chef Marina Araújo + João Filho", nota: "Heineken · Granja Regina", patrocinadorLogo: "/patrocinadores/master-heineken.webp", status: "confirmado" },
       { h: "17h30 - 17h50", o: "Intervalo", status: "intervalo" },
-      { h: "17h50 - 19h20", o: "Gabi Barreto + Renata", nota: "Dorigem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
+      { h: "17h50 - 19h20", o: "Gabi Barreto + Renata + Jardenia", nota: "Dorigem", patrocinadorLogo: "/patrocinadores/master-dorigem.webp", status: "confirmado" },
       { h: "19h20 - 19h40", o: "Intervalo", status: "intervalo" },
-      { h: "19h40 - 22h00", o: "Phelipe Carvalho + Lia Quinderé", nota: "Phelipe Carvalho + Lia Quinderé · Pagueti + Dorigem", patrocinadorLogo: "/patrocinadores/logo-pagueti.webp", status: "confirmado" },
+      { h: "19h40 - 22h00", o: "Phelipe Carvalho + Lia Quinderé + Jardenia", nota: "Phelipe Carvalho + Lia Quinderé · Pagueti + Dorigem", patrocinadorLogo: "/patrocinadores/logo-pagueti.webp", status: "confirmado" },
     ]},
   ]},
 ];
