@@ -278,7 +278,7 @@ const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: 
   { nome: "Diego", sub: "Pepê e Diego", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/diego.webp", link: "/chefs/pepe-e-diego", pronome: "deles", instagram: "https://www.instagram.com/_diegofreire/" },
   { link: "/chefs/elcio-e-bia-nagano", pronome: "deles", nome: "Elcio e Bia Nagano", sub: "Oficina", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-bordo", foto: "/chefs/elcio-e-bia-nagano.webp", instagram: "https://www.instagram.com/elcionagano/", instagram2: "https://www.instagram.com/bianagano/" },
   { nome: "DJ Itaque", sub: "Participação com Elcio e Bia Nagano", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/dj-itaque.webp", instagram: "https://www.instagram.com/itaque/" },
-  { link: "/chefs/rafael-kim", nome: "Rafael Kim", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/rafael-kim.webp", instagram: "https://www.instagram.com/_rafaelkim/" },
+  { link: "/chefs/rafael-kim", nome: "Rafael Kim", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-vinho", foto: "/chefs/rafael-kim.webp", instagram: "https://www.instagram.com/rafajykim/" },
   { link: "/chefs/chef-zinda", pronome: "dela", nome: "Chef Zinda", atracao: "Palco Gourmet", dia: "DOM", cor: "bg-oliva", foto: "/chefs/chef-zinda.webp", instagram: "https://www.instagram.com/restaurante.lafrance/" },
   { link: "/chefs/marco-ferrari", nome: "Marco Ferrari", casa: "Opção", atracao: "Piano Bar", dia: "DOM", cor: "bg-vinho", foto: "/chefs/marco-ferrari.webp", instagram: "https://www.instagram.com/vinhofortaleza/" },
   { link: "/chefs/clovis-holanda", nome: "Clovis Holanda", atracao: "Piano Bar", dia: "DOM", cor: "bg-oliva", foto: "/chefs/clovis-holanda.webp", instagram: "https://www.instagram.com/clovisholandajornalista/" },
@@ -329,7 +329,7 @@ const masterLogos = [
 ].map((n) => `/patrocinadores/master-${n}.webp`);
 
 const premiumLogos = [
-  "kimura","byd","moncoc","alentejo","luckys","haciendas","nescau-protein","moura","santo-oleo","campari","turatti", "avine", "br-spices", "brutal-fruit", "imac", "doritos", "madi",
+  "fitsweet","kimura","byd","moncoc","alentejo","luckys","haciendas","nescau-protein","moura","santo-oleo","campari","turatti", "avine", "br-spices", "brutal-fruit", "imac", "doritos", "madi",
   "naturagua", "netumar", "nossa-fruta", "prokitchen", "pronto-carne", "sabor-vida", "pomar", "tio-joao",
   "lecuisinier","dolcedivino","president","unimed","aperol","castelo","rio-valley","bone","chivas"
 ].map((n) => `/patrocinadores/premium-${n}.webp`).concat([
