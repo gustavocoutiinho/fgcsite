@@ -22,6 +22,7 @@ export const chefProfiles: Record<string, ChefProfileData> = {
     primeiroNome: "Daniel",
     resto: "Sabbá",
     dia: "SEXTA",
+    foto: "/chefs/daniel-sabba.webp",
     cor: "bg-bordo",
     bioCurta: "Chef paraense radicado em Fortaleza há 6 anos, dono do Sabbar (1º bar de tapas da cidade) e vencedor de duelo contra Felipe Bronze no GNT.",
     metaDescription: "Conheça Daniel Sabbá, chef paraense do Sabbar em Fortaleza, vencedor do reality No Fogo com Bronze, que comanda o Palco Gourmet na abertura do Festival Costume Gourmet 2026.",
@@ -66,6 +67,7 @@ export const chefProfiles: Record<string, ChefProfileData> = {
     primeiroNome: "Brunno",
     resto: "Malheiros",
     dia: "SEXTA",
+    foto: "/chefs/brunno-malheiros.webp",
     cor: "bg-oliva",
     bioCurta: "Do bairro do Papicu ao pódio mundial do panetone: Brunno Malheiros, da Cheiro do Pão, chega ao Palco Gourmet do Festival Costume Gourmet 2026.",
     metaDescription: "Conheça Brunno Malheiros, padeiro cearense da Cheiro do Pão, campeão nacional de panetone e presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026.",
@@ -118,6 +120,7 @@ export const chefProfiles: Record<string, ChefProfileData> = {
     primeiroNome: "Felipe",
     resto: "Caputo",
     dia: "SÁBADO",
+    foto: "/chefs/felipe-caputo.webp",
     cor: "bg-vinho",
     bioCurta: "Chef, professor e criador de conteúdo por trás da \"cozinha sofisticadamente simples\", Felipe Caputo sobe ao Palco Gourmet no sábado do Festival Costume Gourmet 2026.",
     metaDescription: "Conheça Felipe Caputo, chef e professor de gastronomia funcional, confirmado no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
@@ -170,6 +173,7 @@ export const chefProfiles: Record<string, ChefProfileData> = {
     primeiroNome: "Thales",
     resto: "Romão",
     dia: "SEXTA",
+    foto: "/chefs/thales-romao.webp",
     cor: "bg-[#8a3d18]",
     bioCurta: "Do Crato para o litoral de Fortaleza: o chef do NOM Frutos do Mar e da padaria Molino sobe ao Palco Gourmet na sexta do Costume Gourmet 2026.",
     metaDescription: "Conheça Thales Romão, chef do NOM Frutos do Mar e da padaria Molino em Fortaleza, que sobe ao Palco Gourmet na sexta do Festival Costume Gourmet 2026.",
@@ -287,6 +291,7 @@ export const chefProfiles: Record<string, ChefProfileData> = {
     primeiroNome: "Chef",
     resto: "Zinda",
     dia: "DOMINGO",
+    foto: "/chefs/chef-zinda.webp",
     cor: "bg-bordo",
     bioCurta: "Da cozinha parisiense ao litoral do Ceará: a chef Zinda comanda o La France há mais de 20 anos e leva sua trajetória francesa ao Festival Costume Gourmet 2026.",
     metaDescription: "Conheça a chef Zinda, do restaurante La France em Fortaleza, entre os 100 melhores do Brasil em 2026 e presença confirmada no Festival Costume Gourmet.",
@@ -340,6 +345,7 @@ export const chefProfiles: Record<string, ChefProfileData> = {
     primeiroNome: "Pepê",
     resto: "e Diego Freire",
     dia: "DOMINGO",
+    foto: "/chefs/pepe.webp",
     cor: "bg-[#8a3d18]",
     bioCurta: "Pepê e Diego Freire, da dupla por trás do Muvuco Boteco do Mar, levam peixe fresco, ikejime e sabor de boteco cearense pro Palco Gourmet do festival.",
     metaDescription: "Conheça Pepê e Diego Freire, do Muvuco Boteco do Mar e da Z-Boys Pizza, dupla de Fortaleza que cozinha ao vivo no Festival Costume Gourmet 2026.",
@@ -395,6 +401,851 @@ export const chefProfiles: Record<string, ChefProfileData> = {
         paragrafos: [
           "É esse repertório, construído entre a cozinha técnica aprendida no Mayú, o rigor do ikejime trazido de Ilhabela e o sabor descomplicado de boteco de praia, que Pepê e Diego levam pro Palco Gourmet do Festival Costume Gourmet 2026. No domingo do festival, com patrocínio da Netumar, os dois cozinham ao vivo diante do público que passa pelo La Maison Coliseu, no Papicu, entre 18 e 20 de setembro. A frase que resume a presença da dupla no evento, \"cozinheiro registrando memórias\", cai bem pra quem construiu carreira exatamente assim: registrando na receita a lembrança de casa, de pai e mãe trabalhando fora, de avós comerciantes, de mestre que ensinou o caminho certo, e de um peixe pescado com respeito virando prato de gente feliz.",
           "O Festival Costume Gourmet 2026 é apresentado pelo São Luiz Supermercado, que completa 100 anos no mesmo ano, e reverte 100% da renda da bilheteria pra três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar e o Instituto do Câncer do Ceará. Além do Palco Gourmet, onde Pepê e Diego se apresentam, o evento reúne também o Piano Bar, com drinks e música ao vivo, e o Recebendo em Casa, jantar intimista para 30 pessoas com chef convidado. Ver a dupla do Muvuco e da Z-Boys Pizza nesse palco é a confirmação de que a boa cozinha cearense, a que nasce de necessidade, se refina com técnica e termina em mesa cheia, tem espaço garantido nas grandes vitrines gastronômicas da cidade.",
+        ],
+      },
+    ],
+  },
+  "georgia-santiago": {
+    slug: "georgia-santiago",
+    primeiroNome: "Georgia",
+    resto: "Santiago",
+    dia: "SEXTA",
+    foto: "/chefs/georgia-santiago.webp",
+    cor: "bg-oliva",
+    bioCurta: "Georgia Santiago nasceu em Fortaleza (CE) e, apesar de formada em Publicidade e Propaganda, não atuou na área: preferiu o caminho da fotografia ao final da faculdade.",
+    metaDescription: "Conheça Georgia Santiago, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Georgia Santiago no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Georgia Santiago",
+        paragrafos: [
+          "Georgia Santiago nasceu em Fortaleza (CE) e, apesar de formada em Publicidade e Propaganda, não atuou na área: preferiu o caminho da fotografia ao final da faculdade. Atuou em todos os jornais da capital cearense, sendo premiada e reconhecida em sua profissão. Foi em 2013 que, ao deixar o Brasil, decidiu se aventurar em terras europeias, escolhendo como país a França, onde morou durante 5 anos.",
+          "Autodidata na gastronomia, começou trabalhando em bistrôs franceses até que, em 2015, deu início a longas jornadas de trabalho em restaurantes estrelados. Trabalhou no Au Crocodile, em Strasbourg, foi ao Japão para estágios em Tóquio por 1 mês e esteve, pelo mesmo período, no restaurante triplamente estrelado Maaemo, em Oslo, na Noruega.",
+          "Em 2016 escolheu Paris para aprofundar ainda mais sua carreira e permaneceu no aclamado restaurante Septime, 11º melhor restaurante do mundo, por dois anos. De volta ao Brasil, teve passagem pelo restaurante Oro, no Rio de Janeiro, a convite do chef Felipe Bronze, e hoje, residindo na capital cearense, é chef e curadora de vinhos em seu bistrô, o Muá Tuá Bistrot, há 5 anos.",
+        ],
+      },
+      {
+        titulo: "Georgia Santiago no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Georgia Santiago se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "chef-zena": {
+    slug: "chef-zena",
+    primeiroNome: "Chef",
+    resto: "Zena",
+    dia: "SEXTA",
+    foto: "/chefs/zena.webp",
+    cor: "bg-vinho",
+    bioCurta: "Ícone da gastronomia popular cearense, Chef Zena, como é carinhosamente conhecida Zenilda Bezerra, construiu uma trajetória de mais de cinco décadas dedicada à cozinha afetiva e aos sabores que fazem parte da memória de Fortaleza.",
+    metaDescription: "Conheça Chef Zena, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Chef Zena no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Chef Zena",
+        paragrafos: [
+          "Ícone da gastronomia popular cearense, Chef Zena, como é carinhosamente conhecida Zenilda Bezerra, construiu uma trajetória de mais de cinco décadas dedicada à cozinha afetiva e aos sabores que fazem parte da memória de Fortaleza. À frente do tradicional Restaurante Zena, no Centro da cidade, tornou-se referência por sua comida caseira, generosa e cheia de identidade.",
+          "Com receitas que atravessam gerações, Zena representa uma cozinha feita de memória, tradição e afeto: um verdadeiro patrimônio da gastronomia cearense.",
+        ],
+      },
+      {
+        titulo: "Chef Zena no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Chef Zena se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "edil-costa": {
+    slug: "edil-costa",
+    primeiroNome: "Edil",
+    resto: "Costa",
+    dia: "SÁBADO",
+    foto: "/chefs/edil-costa.webp",
+    cor: "bg-[#8a3d18]",
+    bioCurta: "Edil Costa é chef de cozinha, graduado e mestre em Gastronomia, além de colunista do jornal O Povo e apresentador do programa Entre Papos e Sabores, da TV Cidade.",
+    metaDescription: "Conheça Edil Costa, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Edil Costa no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Edil Costa",
+        paragrafos: [
+          "Edil Costa é chef de cozinha, graduado e mestre em Gastronomia, além de colunista do jornal O Povo e apresentador do programa Entre Papos e Sabores, da TV Cidade. Após mais de 30 anos como executivo em grandes empresas, dedicou-se integralmente à gastronomia, criando o curso de pós-graduação em Gastronomia da Unifor e fundando o Espaço Gastronomia Edil Costa, que já formou mais de 3.500 alunos em três anos.",
+          "Seu trabalho une técnica, pesquisa e identidade regional, valorizando ingredientes e tradições do Nordeste em diálogo com a cozinha internacional. Edil também realiza cursos temáticos, experiências corporativas e projetos de enogastronomia pelo mundo, sempre com uma abordagem autoral e criativa que conecta cultura, sabor e vivência.",
+        ],
+      },
+      {
+        titulo: "Edil Costa no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Edil Costa se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "maria-braz": {
+    slug: "maria-braz",
+    primeiroNome: "Maria",
+    resto: "Braz",
+    dia: "SEXTA",
+    foto: "/chefs/maria-braz.webp",
+    cor: "bg-bordo",
+    bioCurta: "Maria Braz é a terceira geração da família à frente da gestão da São Braz Bebidas, empresa nordestina com 50 anos de história no setor de vinhos.",
+    metaDescription: "Conheça Maria Braz, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Maria Braz no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Maria Braz",
+        paragrafos: [
+          "Maria Braz é a terceira geração da família à frente da gestão da São Braz Bebidas, empresa nordestina com 50 anos de história no setor de vinhos. Formada em Direito e Enologia, atua como diretora das áreas administrativa, jurídica e de marketing da empresa.",
+        ],
+      },
+      {
+        titulo: "Maria Braz no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Maria Braz se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "marbenia": {
+    slug: "marbenia",
+    primeiroNome: "Marbênia",
+    resto: "Gonçalves",
+    dia: "SEXTA",
+    foto: "/chefs/marbenia.webp",
+    cor: "bg-vinho",
+    bioCurta: "Marbênia Gonçalves é sommelière ABS ASI de Vinhos e Cerveja, com certificações WSET nos níveis 1, 2 e 3, além de Tea Sommelière.",
+    metaDescription: "Conheça Marbênia Gonçalves, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Marbênia Gonçalves no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Marbênia Gonçalves",
+        paragrafos: [
+          "Marbênia Gonçalves é sommelière ABS ASI de Vinhos e Cerveja, com certificações WSET nos níveis 1, 2 e 3, além de Tea Sommelière. Atua como juíza de vinhos e é colunista do @opovomais e do Regulatório Yduqs.",
+        ],
+      },
+      {
+        titulo: "Marbênia Gonçalves no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Marbênia Gonçalves se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "leiliane": {
+    slug: "leiliane",
+    primeiroNome: "Leiliane",
+    resto: "Pinheiro",
+    dia: "SEXTA",
+    foto: "/chefs/leiliane.webp",
+    cor: "bg-oliva",
+    bioCurta: "Leiliane Pinheiro é fundadora da Confraria Wineladies, juíza de vinhos e sommelière internacional formada pela FISAR (Federazione Italiana Sommelier Albergatori Ristoratori) e pela IWTO (International Wine Tasters Organization), também certificada pela instituição londrina WSET (Wine & Spirits Education Trust) nos níveis 1 e 2 em Vinhos e Destilados, além da certificação WSET 1 em Saquê.",
+    metaDescription: "Conheça Leiliane Pinheiro, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Leiliane Pinheiro no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Leiliane Pinheiro",
+        paragrafos: [
+          "Leiliane Pinheiro é fundadora da Confraria Wineladies, juíza de vinhos e sommelière internacional formada pela FISAR (Federazione Italiana Sommelier Albergatori Ristoratori) e pela IWTO (International Wine Tasters Organization), também certificada pela instituição londrina WSET (Wine & Spirits Education Trust) nos níveis 1 e 2 em Vinhos e Destilados, além da certificação WSET 1 em Saquê. Soma ainda diversos cursos e vivências no Brasil e no exterior (França, Portugal, Itália, Chile e Argentina).",
+          "Com formação em Marketing e experiência comercial desde 2005 no universo das bebidas, sempre focada em planejamento e execução comercial, é há mais de 18 anos responsável pelo comercial da Importadora Interfood, uma das maiores importadoras de vinhos e destilados do Brasil, no estado do Ceará.",
+        ],
+      },
+      {
+        titulo: "Leiliane Pinheiro no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Leiliane Pinheiro se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "karime-loureiro": {
+    slug: "karime-loureiro",
+    primeiroNome: "Karime",
+    resto: "Loureiro",
+    dia: "SEXTA",
+    foto: "/chefs/karime-loureiro.webp",
+    cor: "bg-bordo",
+    bioCurta: "Karime Loureiro é comunicadora, sommelier internacional e reconhecida nacionalmente como a Embaixadora das Borbulhas.",
+    metaDescription: "Conheça Karime Loureiro, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Karime Loureiro no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Karime Loureiro",
+        paragrafos: [
+          "Karime Loureiro é comunicadora, sommelier internacional e reconhecida nacionalmente como a Embaixadora das Borbulhas. Certificada como Champagne Expert pela IWTO e pela ABS-RS, assina a única coluna do Brasil dedicada exclusivamente aos espumantes, publicada no jornal O Povo.",
+          "Criadora de projetos como o \"Harmonize Comigo\", em que recebe chefs convidados para experiências de harmonização ao vivo, Karime já visitou mais de 150 vinícolas ao redor do mundo, levando para seus conteúdos e palestras uma visão sensível, acessível e apaixonada sobre o universo dos vinhos e espumantes.",
+        ],
+      },
+      {
+        titulo: "Karime Loureiro no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Karime Loureiro se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "izabela-fiuza": {
+    slug: "izabela-fiuza",
+    primeiroNome: "Izabela",
+    resto: "Fiúza",
+    dia: "SEXTA",
+    foto: "/chefs/isabela-fiuza.webp",
+    cor: "bg-oliva",
+    bioCurta: "Izabela Fiúza é chef e diretora de Gastronomia do La Maison, referência na gastronomia e no mercado de eventos de Fortaleza.",
+    metaDescription: "Conheça Izabela Fiúza, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Izabela Fiúza no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Izabela Fiúza",
+        paragrafos: [
+          "Izabela Fiúza é chef e diretora de Gastronomia do La Maison, referência na gastronomia e no mercado de eventos de Fortaleza. Herdeira de uma tradição familiar construída em torno do prazer de receber, imprime seu olhar à frente da cozinha da casa, unindo sabor, memória e sofisticação. Também se destaca por sua atuação em iniciativas sociais, como o projeto Macarrão Amigo, criado durante a pandemia para levar refeições a pessoas em situação de vulnerabilidade.",
+        ],
+      },
+      {
+        titulo: "Izabela Fiúza no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Izabela Fiúza se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "bia-araujo": {
+    slug: "bia-araujo",
+    primeiroNome: "Bia",
+    resto: "Araújo",
+    dia: "SEXTA",
+    foto: "/chefs/bia-araujo.webp",
+    cor: "bg-vinho",
+    bioCurta: "Bia Araújo é uma maranhense apaixonada pelo Ceará, pelos ingredientes e sabores que cercam o sertão e o mar.",
+    metaDescription: "Conheça Bia Araújo, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Bia Araújo no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Bia Araújo",
+        paragrafos: [
+          "Bia Araújo é uma maranhense apaixonada pelo Ceará, pelos ingredientes e sabores que cercam o sertão e o mar. Com autenticidade e personalidade, vem se destacando há quase 15 anos no mercado gastronômico de forma respeitosa e com comida de verdade. Transita entre cozinhas, eventos, empreendedorismo e comunicação com a mesma paixão de sempre, carregando a gastronomia no colo.",
+        ],
+      },
+      {
+        titulo: "Bia Araújo no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Bia Araújo se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "mona": {
+    slug: "mona",
+    primeiroNome: "Mona",
+    resto: "",
+    dia: "SEXTA",
+    foto: "/chefs/mona.webp",
+    cor: "bg-bordo",
+    bioCurta: "Mona é um dos nomes à frente da As Netas de Olga, confeitaria de Juazeiro do Norte que transforma receitas, memórias e afetos em sabores.",
+    metaDescription: "Conheça Mona, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Mona no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Mona",
+        paragrafos: [
+          "Mona é um dos nomes à frente da As Netas de Olga, confeitaria de Juazeiro do Norte que transforma receitas, memórias e afetos em sabores. À frente do negócio, leva adiante uma história familiar marcada pela tradição e pelo prazer de receber, valorizando a gastronomia afetiva e os ingredientes que carregam a identidade do Cariri.",
+        ],
+      },
+      {
+        titulo: "Mona no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Mona se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "joao-filho": {
+    slug: "joao-filho",
+    primeiroNome: "João",
+    resto: "Filho",
+    dia: "SEXTA",
+    foto: "/chefs/joao-filho.webp",
+    cor: "bg-[#8a3d18]",
+    bioCurta: "1º Beer Sommelier do Ceará (Science of Beer, 2012), João Filho atua desde então em treinamento, consultoria e educação cervejeira.",
+    metaDescription: "Conheça João Filho, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "João Filho no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre João Filho",
+        paragrafos: [
+          "1º Beer Sommelier do Ceará (Science of Beer, 2012), João Filho atua desde então em treinamento, consultoria e educação cervejeira. Foi um dos idealizadores e professores do curso de Beer Sommelier do Senac/CE (2017/2018), professor do curso de Cultura Cervejeira na pós-graduação de Gastronomia da Unifanor e professor da disciplina de Gestão de Alimentos e Bebidas do curso de Gastronomia da Uninta.",
+          "Foi sommelier de cervejas da Cervejaria 5 Elementos e do Giz Cozinha Bohemia. Recebeu, em 2013, o prêmio da Veja Fortaleza de melhor carta de cerveja pelo trabalho realizado no Moleskine Gastrobar, e escreve para a coluna de cerveja do jornal O Povo, no caderno Comes & Bebes.",
+        ],
+      },
+      {
+        titulo: "João Filho no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "João Filho se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "matu-macedo": {
+    slug: "matu-macedo",
+    primeiroNome: "Matu",
+    resto: "Macêdo",
+    dia: "SÁBADO",
+    foto: "/chefs/matu-macedo.webp",
+    cor: "bg-vinho",
+    bioCurta: "Chef pâtissière, professora da Universidade Federal do Ceará (UFC) e consultora gastronômica, Matu Macêdo é uma das grandes referências da gastronomia cearense.",
+    metaDescription: "Conheça Matu Macêdo, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Matu Macêdo no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Matu Macêdo",
+        paragrafos: [
+          "Chef pâtissière, professora da Universidade Federal do Ceará (UFC) e consultora gastronômica, Matu Macêdo é uma das grandes referências da gastronomia cearense. Mestre em Ciências Gastronômicas em Lisboa e doutora em Patrimônios Culturais Alimentares pela Universidade de Coimbra, dedica sua trajetória à valorização da identidade e da cultura alimentar do Ceará.",
+          "À frente de uma carreira marcada pelo ensino, pesquisa e difusão da gastronomia, apresentou por 24 anos o programa Nossa Cozinha, na TV Jangadeiro, e foi pioneira na criação de uma escola de culinária em Fortaleza. Seu trabalho conecta conhecimento, memória afetiva e ingredientes locais, valorizando os sabores que fazem parte da história cearense.",
+        ],
+      },
+      {
+        titulo: "Matu Macêdo no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Matu Macêdo se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "ralfo": {
+    slug: "ralfo",
+    primeiroNome: "Ralfo",
+    resto: "Ifanger",
+    dia: "SÁBADO",
+    foto: "/chefs/ralfo.webp",
+    cor: "bg-bordo",
+    bioCurta: "A trajetória do chef Ralfo Ifanger na gastronomia começou ainda na infância, por influência de sua mãe, que logo percebeu seu talento vocacional e o incentivou a se graduar pelo prestigiado Senac de Águas de São Pedro.",
+    metaDescription: "Conheça Ralfo Ifanger, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Ralfo Ifanger no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Ralfo Ifanger",
+        paragrafos: [
+          "A trajetória do chef Ralfo Ifanger na gastronomia começou ainda na infância, por influência de sua mãe, que logo percebeu seu talento vocacional e o incentivou a se graduar pelo prestigiado Senac de Águas de São Pedro. Após consolidar sua formação, acumulou bagagem em restaurantes renomados de São Paulo e Campinas, além de atuar na consultoria de um grande grupo nacional, viajando o Brasil para ajustar cardápios regionais e liderar aberturas de casas.",
+          "Buscou expansão internacional em uma temporada na Austrália, experiência que aprimorou seu idioma e enriqueceu seu repertório cultural com vivências em cozinhas do exterior. De volta ao Brasil, fixou raízes definitivas em Fortaleza, onde construiu sua família e estabeleceu sua carreira executiva.",
+          "Hoje, Ralfo Ifanger é sócio e chef executivo do grupo Evol, à frente da cozinha do Parrilleiro. Versátil e com histórico consolidado na culinária italiana, nos últimos anos voltou sua expertise para o universo das carnes, dominando processos de acompanhamento e técnicas de maturação. Sob sua liderança, a casa se consolida hoje como a maior referência em dry aged de Fortaleza.",
+        ],
+      },
+      {
+        titulo: "Ralfo Ifanger no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Ralfo Ifanger se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "marco-frossard": {
+    slug: "marco-frossard",
+    primeiroNome: "Marco",
+    resto: "Frossard",
+    dia: "SÁBADO",
+    foto: "/chefs/marco-frossard.webp",
+    cor: "bg-[#8a3d18]",
+    bioCurta: "Chef com atuação na gastronomia profissional e especialista em técnicas e tecnologias para cozinhas profissionais, Marco Frossard une conhecimento técnico, criatividade e paixão pela cozinha à frente de demonstrações e experiências gastronômicas, explorando diferentes possibilidades de preparo e valorizando a eficiência sem abrir mão de sabor e qualidade.",
+    metaDescription: "Conheça Marco Frossard, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Marco Frossard no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Marco Frossard",
+        paragrafos: [
+          "Chef com atuação na gastronomia profissional e especialista em técnicas e tecnologias para cozinhas profissionais, Marco Frossard une conhecimento técnico, criatividade e paixão pela cozinha à frente de demonstrações e experiências gastronômicas, explorando diferentes possibilidades de preparo e valorizando a eficiência sem abrir mão de sabor e qualidade.",
+          "Com atuação junto à Rational Nordeste, também se destaca pela disseminação de novas tecnologias e soluções para a gastronomia profissional.",
+        ],
+      },
+      {
+        titulo: "Marco Frossard no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Marco Frossard se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "barbara-saunders": {
+    slug: "barbara-saunders",
+    primeiroNome: "Barbara",
+    resto: "Saunders",
+    dia: "SÁBADO",
+    foto: "/chefs/barbara-saunders.webp",
+    cor: "bg-vinho",
+    bioCurta: "Bárbara Saunders é chef, empresária e fundadora da Cacao Confeitaria Saudável, marca cearense que nasceu com a proposta de provar que alimentação saudável pode ser saborosa, inclusiva e cheia de afeto.",
+    metaDescription: "Conheça Barbara Saunders, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Barbara Saunders no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Barbara Saunders",
+        paragrafos: [
+          "Bárbara Saunders é chef, empresária e fundadora da Cacao Confeitaria Saudável, marca cearense que nasceu com a proposta de provar que alimentação saudável pode ser saborosa, inclusiva e cheia de afeto. Formada em Administração, transformou uma necessidade pessoal em propósito profissional e, ao lado do marido e sócio, Pedro Jorge de Lima, construiu um grupo que hoje reúne a Cacao, a Cacao Fresh e outras operações. Sua gastronomia valoriza sabor, criatividade e inclusão, com criações sem glúten, sem lactose e sem açúcar refinado.",
+        ],
+      },
+      {
+        titulo: "Barbara Saunders no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Barbara Saunders se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "fernanda-dantas": {
+    slug: "fernanda-dantas",
+    primeiroNome: "Fernanda",
+    resto: "Dantas",
+    dia: "SÁBADO",
+    foto: "/chefs/fernanda-dantas.webp",
+    cor: "bg-oliva",
+    bioCurta: "Fernanda Dantas é empresária e fundadora da Coktelitas, referência cearense em coquetelaria e experiências de bar para eventos.",
+    metaDescription: "Conheça Fernanda Dantas, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Fernanda Dantas no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Fernanda Dantas",
+        paragrafos: [
+          "Fernanda Dantas é empresária e fundadora da Coktelitas, referência cearense em coquetelaria e experiências de bar para eventos. Há mais de 20 anos à frente da marca, construiu uma trajetória marcada pela inovação, hospitalidade e valorização da mixologia. Hoje, a Coktelitas atua no mercado de eventos premium, desenvolvendo experiências que unem drinks autorais, criatividade e excelência em serviço.",
+        ],
+      },
+      {
+        titulo: "Fernanda Dantas no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Fernanda Dantas se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "carol-barreto": {
+    slug: "carol-barreto",
+    primeiroNome: "Carol",
+    resto: "Barreto",
+    dia: "SÁBADO",
+    foto: "/chefs/carol-barreto.webp",
+    cor: "bg-vinho",
+    bioCurta: "Carol Barreto é formada em Gastronomia, Confeitaria e Panificação, com experiência em renomados restaurantes como DOM, Famiglia Mancini e La Casserole.",
+    metaDescription: "Conheça Carol Barreto, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Carol Barreto no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Carol Barreto",
+        paragrafos: [
+          "Carol Barreto é formada em Gastronomia, Confeitaria e Panificação, com experiência em renomados restaurantes como DOM, Famiglia Mancini e La Casserole. Barista e sommelière formada, encontrou no universo do café uma de suas grandes paixões e atua há mais de uma década no segmento. Atualmente, integra o Grupo 3 Corações, onde trabalha com treinamentos e experiências de consumo, aproximando técnica, café e hospitalidade.",
+        ],
+      },
+      {
+        titulo: "Carol Barreto no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Carol Barreto se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "marcelo-pimentel": {
+    slug: "marcelo-pimentel",
+    primeiroNome: "Marcelo",
+    resto: "Pimentel",
+    dia: "SÁBADO",
+    foto: "/chefs/marcelo-pimentel.webp",
+    cor: "bg-bordo",
+    bioCurta: "Marcelo Pimentel é empresário e fundador do Pim Food Group.",
+    metaDescription: "Conheça Marcelo Pimentel, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Marcelo Pimentel no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Marcelo Pimentel",
+        paragrafos: [
+          "Marcelo Pimentel é empresário e fundador do Pim Food Group. Construiu sua trajetória no setor de gastronomia a partir do Barney's Burger, criado em Fortaleza em 2011. Hoje está à frente de marcas como Barney's, Butcher's 746, Olli's Burger, Estela Pizza e JU Omakase, combinando gestão, inovação, experiência do cliente e construção de marcas no setor de alimentação.",
+        ],
+      },
+      {
+        titulo: "Marcelo Pimentel no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Marcelo Pimentel se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "julia-zimmerman": {
+    slug: "julia-zimmerman",
+    primeiroNome: "Julia",
+    resto: "Zimmerman",
+    dia: "SÁBADO",
+    foto: "/chefs/julia-zimmermann.webp",
+    cor: "bg-oliva",
+    bioCurta: "Julia Zimmermann é chef confeiteira de Fortaleza (CE), apaixonada pelo universo da gastronomia.",
+    metaDescription: "Conheça Julia Zimmerman, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Julia Zimmerman no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Julia Zimmerman",
+        paragrafos: [
+          "Julia Zimmermann é chef confeiteira de Fortaleza (CE), apaixonada pelo universo da gastronomia. Sua trajetória é marcada pela dedicação à confeitaria e pela busca por técnicas e sabores sofisticados. À frente de produções como entremets e sobremesas artesanais, se destaca pela delicadeza e criatividade em seus doces, valorizando o equilíbrio de sabores e a apresentação. Já atuou também como professora em cursos de confeitaria, compartilhando conhecimentos e experiências com novos apaixonados pela gastronomia.",
+        ],
+      },
+      {
+        titulo: "Julia Zimmerman no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Julia Zimmerman se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "mauro-tirabosco": {
+    slug: "mauro-tirabosco",
+    primeiroNome: "Mauro",
+    resto: "Tirabosco",
+    dia: "DOMINGO",
+    foto: "/chefs/mauro-tirabosto.webp",
+    cor: "bg-bordo",
+    bioCurta: "Mauro Tirabosco é mixologista argentino, formado pela Universidad del Cóctel, em Buenos Aires.",
+    metaDescription: "Conheça Mauro Tirabosco, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Mauro Tirabosco no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Mauro Tirabosco",
+        paragrafos: [
+          "Mauro Tirabosco é mixologista argentino, formado pela Universidad del Cóctel, em Buenos Aires. Possui especializações em ABC da Coquetelaria, Vermouths, Pisco, Flair, Administração de Bares e Coquetelaria Criativa. Atualmente, atua como Head de Bar do Grupo Host, onde é responsável pela criação de drinks, treinamento e desenvolvimento das equipes de bar, unindo técnica, criatividade e inovação em suas criações.",
+        ],
+      },
+      {
+        titulo: "Mauro Tirabosco no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Mauro Tirabosco se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "luiz-de-franca": {
+    slug: "luiz-de-franca",
+    primeiroNome: "Luiz",
+    resto: "de França",
+    dia: "SÁBADO",
+    foto: "/chefs/luiz-de-franca.webp",
+    cor: "bg-vinho",
+    bioCurta: "Chef Luiz de França é chef, professor e consultor gastronômico cearense, formado pelo Le Cordon Bleu São Paulo.",
+    metaDescription: "Conheça Luiz de França, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Luiz de França no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Luiz de França",
+        paragrafos: [
+          "Chef Luiz de França é chef, professor e consultor gastronômico cearense, formado pelo Le Cordon Bleu São Paulo. Sua cozinha aproxima a técnica francesa dos ingredientes e da cultura brasileira, com uma atuação marcada pela educação, sustentabilidade e valorização da gastronomia local.",
+        ],
+      },
+      {
+        titulo: "Luiz de França no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Luiz de França se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "dani-gondim": {
+    slug: "dani-gondim",
+    primeiroNome: "Dani",
+    resto: "Gondim",
+    dia: "SÁBADO",
+    foto: "/chefs/dani-gondim.webp",
+    cor: "bg-bordo",
+    bioCurta: "Dani Gondim é multiartista cearense, empreendedora e apaixonada por gastronomia.",
+    metaDescription: "Conheça Dani Gondim, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Dani Gondim no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Dani Gondim",
+        paragrafos: [
+          "Dani Gondim é multiartista cearense, empreendedora e apaixonada por gastronomia. Com uma trajetória que passa pela moda, televisão e criação de conteúdo, também se destaca na cozinha, onde transforma receitas em experiências afetivas e cheias de personalidade. Já participou de importantes eventos gastronômicos de Fortaleza, como o Festival Costume Gourmet, levando para a mesa seu olhar criativo e seu jeito leve de receber.",
+        ],
+      },
+      {
+        titulo: "Dani Gondim no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Dani Gondim se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "felipe-cicconato": {
+    slug: "felipe-cicconato",
+    primeiroNome: "Felipe",
+    resto: "Cicconato",
+    dia: "SÁBADO",
+    foto: "/chefs/felipe-cicconato.webp",
+    cor: "bg-[#8a3d18]",
+    bioCurta: "Felipe Cicconato é chef confeiteiro do Grupo Illa e chef chocolatier da Barry Callebaut.",
+    metaDescription: "Conheça Felipe Cicconato, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Felipe Cicconato no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Felipe Cicconato",
+        paragrafos: [
+          "Felipe Cicconato é chef confeiteiro do Grupo Illa e chef chocolatier da Barry Callebaut. Especialista em confeitaria e chocolate, alia técnica, criatividade e precisão em criações que valorizam sabor, textura e apresentação. Sua atuação traduz a alta confeitaria em experiências sofisticadas e autorais, com o chocolate como um dos grandes protagonistas de seu trabalho.",
+        ],
+      },
+      {
+        titulo: "Felipe Cicconato no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Felipe Cicconato se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "frederico-jayme": {
+    slug: "frederico-jayme",
+    primeiroNome: "Frederico",
+    resto: "Jayme",
+    dia: "SÁBADO",
+    foto: "/chefs/frederico-jayme.webp",
+    cor: "bg-vinho",
+    bioCurta: "Chef Frederico Jayme é proprietário do restaurante Amecari, em Fortaleza.",
+    metaDescription: "Conheça Frederico Jayme, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Frederico Jayme no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Frederico Jayme",
+        paragrafos: [
+          "Chef Frederico Jayme é proprietário do restaurante Amecari, em Fortaleza. Formado em International Culinary Arts pela University of West London, soma 12 anos de trajetória profissional no Reino Unido e desenvolve uma cozinha que valoriza ingredientes brasileiros, especialmente cearenses, combinados a técnicas e referências internacionais.",
+        ],
+      },
+      {
+        titulo: "Frederico Jayme no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Frederico Jayme se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "matheus-vieira": {
+    slug: "matheus-vieira",
+    primeiroNome: "Matheus",
+    resto: "Vieira",
+    dia: "DOMINGO",
+    foto: "/chefs/matheus-vieira.webp",
+    cor: "bg-oliva",
+    bioCurta: "Chef, gastrônomo e empreendedor cearense, formado em Gastronomia pela Universidade Federal do Ceará (UFC), Matheus Vieira soma 15 anos de experiência no mercado gastronômico.",
+    metaDescription: "Conheça Matheus Vieira, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Matheus Vieira no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Matheus Vieira",
+        paragrafos: [
+          "Chef, gastrônomo e empreendedor cearense, formado em Gastronomia pela Universidade Federal do Ceará (UFC), Matheus Vieira soma 15 anos de experiência no mercado gastronômico. Atuou por 10 anos como professor, instrutor e consultor de gastronomia e confeitaria, além de trabalhar na preparação de competidores para concursos profissionais. Especialista em gestão de eventos e entretenimento, dedica-se hoje ao desenvolvimento de projetos autorais que unem técnica, identidade brasileira e experiências gastronômicas.",
+        ],
+      },
+      {
+        titulo: "Matheus Vieira no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Matheus Vieira se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "elcio-e-bia-nagano": {
+    slug: "elcio-e-bia-nagano",
+    primeiroNome: "Elcio e Bia",
+    resto: "Nagano",
+    dia: "DOMINGO",
+    foto: "/chefs/elcio-e-bia-nagano.webp",
+    cor: "bg-bordo",
+    bioCurta: "Engenheiro mecânico pela Unesp (Universidade Estadual Paulista), pós-graduado em Administração de Empresas pela FAAP (Fundação Armando Álvares Penteado) e mestrando em Turismo pela UECE (Universidade Estadual do Ceará), Elcio Nagano tem 62 anos, é casado e reside em Fortaleza.",
+    metaDescription: "Conheça Elcio e Bia Nagano, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Elcio e Bia Nagano no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Elcio Nagano",
+        paragrafos: [
+          "Engenheiro mecânico pela Unesp (Universidade Estadual Paulista), pós-graduado em Administração de Empresas pela FAAP (Fundação Armando Álvares Penteado) e mestrando em Turismo pela UECE (Universidade Estadual do Ceará), Elcio Nagano tem 62 anos, é casado e reside em Fortaleza.",
+          "Aprendeu a cozinhar na infância com os pais e avós, todos japoneses e ótimos cozinheiros, o que explica sua maior especialidade: a gastronomia japonesa e asiática. Desenvolveu a atividade gastronômica como hobby quando morava em São Paulo, frequentando cursos em entidades como Senac, Gendai Restaurantes Japoneses e Ginza Espaço das Artes. Ao se mudar para Fortaleza, em 1998, passou a se dedicar exclusivamente à gastronomia.",
+          "Em 2000, abriu o Kingyo Restaurant ao lado da esposa, a nutricionista Miriam Kina, eleito melhor restaurante japonês de Fortaleza pelo júri da revista Veja durante os 9 anos consecutivos de sua existência. Em 2002, abriu, também com Miriam Kina e o cunhado Alexandre Kina, o restaurante Kina, no Shopping Del Paseo, que segue em funcionamento com 3 unidades em Fortaleza.",
+          "Hoje, além de chef e empresário do ramo de alimentação, é professor de Gastronomia no Centro Universitário Uninta de Sobral, no Espaço Gastronomia Edil Costa e na Unifor, colunista gastronômico do jornal O Povo, consultor gastronômico e responsável por uma empresa de catering, palestras e cursos de gastronomia. Participa também do movimento Ceará à Mesa, ao lado dos chefs Fernando Barroso e Bernard Twardy, iniciativa que valoriza os insumos cearenses e resultou em um livro lançado em 21 de agosto de 2023.",
+        ],
+      },
+      {
+        titulo: "Bia Nagano",
+        paragrafos: [
+          "Formada em Administração pela UFC, Bia Nagano cresceu no universo da gastronomia: os pais já tiveram restaurantes na cidade e, hoje, é uma das sócias do Kina, que já existe há 23 anos. Além do trabalho à frente do restaurante, também atua como influenciadora digital.",
+        ],
+      },
+      {
+        titulo: "Elcio e Bia Nagano no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Elcio e Bia Nagano se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "rafael-kim": {
+    slug: "rafael-kim",
+    primeiroNome: "Rafael",
+    resto: "Kim",
+    dia: "DOMINGO",
+    foto: "/chefs/rafael-kim.webp",
+    cor: "bg-vinho",
+    bioCurta: "Rafa Kim, chef proprietário do Manur Izakaya, é paulistano e descendente de coreanos, e encontrou no Ceará o lugar para construir sua história na gastronomia.",
+    metaDescription: "Conheça Rafael Kim, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Rafael Kim no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Rafael Kim",
+        paragrafos: [
+          "Rafa Kim, chef proprietário do Manur Izakaya, é paulistano e descendente de coreanos, e encontrou no Ceará o lugar para construir sua história na gastronomia. Há 10 anos vivendo no estado, tornou-se apaixonado por sua cultura, seus ingredientes e a riqueza de sabores que o Ceará oferece. À frente do Manur, traz para Fortaleza os sabores e a essência das cozinhas asiáticas em suas formas originais, explorando novas possibilidades e contribuindo para inovar e movimentar o cenário gastronômico cearense.",
+        ],
+      },
+      {
+        titulo: "Rafael Kim no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Rafael Kim se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "marco-ferrari": {
+    slug: "marco-ferrari",
+    primeiroNome: "Marco",
+    resto: "Ferrari",
+    dia: "DOMINGO",
+    foto: "/chefs/marco-ferrari.webp",
+    cor: "bg-vinho",
+    bioCurta: "Marco Ferrari é sommelier profissional, professor e consultor de vinhos, considerado um dos pioneiros na formação e difusão da cultura do vinho no Ceará.",
+    metaDescription: "Conheça Marco Ferrari, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Marco Ferrari no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Marco Ferrari",
+        paragrafos: [
+          "Marco Ferrari é sommelier profissional, professor e consultor de vinhos, considerado um dos pioneiros na formação e difusão da cultura do vinho no Ceará. Italiano, nascido no Piemonte, soma mais de 25 anos de experiência no universo dos vinhos, com especializações em enologia italiana e vinhos de Bordeaux. Foi eleito Melhor Sommelier do Ceará pela revista Prazeres da Mesa em 2012 e 2013, e atua também como professor, palestrante e embaixador de importantes vinícolas.",
+        ],
+      },
+      {
+        titulo: "Marco Ferrari no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Marco Ferrari se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "clovis-holanda": {
+    slug: "clovis-holanda",
+    primeiroNome: "Clóvis",
+    resto: "Holanda",
+    dia: "DOMINGO",
+    foto: "/chefs/clovis-holanda.webp",
+    cor: "bg-oliva",
+    bioCurta: "Clóvis Holanda é jornalista, colunista e editor de Cultura e Entretenimento do O Povo, com atuação destacada na cobertura de comportamento, gastronomia, cultura e lifestyle no Ceará.",
+    metaDescription: "Conheça Clóvis Holanda, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Clóvis Holanda no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Clóvis Holanda",
+        paragrafos: [
+          "Clóvis Holanda é jornalista, colunista e editor de Cultura e Entretenimento do O Povo, com atuação destacada na cobertura de comportamento, gastronomia, cultura e lifestyle no Ceará. À frente de sua coluna, acompanha e dá visibilidade a personagens, chefs, restaurantes e experiências que movimentam a cena gastronômica e cultural de Fortaleza. Também atua na curadoria e realização de experiências que aproximam gastronomia, vinhos, arte e cultura.",
+        ],
+      },
+      {
+        titulo: "Clóvis Holanda no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Clóvis Holanda se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "marina-araujo": {
+    slug: "marina-araujo",
+    primeiroNome: "Marina",
+    resto: "Araújo",
+    dia: "DOMINGO",
+    foto: "/chefs/marina-araujo.webp",
+    cor: "bg-oliva",
+    bioCurta: "Empresária, pesquisadora e cozinheira, Marina Araújo atua na interseção entre alimento, afeto e território.",
+    metaDescription: "Conheça Marina Araújo, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Marina Araújo no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Marina Araújo",
+        paragrafos: [
+          "Empresária, pesquisadora e cozinheira, Marina Araújo atua na interseção entre alimento, afeto e território. Foi diretora do Mercado AlimentaCE, política pública que desenvolve experiências que conectam pessoas por meio da cultura alimentar, dos saberes ancestrais, da hospitalidade e de narrativas que fortalecem a comunidade.",
+        ],
+      },
+      {
+        titulo: "Marina Araújo no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Marina Araújo se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "gabi-barreto": {
+    slug: "gabi-barreto",
+    primeiroNome: "Gabi",
+    resto: "Barreto",
+    dia: "DOMINGO",
+    foto: "/chefs/gabi-barreto.webp",
+    cor: "bg-bordo",
+    bioCurta: "Chef Gabriela Barreto é uma jovem chef cearense e personal chef, com uma trajetória marcada pela busca por técnica, criatividade e experiências gastronômicas personalizadas.",
+    metaDescription: "Conheça Gabi Barreto, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Gabi Barreto no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Gabi Barreto",
+        paragrafos: [
+          "Chef Gabriela Barreto é uma jovem chef cearense e personal chef, com uma trajetória marcada pela busca por técnica, criatividade e experiências gastronômicas personalizadas. Medalhista de bronze nas Competições Senac de Educação Profissional de 2023, representando o Ceará, atua na criação de menus, eventos e experiências exclusivas, valorizando ingredientes, sabores e a cozinha feita sob medida para cada ocasião.",
+        ],
+      },
+      {
+        titulo: "Gabi Barreto no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Gabi Barreto se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "renata": {
+    slug: "renata",
+    primeiroNome: "Renata",
+    resto: "Azúcar",
+    dia: "DOMINGO",
+    foto: "/chefs/renata-azucar.webp",
+    cor: "bg-vinho",
+    bioCurta: "Renata é fundadora da Azúcar, marca de doces artesanais e cafeteria de Fortaleza.",
+    metaDescription: "Conheça Renata Azúcar, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Renata Azúcar no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Renata Azúcar",
+        paragrafos: [
+          "Renata é fundadora da Azúcar, marca de doces artesanais e cafeteria de Fortaleza. Formada em Gastronomia, transformou receitas de família em um negócio que valoriza a confeitaria artesanal, o cuidado nos detalhes e o sabor afetivo. À frente da Azúcar, construiu uma identidade marcada pela delicadeza, qualidade e pelo prazer de transformar doces em experiências.",
+        ],
+      },
+      {
+        titulo: "Renata Azúcar no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Renata Azúcar se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "lia-quindere": {
+    slug: "lia-quindere",
+    primeiroNome: "Lia",
+    resto: "Quinderé",
+    dia: "DOMINGO",
+    foto: "/chefs/lia-quindere.webp",
+    cor: "bg-[#8a3d18]",
+    bioCurta: "Lia Quinderé é chef pâtissière, empresária e fundadora da Sucré, uma das marcas de confeitaria de maior destaque do Ceará.",
+    metaDescription: "Conheça Lia Quinderé, presença confirmada no Recebendo em Casa do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Lia Quinderé no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Lia Quinderé",
+        paragrafos: [
+          "Lia Quinderé é chef pâtissière, empresária e fundadora da Sucré, uma das marcas de confeitaria de maior destaque do Ceará. Formada pela renomada Le Cordon Bleu, em Paris, e especializada em Cake Design pela Wilton School, em Chicago, construiu sua trajetória unindo técnica francesa, criatividade e valorização dos ingredientes brasileiros e cearenses. Reconhecida nacionalmente, foi eleita Chef Pâtissière do Ano pela Prazeres da Mesa em 2013 e 2015, consolidando seu nome entre os grandes talentos da confeitaria brasileira.",
+        ],
+      },
+      {
+        titulo: "Lia Quinderé no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Lia Quinderé se apresenta no Recebendo em Casa do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
         ],
       },
     ],
