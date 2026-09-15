@@ -1250,4 +1250,30 @@ export const chefProfiles: Record<string, ChefProfileData> = {
       },
     ],
   },
+  "phelipe-carvalho": {
+    slug: "phelipe-carvalho",
+    primeiroNome: "Phelipe",
+    resto: "Carvalho",
+    dia: "",
+    foto: "/chefs/phelipe-carvalho.webp",
+    cor: "bg-telha",
+    bioCurta: "Phelipe Carvalho é um profissional multifacetado de Fortaleza, com trajetória que une música, gastronomia e inovação.",
+    metaDescription: "Conheça Phelipe Carvalho, embaixador gastronômico do São Luiz, presença confirmada no Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Phelipe Carvalho no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Phelipe Carvalho",
+        paragrafos: [
+          "Phelipe Carvalho é um profissional multifacetado de Fortaleza, com trajetória que une música, gastronomia e inovação. Na carreira artística, integra o PaDuo, projeto musical voltado para casamentos, eventos corporativos e grandes celebrações, além de acumular experiências em palcos, projetos culturais e na televisão, com participação no programa Ídolos em 2009.",
+          "Fora dos palcos, Phelipe é engenheiro de alimentos e chef de cozinha, atuando também na área de estratégia e desenvolvimento de produtos do Mercadinhos São Luiz. Sua carreira combina criatividade, sensibilidade artística e visão de negócio, transitando de forma natural entre entretenimento, gastronomia e projetos corporativos.",
+        ],
+      },
+      {
+        titulo: "Phelipe Carvalho no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Phelipe Carvalho se apresenta como embaixador gastronômico do São Luiz no Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
 };

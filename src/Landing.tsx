@@ -238,7 +238,7 @@ const numeroVarianteItem = {
 };
 
 const chefs: { nome: string; sub?: string; casa?: string; atracao: string; dia: string; cor: string; foto?: string; link?: string; instagram?: string; instagram2?: string; bio?: string; pronome?: string; status?: "aconfirmar" }[] = [
-  { nome: "Phelipe Carvalho", casa: "Curadoria gastronômica", atracao: "Embaixador São Luiz", dia: "", cor: "bg-telha", foto:"/chefs/phelipe-carvalho.webp", instagram: "https://www.instagram.com/phecarvalhopaduo/" },
+  { link: "/chefs/phelipe-carvalho", nome: "Phelipe Carvalho", casa: "Curadoria gastronômica", atracao: "Embaixador São Luiz", dia: "", cor: "bg-telha", foto:"/chefs/phelipe-carvalho.webp", instagram: "https://www.instagram.com/phecarvalhopaduo/" },
   // SEXTA
   { link: "/chefs/georgia-santiago", pronome: "dela", nome: "Georgia Santiago", casa: "Muá Tuá", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-oliva", foto: "/chefs/georgia-santiago.webp", instagram: "https://www.instagram.com/georgiasantiago/" },
   { nome: "Daniel Sabbá", atracao: "Palco Gourmet", dia: "SEX", cor: "bg-bordo", foto: "/chefs/daniel-sabba.webp", instagram: "https://instagram.com/danielsabba", link: "/chefs/daniel-sabba" },
