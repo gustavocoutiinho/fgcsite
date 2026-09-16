@@ -7,7 +7,8 @@ const SYMPLA =
   "https://www.sympla.com.br/evento/festival-costume-gourmet/3512927";
 const MAPS =
   "https://www.google.com/maps/search/?api=1&query=La+Maison+Coliseu+Av+Eng+Luiz+Vieira+555+Papicu+Fortaleza";
-const WAZE = "https://waze.com/ul?q=La%20Maison%20Coliseu%20Av%20Eng%20Luiz%20Vieira%20555%20Papicu%20Fortaleza";
+/* Waze por coordenada do La Maison Coliseu: a busca por texto devolvia "Av. Luiz Vieira" (Messejana, ~15 km daqui) como 1o resultado */
+const WAZE = "https://www.waze.com/ul?ll=-3.733469%2C-38.466644&navigate=yes&zoom=17";
 const NEWSLETTER = "https://www.instagram.com/channel/AbYOJmngcLM_wj4b/";
 const LEADS_API = "https://festival-costume-gourmet.vercel.app/api/leads-b2b";
 /* liga quando o chef convidado de sexta for divulgado nas redes; até lá, some do site sem apagar o trabalho */
