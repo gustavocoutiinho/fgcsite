@@ -8,7 +8,10 @@ const SYMPLA =
 /* Rota até o PRIMEIRO PORTÃO do La Maison (entrada do estacionamento do festival, pedida pelo Comitê em 14/09).
    Ponto na Av. Eng. Luiz Vieira, na boca do portão oeste; o centro do prédio puxava a rota para a rua dos fundos. */
 const PORTAO = "-3.732897,-38.467636";
-const MAPS = `https://www.google.com/maps/dir/?api=1&destination=${PORTAO}&travelmode=driving`;
+/* No Google o ponto exato do portão aparece com o nome do vizinho (Paulo Quezado Advocacia).
+   6 m a leste, ainda na boca do portão, ele vira "Av. Eng. Luiz Vieira" e a rota termina no mesmo lugar. */
+const PORTAO_GOOGLE = "-3.732860,-38.467480";
+const MAPS = `https://www.google.com/maps/dir/?api=1&destination=${PORTAO_GOOGLE}&travelmode=driving`;
 /* Waze por coordenada: a busca por texto devolvia "Av. Luiz Vieira" (Messejana, ~15 km daqui) como 1o resultado */
 const WAZE = `https://www.waze.com/ul?ll=${encodeURIComponent(PORTAO)}&navigate=yes&zoom=17`;
 const NEWSLETTER = "https://www.instagram.com/channel/AbYOJmngcLM_wj4b/";
