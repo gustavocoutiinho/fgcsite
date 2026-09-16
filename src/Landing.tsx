@@ -5,10 +5,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const SYMPLA =
   "https://www.sympla.com.br/evento/festival-costume-gourmet/3512927";
-const MAPS =
-  "https://www.google.com/maps/search/?api=1&query=La+Maison+Coliseu+Av+Eng+Luiz+Vieira+555+Papicu+Fortaleza";
-/* Waze por coordenada do La Maison Coliseu: a busca por texto devolvia "Av. Luiz Vieira" (Messejana, ~15 km daqui) como 1o resultado */
-const WAZE = "https://www.waze.com/ul?ll=-3.733469%2C-38.466644&navigate=yes&zoom=17";
+/* Rota até o PRIMEIRO PORTÃO do La Maison (entrada do estacionamento do festival, pedida pelo Comitê em 14/09).
+   Ponto na Av. Eng. Luiz Vieira, na boca do portão oeste; o centro do prédio puxava a rota para a rua dos fundos. */
+const PORTAO = "-3.732897,-38.467636";
+const MAPS = `https://www.google.com/maps/dir/?api=1&destination=${PORTAO}&travelmode=driving`;
+/* Waze por coordenada: a busca por texto devolvia "Av. Luiz Vieira" (Messejana, ~15 km daqui) como 1o resultado */
+const WAZE = `https://www.waze.com/ul?ll=${encodeURIComponent(PORTAO)}&navigate=yes&zoom=17`;
 const NEWSLETTER = "https://www.instagram.com/channel/AbYOJmngcLM_wj4b/";
 const LEADS_API = "https://festival-costume-gourmet.vercel.app/api/leads-b2b";
 /* liga quando o chef convidado de sexta for divulgado nas redes; até lá, some do site sem apagar o trabalho */
@@ -1768,7 +1770,7 @@ export default function Landing() {
                   <div className="h-px bg-musgo/25 my-6" />
                   <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-musgo">Onde</div>
                   <div className="text-[15px] font-semibold mt-1.5">La Maison Coliseu</div>
-                  <div className="text-[13.5px] text-creme/80 leading-relaxed">Av. Eng. Luiz Vieira, 555, Papicu, Fortaleza. O local conta com opções de estacionamento; chegue com antecedência.</div>
+                  <div className="text-[13.5px] text-creme/80 leading-relaxed">Av. Eng. Luiz Vieira, 555, Papicu, Fortaleza. A entrada do estacionamento é pelo primeiro portão: não siga até o portal principal. Chegue com antecedência.</div>
                   <div className="flex flex-wrap gap-3 mt-5">
                     <a href={MAPS} target="_blank" rel="noopener" className="px-5 py-2.5 rounded-full bg-musgo text-oliva font-bold text-[13px] hover:brightness-105 transition">Google Maps</a>
                     <a href={WAZE} target="_blank" rel="noopener" className="px-5 py-2.5 rounded-full border border-musgo/50 text-musgo font-bold text-[13px] hover:bg-musgo hover:text-oliva transition">Waze</a>
