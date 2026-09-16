@@ -1276,4 +1276,55 @@ export const chefProfiles: Record<string, ChefProfileData> = {
       },
     ],
   },
+  "beatriz-marcondes": {
+    slug: "beatriz-marcondes",
+    primeiroNome: "Beatriz",
+    resto: "Marcondes",
+    dia: "SEXTA",
+    foto: "/chefs/beatriz-marcondes.webp",
+    cor: "bg-oliva",
+    bioCurta: "Beatriz Marcondes é profissional da área de bebidas e hospitalidade, com formação em Hotelaria pelo Senac e especialização em andamento pela Associação Brasileira de Sommeliers.",
+    metaDescription: "Conheça Beatriz Marcondes, da Rémy Cointreau, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Beatriz Marcondes no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Beatriz Marcondes",
+        paragrafos: [
+          "Beatriz Marcondes é profissional da área de bebidas e hospitalidade, com formação em Hotelaria pelo Senac e especialização em andamento pela Associação Brasileira de Sommeliers. Atua na Rémy Cointreau, grupo internacional de bebidas premium, aproximando marcas, profissionais e experiências do universo da alta gastronomia e da coquetelaria. Sua trajetória combina conhecimento técnico, hospitalidade e paixão pelo universo de bebidas.",
+        ],
+      },
+      {
+        titulo: "Beatriz Marcondes no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Beatriz Marcondes se apresenta no Piano Bar do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
+  "deuza-firmiano": {
+    slug: "deuza-firmiano",
+    primeiroNome: "Deuza",
+    resto: "Firmiano",
+    dia: "SÁBADO",
+    foto: "/chefs/deuza-firmiano.webp",
+    cor: "bg-vinho",
+    bioCurta: "Deuza Firmiano é mixologista e embaixadora da Jack Daniel's Brasil, com atuação na região Nordeste, especializada em hospitalidade, coquetelaria contemporânea, ciência aplicada à coquetelaria e experiência de marca.",
+    metaDescription: "Conheça Deuza Firmiano, mixologista e embaixadora da Jack Daniel's Brasil, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Deuza Firmiano no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Deuza Firmiano",
+        paragrafos: [
+          "Deuza Firmiano é mixologista e embaixadora da Jack Daniel's Brasil, com atuação na região Nordeste, especializada em hospitalidade, coquetelaria contemporânea, ciência aplicada à coquetelaria e experiência de marca.",
+          "Com mais de uma década de atuação no mercado de bar, une técnica, criatividade, pesquisa científica e análise sensorial para aproximar o público da cultura do whisky e da coquetelaria de forma acessível, dinâmica e autoral, explorando ingredientes brasileiros e novas formas de experiência através do bar.",
+        ],
+      },
+      {
+        titulo: "Deuza Firmiano no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Deuza Firmiano se apresenta no Piano Bar do Festival Costume Gourmet 2026, pela Jack Daniel's. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
 };
