@@ -694,21 +694,21 @@ export const chefProfiles: Record<string, ChefProfileData> = {
     dia: "SÁBADO",
     foto: "/chefs/matu-macedo.webp",
     cor: "bg-vinho",
-    bioCurta: "Chef pâtissière, professora da Universidade Federal do Ceará (UFC) e consultora gastronômica, Matu Macêdo é uma das grandes referências da gastronomia cearense.",
-    metaDescription: "Conheça Matu Macêdo, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
-    tituloPagina: "Matu Macêdo no Festival Costume Gourmet 2026",
+    bioCurta: "Chef pâtissière, professora da Universidade Federal do Ceará (UFC) e consultora gastronômica, Mattu Macêdo é uma das grandes referências da gastronomia cearense.",
+    metaDescription: "Conheça Mattu Macêdo, presença confirmada no Palco Gourmet do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Mattu Macêdo no Festival Costume Gourmet 2026",
     artigo: [
       {
-        titulo: "Sobre Matu Macêdo",
+        titulo: "Sobre Mattu Macêdo",
         paragrafos: [
-          "Chef pâtissière, professora da Universidade Federal do Ceará (UFC) e consultora gastronômica, Matu Macêdo é uma das grandes referências da gastronomia cearense. Mestre em Ciências Gastronômicas em Lisboa e doutora em Patrimônios Culturais Alimentares pela Universidade de Coimbra, dedica sua trajetória à valorização da identidade e da cultura alimentar do Ceará.",
+          "Chef pâtissière, professora da Universidade Federal do Ceará (UFC) e consultora gastronômica, Mattu Macêdo é uma das grandes referências da gastronomia cearense. Mestre em Ciências Gastronômicas em Lisboa e doutora em Patrimônios Culturais Alimentares pela Universidade de Coimbra, dedica sua trajetória à valorização da identidade e da cultura alimentar do Ceará.",
           "À frente de uma carreira marcada pelo ensino, pesquisa e difusão da gastronomia, apresentou por 24 anos o programa Nossa Cozinha, na TV Jangadeiro, e foi pioneira na criação de uma escola de culinária em Fortaleza. Seu trabalho conecta conhecimento, memória afetiva e ingredientes locais, valorizando os sabores que fazem parte da história cearense.",
         ],
       },
       {
-        titulo: "Matu Macêdo no Festival Costume Gourmet 2026",
+        titulo: "Mattu Macêdo no Festival Costume Gourmet 2026",
         paragrafos: [
-          "Matu Macêdo se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+          "Mattu Macêdo se apresenta no Palco Gourmet do Festival Costume Gourmet 2026. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
         ],
       },
     ],
