@@ -1327,4 +1327,30 @@ export const chefProfiles: Record<string, ChefProfileData> = {
       },
     ],
   },
+  "alex-yuji": {
+    slug: "alex-yuji",
+    primeiroNome: "Alex",
+    resto: "Yuji",
+    dia: "SEXTA",
+    foto: "/chefs/alex-yuji.png",
+    cor: "bg-bordo",
+    bioCurta: "Alex Yuji é mixologista da Pernod Ricard Brasil, onde atua no desenvolvimento de experiências, treinamentos e consultorias para bares e restaurantes.",
+    metaDescription: "Conheça Alex Yuji, mixologista da Pernod Ricard Brasil, presença confirmada no Piano Bar do Festival Costume Gourmet 2026, em Fortaleza.",
+    tituloPagina: "Alex Yuji no Festival Costume Gourmet 2026",
+    artigo: [
+      {
+        titulo: "Sobre Alex Yuji",
+        paragrafos: [
+          "Alex Yuji é mixologista da Pernod Ricard Brasil, onde atua no desenvolvimento de experiências, treinamentos e consultorias para bares e restaurantes.",
+          "Com uma abordagem que une técnica, criatividade e visão de negócio, seu trabalho conecta coquetelaria, gastronomia e hospitalidade a estratégias de gestão, utilizando bebidas premium para potencializar resultados e elevar a experiência do consumidor.",
+        ],
+      },
+      {
+        titulo: "Alex Yuji no Festival Costume Gourmet 2026",
+        paragrafos: [
+          "Alex Yuji se apresenta no Piano Bar do Festival Costume Gourmet 2026, pelo Momento Chivas Regal. O Festival Costume Gourmet 2026 acontece de 18 a 20 de setembro, no La Maison Coliseu, na Avenida Engenheiro Luiz Vieira, 555, no Papicu, em Fortaleza, e é apresentado pelo São Luiz Supermercado, rede que completa 100 anos em 2026. O evento reúne três espaços centrais de experiência, o Palco Gourmet, o Piano Bar e o Recebendo em Casa, e reverte 100% da renda da bilheteria para três instituições sociais de Fortaleza: o IPREDE, o Instituto Povo do Mar (IPOM) e o Instituto do Câncer do Ceará (ICC).",
+        ],
+      },
+    ],
+  },
 };
